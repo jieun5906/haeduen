@@ -1,0 +1,37 @@
+<li id="anchorBoxId_{$product_no}">
+    <div class="prdpadding fd-prd-list-item dream fd-prd-list-item2">
+        <div class="prdline">
+            <a href="/product/detail.html{$param}" class='fd-prd-cont'>
+                <div style="position:relative;">
+                    <div id="fitsoftimg2">
+                        <img src="{$image_medium}" width=100% class=fitsoftimg2 />
+                    </div>
+                </div>
+                <img src="{$image_big}" width=100% class=fitsoftimg />                
+                <div class="soldout_icon">{$soldout_icon}</div>
+            </a>
+        </div>
+        
+    	<div class="colorWrap">
+            <div class="color {$colorchip_display|display}">
+                <div module="product_Colorchip">
+                    <ul>
+                        <li class="chips" style="background-color:{$color}"></li>
+                        <li class="chips" style="background-color:{$color}"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <p class="name pret"><a href="/product/detail.html{$param}">{$product_name}</a></p>
+        
+        <!-- <ul module="product_ListItem">
+            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+            <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+        </ul> -->
+        <p class="info pret {$summary_desc|display}">{$summary_desc}</p>
+    	<p class="prices pret" style='margin-top:12px;'><span class="price pret normal{$product_custom|display}"><strike>{$disp_product_custom}</strike></span><span class="price sale pret">{$disp_product_price}</span></p>
+
+    	<p class="icon">{$stock_icon}{$recommend_icon}{$new_icon}{$product_icons}{$benefit_icons}</p>
+    </div>
+</li>

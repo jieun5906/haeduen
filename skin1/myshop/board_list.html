@@ -1,0 +1,106 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="path">
+    <span>현재 위치</span>
+    <ol>
+        <li><a href="/">홈</a></li>
+        <li><a href="/myshop/index.html">마이쇼핑</a></li>
+        <li title="현재 위치"><strong>게시물 관리</strong></li>
+    </ol>
+</div>
+
+<!--@css(/fitsoft/fd-co/css/myshop.css)-->
+<!--@js(/fitsoft/fd-co/js/myshop.js)-->
+<div class='fd-comm-cont'>
+
+    <div class='fd-myshop-cont fd-flex-ais'>
+        <div class='ms-left'><!--@import(/fitsoft/fd-co/html/myshop/myshop-navi.html)--></div>
+        <div class='ms-right'>
+            <div class='fd-msr-cont'>
+                
+                <div module="myshop_BoardPackage">
+                    <!--@css(/css/module/myshop/boardPackage.css)-->
+<!-- 
+                    <div class="-search" module="myshop_boardlistSearch">
+                        <div module="myshop_boardListHead">
+                            {$board_sort}
+                        </div>
+                        {$form.search_key}
+                        {$form.search}
+                        <a href="#none" onclick="{$action_search}"><img src="/_sp/image/board/search.png" /></a>
+                    </div> -->
+
+                    <div class='msr-list' module="myshop_boardList">
+                        <!--
+                            $count = 10
+                            $relation_post = yes
+                        -->
+                        <table border="1" summary="" class='ms-table' style='border-top:2px solid #000;'>
+                        <caption>게시물 관리 목록</caption>
+                        <colgroup module="board_listheader_1002">
+                            <col style="width:70px;" />
+                            <col style="width:135px;" />
+                            <col style="width:auto;" />
+                            <!--<col style="width:84px;" />-->
+                            <col style="width:80px;" />
+                            <!-- <col style="width:55px;" /> -->
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">분류</th>
+                                <th scope="col">제목</th>
+                                <!--<th scope="col">작성자</th>-->
+                                <th scope="col">날짜</th>
+                                <!-- <th scope="col">HIT수</th> -->
+                            </tr>
+                        </thead>
+                        <tbody class="{$list_display|display} center">
+                            <tr>
+                                <td>{$no}</td>
+                                <td><a href="{$link_board_list}" class="txtEm">{$board_category}</a></td>
+                                <td class="left subject">{$icon_re}{$icon_lock} <a href="{$board_read_url}">{$subject}</a> {$icon_new}{$icon_file}{$comment_count}</td>
+                                <!--<td>{$writer}</td>-->
+                                <td><span class="txtNum">{$write_date}</span></td>
+                                <!-- <td><span class="txtNum">{$hit_count}</span></td> -->
+                            </tr>
+                            <tr>
+                                <td>{$no}</td>
+                                <td><a href="{$link_board_list}" class="txtEm">{$board_category}</a></td>
+                                <td class="left subject">{$icon_re}{$icon_lock} <a href="{$board_read_url}">{$subject}</a> {$icon_new}{$icon_file}{$comment_count}</td>
+                                <!--<td>{$writer}</td>-->
+                                <td><span class="txtNum">{$write_date}</span></td>
+                                <!-- <td><span class="txtNum">{$hit_count}</span></td> -->
+                            </tr>
+                        </tbody>
+                        </table>
+                        <div class="message {$nodata_display|display}">
+                            작성된 게시글이 없습니다.
+                        </div>
+                        
+                        <!--페이지-->
+                        <!--@css(/_sp/apps/module/pagination/pagination.css)-->
+                        <div module="myshop_couponMemberPaging" class="fitsoft-paging">
+                            <a href="{$first_url}" class="first"><img src="/img/page_first.gif" alt="첫 페이지" /></a>
+                            <a href="{$prev_url}"><img src="/img/page_prev.gif" alt="이전 페이지" /></a>
+                            <ol>
+                                <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+                                <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+                                <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+                                <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+                                <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+                            </ol>
+                            <a href="{$next_url}"><img src="/img/page_next.gif" alt="다음 페이지" /></a>
+                            <a href="{$last_url}" class="last"><img src="/img/page_last.gif" alt="마지막 페이지" /></a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- cre.ma / 내가 작성한 리뷰 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+                <div class="crema-reviews" data-type="my-reviews" style="margin-top: 20px;"></div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

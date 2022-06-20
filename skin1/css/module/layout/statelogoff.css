@@ -1,0 +1,3 @@
+.xans-layout-statelogoff {display:flex; justify-content:flex-end; align-items:center; font-family:'Pretendard';}
+.xans-layout-statelogoff > a {padding:0 12px; color:#838383; font-size:14px; background:url("//img.echosting.cafe24.com/skin/base/common/ico_bar.gif") no-repeat 0 3px; }
+.xans-layout-statelogoff .log { background:none; }

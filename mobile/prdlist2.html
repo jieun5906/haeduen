@@ -1,0 +1,35 @@
+<!--@js(/js/fitsoft-prdlist.js)-->
+<li class='fd-prdlist-item fd-prd-list-item2'>
+    <div class="thumbnail">
+        <a href="/product/detail.html{$param}" class='fd-prd-cont'><img src="{$image_big}" alt="{$seo_alt_tag}" class="thumb"></a>
+        <div class="soldout_icon">{$soldout_icon}</div>
+    </div>
+    <div class="color {$colorchip_display|display}">
+        <div module="product_Colorchip">
+            <span class="chips" style="background-color:{$color};"></span>
+            <span class="chips" style="background-color:{$color};"></span>
+        </div>
+    </div>
+    
+    <p class="name pret"><a href="/product/detail.html{$param}">{$product_name}</a></p>
+	<!-- <p class="infotext pret {$summary_desc|display}">{$summary_desc}</p> -->
+    
+    <ul module="product_ListItem">
+        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+    </ul>
+
+    <!-- <p class="prices pret" style='margin-top:12px;'>
+        <span class="price normal{$product_price|display}">
+            <strike>{$product_price|number_format}</strike>
+        </span>
+        <span class="price sale">{$product_sale_price}</span>
+    </p> -->
+
+    <div class="information">
+        <!--<span class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price}</span>
+        <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span class="price {$product_sale_display|display}">{$product_sale_price|replace:#555555,#000}</span>-->
+        
+        <p class="icon">{$stock_icon}{$new_icon}{$recommend_icon}{$product_icons}</p>
+    </div>
+</li>

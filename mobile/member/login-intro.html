@@ -1,0 +1,119 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div id="titleArea">
+    <h2 class='f20'>LOGIN</h2>
+</div>
+<div module="member_login" class='fd-login-cont' id="{$member_login_module_id}">
+    <!--@css(/css/module/member/login.css)-->
+    <!--@js(/js/module/member/login.js)-->
+    <!--
+        $defaultReturnUrl = /index.html
+    -->
+    <!--주문조회-->
+    <div class="loginWrap">
+        <div class="tab eTab {$member_login_tab_display|display}">
+            <ul>
+                <li class="selected">
+                    <a href="#member">회원</a>
+                </li>
+                <li>
+                    <a href="#noMember">비회원</a>
+                </li>
+            </ul>
+        </div>
+        <div class="loginHeader">
+            <div class="keyboard">
+                <button type="button" class="btnKey korean" title="korean">한글자판</button>
+                <button type="button" class="btnKey special" title="special">특수문자</button>
+            </div>
+            <div class="view">
+                <div class="korean"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/member/img_keyboard.png" alt="" width="254"></div>
+                <div class="special"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/member/img_keyboard_special.png" alt="" width="254"></div>
+            </div>
+        </div>
+        <fieldset>
+            <div class="formBox">
+                <div class="form">
+                    {$form.member_id}
+                    {$form.member_passwd}
+                </div>
+                <div class="option">
+                    <span class="auto">{$form.use_login_keeping}</span>
+                    <span class="save">{$form.check_save_id}</span>
+                    <span class="ssl"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/member/ico_ssl.png" alt="보안접속"><em>보안접속</em></span>
+                </div>
+                <div class="ec-base-button gFull">
+                    <button type="button" class="btnSubmit fd-btn-style01" onclick="{$action_func_login}">LOGIN</button>
+                </div>
+                <div class="loginUtil">
+                    <a href="/member/id/find_id.html" class="btnLogin">아이디찾기</a>
+                    <a href="/member/passwd/find_passwd_info.html" class="btnLogin">비밀번호찾기</a>
+                </div>
+                <div class="snsLogin">
+                    <a href="#none" class="{$display_naver|display}" onclick="{$naver_func_login}"><img src="/web/upload/fitsoft/login/btn_naver_login.gif" alt="네이버 로그인" /></a>
+                    <a href="#none" class="{$display_facebook|display}" onclick="{$facebook_func_login}"><img src="/web/upload/fitsoft/login/btn_facebook_login.gif" alt="페이스북 로그인" /></a>
+                    <a href="#none" class="{$display_google|display}" onclick="{$google_func_login}"><img src="/web/upload/fitsoft/login/btn_google_login.gif" alt="구글 로그인" /></a>
+                    <a href="#none" class="{$display_kakao|display}" onclick="{$kakao_func_login}"><img src="/web/upload/fitsoft/login/btn_kakao_login.gif" alt="카카오계정 로그인" /></a>
+                    <a href="#none" class="{$display_line|display}" onclick="{$line_func_login}"><img src="/web/upload/fitsoft/login/btn_line_login.gif" alt="LINE 로그인" /></a>
+                </div>
+                
+                <div class='fd-nomember-btn {$display_nomember|display}'>
+                    <p>비회원님도 상품구매가 가능하나 다양한 회원혜택에서 제외됩니다.</p>
+                    <a href="{$returnUrl}" onclick="{$action_nomember_order}" class="btnEm {$display_nomember|display}">GUEST</a>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+     <!--//주문조회-->
+</div>
+
+<div module="MyShop_OrderHistoryNologin" id="{$order_history_nologin_id}">
+    <!--@css(/css/module/myshop/orderHistoryNologin.css)-->
+    <!--
+        $orderDetailUrl = /myshop/order/detail.html
+    -->
+    <div class="tab eTab">
+        <ul>
+            <li>
+                <a href="#member">회원</a>
+            </li>
+            <li class="selected">
+                <a href="#noMember">비회원</a>
+            </li>
+        </ul>
+    </div>
+    <div class="loginHeader">
+        <div class="keyboard">
+            <button type="button" class="btnKey korean" title="korean">한글자판</button>
+            <button type="button" class="btnKey special" title="special">특수문자</button>
+        </div>
+        <div class="view">
+            <div class="korean"><img src="http://img.echosting.cafe24.com/skin/mobile_ko_KR/member/img_keyboard.png" alt="" width="254"></div>
+            <div class="special"><img src="http://img.echosting.cafe24.com/skin/mobile_ko_KR/member/img_keyboard_special.png" alt="" width="254"></div>
+        </div>
+    </div>
+    <fieldset>
+        <div class="formBox">
+            <div class="form">
+                {$form.order_name}
+                {$form.order_id}
+                {$form.order_password}
+            </div>
+            <div class="btnArea type1">
+                <button type="button" class="btnSubmit" onclick="$('#historyNoLoginForm').submit();">조회</button>
+            </div>
+            <div class="help">
+                <p>비회원인 경우 주문번호로 주문조회만 가능합니다.</p>
+            </div>
+        </div>
+    </fieldset>
+</div>
+
+<div id="titleArea" class='fd-join-tit'>
+    <!-- <h2 class='f20'>JOIN</h2> -->
+    
+    <div class='join-btn'>
+        <p>회원가입을 하시면 다양하고 특별한 혜택이 준비되어 있습니다.</p>
+        <a href="/member/agreement.html" class="btnLogin ridi fd-btn-style02">JOIN US</a>
+    </div>
+</div>
+

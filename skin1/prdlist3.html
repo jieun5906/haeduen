@@ -1,0 +1,26 @@
+
+<!--@css(/css/fitsoftproduct.css)-->
+<!--@js(/js/fitsoft-prdlist.js)-->
+
+<li class="swiper-slide item" id="anchorBoxId_{$product_no}">
+    <div class="thumbnail" style="position:relative;">
+        <a href="/product/detail.html{$param}">
+            <img src="{$image_medium}" id="{$image_medium_id}" alt="" class="thumb" onmouseover="this.src='{$image_small}'" onmouseout="this.src='{$image_medium}'"/>
+            <div class="soldout_icon">{$soldout_icon}</div>
+        </a>
+    </div>
+    <div class="box description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
+        <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"></a>
+        <p class="name">
+            <strong><a href="/product/detail.html{$param}" class="{$product_name_display|display}"><span class="title {$product_name_title_display|display}">{$product_name_title} :</span> {$product_name}</a></strong>
+        </p>
+        <ul module="product_ListItem" class='spec'>
+            <li class="{$item_display|display} fitsoft-prd-item"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+            <li class="{$item_display|display} fitsoft-prd-item"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+        </ul>
+        <div class="status">
+            <div class="icon">{$recommend_icon} {$new_icon} {$product_icons} {$benefit_icons}</div>
+        </div>
+    </div>
+    <div class="item_link_box"><div class="item_link"><a class="buynow-btn" href="/product/detail.html{$param}">구매하기</a> <button class='wish-btn'>{$list_wish_icon}</button> <button class='basket-btn'>{$basket_icon} </button></div></div>
+</li>

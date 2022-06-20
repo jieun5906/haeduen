@@ -1,0 +1,4 @@
+/* 타이틀 탭메뉴 */
+.board-tab-menu {display:flex; align-items:center; justify-content:center; padding:10px 0 30px;}
+.board-tab-menu a {flex:1; display:inline-block; padding:0 0 10px; text-align:center; font-size:20px; font-weight:600; color:#888;}
+.board-tab-menu a.active {color:#000;  border-bottom:2px solid #000;}

@@ -1,0 +1,51 @@
+#detailguide {display:none; margin-bottom:35px; font-size:16px; letter-spacing:0; color:#050505; border-top:1px solid #c4c4c4;border-bottom:1px solid #c4c4c4; padding:20px 0;}
+
+#detailguide .inner {/*border-bottom:1px solid #eaeaea; */padding:20px 0; font-size:.8rem; line-height:1.2rem; font-weight:400; }
+#detailguide .accordion-label {
+    color: #111;
+    display: block;
+    font-size: .8rem;
+    font-weight:bold;
+    text-transform:uppercase;
+    line-height: 1em;
+    padding: 15px 0;
+    position: relative;
+    text-decoration: none;
+    /* border-bottom:1px solid #eaeaea; */
+}
+
+#detailguide .accordion-label:after {
+    background: transparent url(/web/upload/fitsoft/icon-filter-open.svg) center center no-repeat;
+    background-size: 11px 11px;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 12px;
+    right: 5px;
+    top: 0;
+    width: 15px;
+}
+
+#detailguide .accordion-label.ui-state-active:after {
+    background: transparent url(/web/upload/fitsoft/icon-filter-close.svg) center center no-repeat;
+    background-size: 11px 1px;
+}
+
+
+textarea:focus, input:focus {
+    outline: none;
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
+}
+:focus {
+    outline: none;
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
+}
+
+/* 상세페이지 커스텀 (22.06.07) */
+.fitsoft-detail-info tbody tr:nth-child(1), .fitsoft-detail-info tbody tr:nth-child(2), .fitsoft-detail-info tbody tr:nth-child(3), .fitsoft-detail-info tbody tr:nth-child(4) {display:none;}

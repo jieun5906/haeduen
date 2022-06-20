@@ -1,0 +1,47 @@
+/* 타이틀 탭메뉴 */
+.board-tab-menu {display:flex; align-items:center; justify-content:center; padding-bottom:50px;}
+.board-tab-menu a {flex:1; display:inline-block; padding:0 0 10px; text-align:center; font-size:20px; font-weight:600; color:#888;}
+.board-tab-menu a.active {color:#000;  border-bottom:2px solid #000;}
+
+/* 이벤트 (22.06.09) - 썸네일형 */
+/* 목록 */
+.fitsoft-boardlist-event {}
+.fitsoft-boardlist-event .xans-board ul {font-size:0;}
+.fitsoft-boardlist-event .ec-base-table {margin-top:50px;}
+.fitsoft-boardlist-event .xans-board ul li {display:inline-block; width:calc(100% / 2 - 5px); margin-right:10px;}
+.fitsoft-boardlist-event .xans-board ul li:nth-child(2n) {margin-right:0;}
+.fitsoft-boardlist-event .xans-board ul li:nth-child(2n)~li {margin-top:50px;}
+.fitsoft-boardlist-event .xans-board ul li .board-item {}
+.fitsoft-boardlist-event .xans-board ul li .board-item img {width:100%;}
+.fitsoft-boardlist-event .xans-board ul li .board-item p.title {margin:10px 5px; font-size:18px; font-weight:bold;}
+
+/* 상세 */
+.fitsoft-boardread-event {}
+.fitsoft-boardread-event .ec-base-table tbody th {display:none;}
+.fitsoft-boardread-event .ec-base-table tbody td {border:none;}
+.fitsoft-boardread-event .ec-base-table tbody tr.board-subject td {font-size:16px; font-weight:600;}
+.fitsoft-boardread-event .ec-base-table tbody tr.board-info td {}
+.fitsoft-boardread-event .ec-base-table tbody tr.board-info td span {position:relative; display:inline-block; margin-right:10px;}
+.fitsoft-boardread-event .ec-base-table tbody tr.board-info td span:after {content:''; position:absolute; top:50%; right:-5px; width:1px; height:60%; background-color:#666; transform:translateY(-50%);}
+.fitsoft-boardread-event .ec-base-table tbody tr.board-info td span:last-child:after {display:none;}
+
+/* 일반 (22.06.09) - 목록형 */
+/* 목록 */
+.fitsoft-boardlist-free {}
+.fitsoft-boardlist-free .xans-board {}
+.fitsoft-boardlist-free .ec-base-table {margin-top:50px;}
+.fitsoft-boardlist-free .ec-base-table.typeList table {border-top:1px solid #000;}
+.fitsoft-boardlist-free .xans-board th {border-left:none; border-color:#000; font-weight:bold; color:#000;}
+.fitsoft-boardlist-free .xans-board td {border:none !important;}
+.fitsoft-boardlist-free .xans-board .ec-base-table thead tr th {border-top:1px solid #000; border-bottom:1px solid #000;} 
+.fitsoft-boardlist-free .txtNum {font-size:14px !important;}
+
+/* 상세 */
+.fitsoft-boardread-free {}
+.fitsoft-boardread-free .ec-base-table tbody th {display:none;}
+.fitsoft-boardread-free .ec-base-table tbody td {border:none;}
+.fitsoft-boardread-free .ec-base-table tbody tr.board-subject td {font-size:16px; font-weight:600;}
+.fitsoft-boardread-free .ec-base-table tbody tr.board-info td {}
+.fitsoft-boardread-free .ec-base-table tbody tr.board-info td span {position:relative; display:inline-block; margin-right:10px;}
+.fitsoft-boardread-free .ec-base-table tbody tr.board-info td span:after {content:''; position:absolute; top:50%; right:-5px; width:1px; height:60%; background-color:#666; transform:translateY(-50%);}
+.fitsoft-boardread-free .ec-base-table tbody tr.board-info td span:last-child:after {display:none;}

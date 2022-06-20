@@ -1,0 +1,43 @@
+<!--@layout(/layout/basic/layout2.html)-->
+
+<!--
+
+아래 페이지는 메인 인트로에서 section1 클릭시 이동되는 페이지입니다
+상품관리 > 메인상품진열관리에 등록하신 추천상품/신상품 메뉴가 노출됩니다
+노출되는 상품 갯수 수정을 원하실 경우 count 옆 숫자를 조정해 주세요
+
+-->
+
+<div class="mPrdList typeThumb prdlist" module="product_listmain_2">
+    <div id="maintitle">
+        <h2>New Arrival</h2>
+    </div>
+    <!--
+        $count = 4
+        $moreview = yes
+    -->
+    <ul class="grid2">
+        <!--@import(/prdlist.html)-->
+        <!--@import(/prdlist.html)-->
+    </ul>
+</div>
+<div module="product_listmore_2" class="paginate typeMoreview">
+    <a href="#none" onclick="{$more_action}">+ More item</a>
+</div>
+
+<div class="mPrdList typeThumb prdlist" module="product_listmain_1">
+    <div id="maintitle2">
+        <h2>Best Item</h2>
+    </div>
+    <!--
+        $count = 6
+        $moreview = yes
+    -->
+    <ul class="grid2">
+        <!--@import(/prdlist.html)-->
+        <!--@import(/prdlist.html)-->
+    </ul>
+</div>
+<div module="product_listmore_1" class="paginate typeMoreview">
+    <a href="#none" onclick="{$more_action}">+ More item</a>
+</div>

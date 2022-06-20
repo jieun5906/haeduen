@@ -1,0 +1,33 @@
+#fd-footer {margin-bottom:100px; margin-top:80px;}
+#fd-footer .ff-layout {width:1330px; margin:0 auto;}
+#fd-footer .ff-top {border-top:1px solid #ddd; padding:18px 0;}
+#fd-footer .ff-top ul.fft-list {}
+#fd-footer .ff-top ul.fft-list li.fft-item {display:inline-block;}
+#fd-footer .ff-top ul.fft-list li.fft-item a {font-size:.8rem; padding-right:20px;}
+#fd-footer .ff-top ul.fft-list li.fft-item:last-child a {padding-right:0;}
+#fd-footer .ff-mid {border-top:1px solid #ddd; border-bottom:1px solid #ddd; padding:30px 0;}
+#fd-footer .ff-mid > .ff-layout {display:flex; align-items:flex-start;}
+#fd-footer .ff-mid .ffm-left {flex:.4;}
+#fd-footer .ff-mid .ffm-right {flex:.65; display:flex; align-items:flex-start; padding:14px 0; border-left:1px solid #acacac;}
+#fd-footer .ff-mid .ffm-right .ffmr {margin:0 60px; padding:0 30px; }
+#fd-footer .ff-mid .ffm-right .ffmr .ffmr-tit {font-size:1.3rem; font-weight:600; margin-bottom:26px;}
+#fd-footer .ff-mid .ffm-right .ffmr .ffmr-center {}
+#fd-footer .ff-mid .ffm-right .ffmr .ffmr-center .ffmr-des > span {display:block; font-size:.9rem; line-height:1.5rem;}
+#fd-footer .ff-mid .ffm-right .ffmr .ffmr-center .ffmr-des .ffmr-num {font-size:1.7rem; font-weight:500; padding-bottom:14px;}
+#fd-footer .ff-mid .ffm-right .ffmr .ffmr-item {}
+#fd-footer .ff-mid .ffm-right .ffmr .ffmr-item:nth-child(2) {border-top:1px solid #acacac; padding-top:24px; margin-top:24px;}
+#fd-footer .ff-mid .ffm-right .ffmr .ffmr-item .ffmr-des {}
+#fd-footer .ff-mid .ffm-right .ffmr .ffmr-item .ffmr-des span {display:block; font-size:.9rem; line-height:1.5rem;}
+#fd-footer .ff-mid .ffm-right .ffmr .ffmr-item .ffmr-des span.ffmr-bank {}
+#fd-footer .ff-mid .ffm-right .ffmr .ffmr-item .ffmr-des span.ffmr-bank i {font-style:normal; display:inline-block; width:30%;}
+#fd-footer .ff-mid .ffm-right .ffmr .ffmr-item .ffmr-des .ffmr-bank-link {margin-top:14px; font-size:0;}
+#fd-footer .ff-mid .ffm-right .ffmr .ffmr-item .ffmr-des .ffmr-bank-link a {font-size:11px; padding:3px 10px; border:1px solid #acacac;}
+#fd-footer .ff-mid .ffm-right .ffmr .ffmr-item .ffmr-des .ffmr-bank-link a:last-child {border-left:0;}
+#fd-footer .ff-mid .ffm-right .ffmr .ffmr-item .ffmr-des span.ffmr-board {font-size:0;}
+#fd-footer .ff-mid .ffm-right .ffmr .ffmr-item .ffmr-des span.ffmr-board a {display:inline-block; width:50%; font-size:.9rem;}
+#fd-footer .ff-mid .ffm-right .ffmr .ffmr-item .ffmr-des ul li.ffmr-board-item a {font-size:.9rem; line-height:1.5rem;}
+#fd-footer .ff-mid .ffm-right .ffmr .ffmr-item .ffmr-des .ffmr-board-more a {font-size:.7rem; padding:0 15px; border:1px solid #acacac; margin-top:10px; display:inline-block;}
+#fd-footer .ff-bot {border-bottom:1px solid #ddd; padding:18px 0;}
+#fd-footer .ff-bot > .ff-layout {display:flex; align-items:center; justify-content:space-between;}
+#fd-footer .ff-bot > span {font-size:.8rem;}
+#fd-footer .ff-bot .ffb-icon {}

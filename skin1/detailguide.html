@@ -1,0 +1,72 @@
+<!--@js(/js/detailguide.js)-->
+<!--@css(/css/detailguide.css)-->
+<div id="detailguide">
+    <!-- 기본정보 -->
+    <div module="product_additional">
+        <div module="product_detaildesign">
+            <!--
+            출력 갯수 지정 변수, 없으면 설정된 전체가 나옵니다.
+            count = 10
+            -->
+            <table border="1" summary="" class='fitsoft-detail-info'>
+                <caption>{$name} 기본 정보</caption>
+                <tbody>
+                    <tr class="{$item_display|display}">
+                        <th scope="row">{$item_title}</th>
+                        <td >{$item_content}</td>
+                    </tr>
+                    <tr class="{$item_display|display}">
+                        <th scope="row">{$item_title}</th>
+                        <td >{$item_content}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- 옵션 -->
+    <table border="1" summary="" module="product_option">
+        <caption>상품 옵션</caption>
+        <!-- 참고 : 뉴상품관리 전용 변수가 포함되어 있습니다. 뉴상품관리 이외의 곳에서 사용하면 일부 변수가 정상동작하지 않을 수 있습니다. -->
+        <tbody>
+            <tr module="product_addoption">
+                <th scope="row">{$add_option_name}</th>
+                <td>
+                    <!-- {$form.add_option} -->
+                    <span class="txtByte" title="현재글자수/최대글자수">(<strong class="length">0</strong>/{$option_maxlength})</span>
+                </td>
+            </tr>
+        </tbody>
+        <tbody module="product_option">
+            <tr>
+                <th scope="row">{$option_name}</th>
+                <td>{$form.option}</td>
+            </tr>
+            <tr module="product_quantity">
+                <th scope="row">수량</th>
+                <td>
+                    <div class="ec-base-qty">
+                        {$form.quantity}
+                        <a href="javascript:;"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_up.gif" id="{$quantity_up_id}" alt="증가" class="up {$quantity_up_class}"></a>
+                        <a href="javascript:;"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_down.gif" id="{$quantity_down_id}" alt="감소" class="down {$quantity_down_class}"></a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr class="{$option_push_button_display|display}" id="{$option_push_button_id}">
+                <td colspan="2" class="selectButton"><a href="#none" onclick="{$action_push_button}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/product/btn_manual_select.gif" alt="옵션 선택" /></a></td>
+            </tr>
+            <tr module="product_fileoption">
+                <th scope="row">{$file_option_name}</th>
+                <td class="fileInfo">
+                    {$form.file_option}
+                    <ul class="infoDesc">
+                        <li>- 파일은 최대 5개까지 {$file_option_limit}M 이하로 개별업로드 가능합니다.</li>
+                        <li>- 동일상품이 장바구니에 있을 경우 현재 업로드 되는 파일로 교체됩니다.</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody><!-- //참고 -->
+    </table>
+</div>

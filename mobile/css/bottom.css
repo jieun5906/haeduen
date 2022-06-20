@@ -1,0 +1,26 @@
+/* 하단 */
+#bottom {margin:0 auto; padding:30px; color:#999; font-size:12px; background:#fafafa;}
+#bottom .footer_logo img {width:120px; image-rendering:-webkit-optimize-contrast;}
+
+#bottom .bottom_company .utilMenu {display:flex; margin: 10px 0 20px;}
+#bottom .bottom_company .utilMenu li {margin-right:12px;}
+#bottom .bottom_company .utilMenu li a {color:#999;}
+
+#bottom .bottom_company .address {line-height:1.6;}
+#bottom .bottom_company .address span {position:relative; padding:5px;}
+#bottom .bottom_company .address a {color:#999;}
+#bottom .bottom_company .address .cont:after {position:absolute; content:''; display:inline-block; width:1px; height:12px; background:#999;top:6px;right:0;}
+
+#bottom .bottom_company .copyright {margin-top:14px;}
+
+
+#bottom .bottom_info h2 {font-size:20px; color:#050505; font-weight:500; padding:20px 0 10px;}
+#bottom .bottom_info .runtime li {line-height:1.6; white-space:pre-wrap;}
+#bottom .bottom_info .sns {display:inline-flex; margin:20px 0 40px;}
+#bottom .bottom_info .sns i {color:#3f3e3d; font-size:20px; margin-right:12px;}
+
+#bottom .bank_info {margin-bottom:40px;}
+#bottom .bank_info h4 {color:#050505; font-size:14px; margin-bottom:10px; font-weight:700;}
+#bottom .bank_info .bank span {display:inline-block;width:54px; line-height:1.6;}
+
+#bottom .bot-list {display:none;}

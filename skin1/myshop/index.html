@@ -1,0 +1,279 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="path">
+    <span>현재 위치</span>
+    <ol>
+        <li><a href="/">홈</a></li>
+        <li title="현재 위치">마이 쇼핑</li>
+    </ol>
+</div>
+
+
+
+<!--@css(/fitsoft/fd-co/css/myshop.css)-->
+<!--@js(/fitsoft/fd-co/js/myshop.js)-->
+<div id="fitsoft-mypage" class='fd-comm-cont'>
+
+    <div class='fd-myshop-cont fd-flex-ais'>
+        <div class='ms-left'>
+            <!--@import(/fitsoft/fd-co/html/myshop/myshop-navi.html)-->
+        </div>
+        <div class='ms-right'>
+            <div class='msr-userinfo'>
+                <div class='msr-uil'  module="myshop_asyncbenefit">
+                    <!-- <div class='user-group'>{$group_name}</div> -->
+                    <div class='user-group'>
+                        <img src="{$group_image}" alt="" onerror="this.src='//img.echosting.cafe24.com/skin/base/member/img_member_default.gif';" class="{$group_image_tag_class}" />
+                    </div>
+                   
+                    <p class='user-grouptxt'>
+                        <b>{$member_name}</b>님
+                        <!-- 안녕하세요 <b>{$member_name}</b>회원님!<br/>
+                        회원님의 회원등급은 <b>{$group_name}</b>입니다.<br/>
+                        다음 등급이 되려면 <b>{$dc_pay} {$dc_min_price_mileage}</b> 구매가 필요합니다. -->
+                    </p>
+                </div>
+                <div class='msr-uic'>
+                    <a href="/fitsoft/event_member.html" class='msr-uic-link'>등급혜택보기</a>
+                    <a href="/member/modify.html" class='msr-uic-link'>회원정보변경</a>
+                </div>
+                <div class='msr-uir'>
+                    <div class='msr-benefitinfo'>
+                        <div class='msr-benefit msr-benefit04' module="myshop_asyncbankbook">
+                            <p class='benefit-tit'>
+                                <!-- <img src='/fitsoft/fd-co/img/ms-icon03.png' alt='쿠폰'> -->
+                                <span>쿠폰</span>
+                            </p>
+                            <p class='benefit-con'>
+                                <span class='benefit-val'>{$coupon_cnt}</span>장</p>
+                        </div>
+                        <div class='msr-benefit msr-benefit02' module="myshop_asyncbankbook">
+                            <p class='benefit-tit'>
+                                <!-- <img src='/fitsoft/fd-co/img/ms-icon01.png' alt='적립금'> -->
+                                <span>적립금</span>
+                            </p>
+                            <p class='benefit-con'>
+                                <span class='benefit-val'>{$total_mileage}</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class='msr-benefitinfo' module="myshop_asyncbenefit">
+                <div class='msr-benefit msr-benefit01' module="myshop_asyncbankbook">
+                    <p class='benefit-tit'><span>총 주문금액</span></p>
+                    <p class='benefit-con'>{$total_order_price}</p>
+                </div>
+                <div class='msr-benefit msr-benefit03' module="myshop_asyncbankbook">
+                    <p class='benefit-tit'>
+                        <img src='/fitsoft/fd-co/img/ms-icon02.png' alt='예치금'>
+                        <span>예치금</span>
+                    </p>
+                    <p class='benefit-con'>{$total_deposit}</p>
+                </div>
+            </div> -->
+            <div class='msr-orderinfo' module="myshop_orderstate">
+                <div class="order-tit">
+                    <p>진행 중인 주문 <span>(최근 3개월 기준)</span></p>
+                </div>
+                <div class="order-con">
+                    <ul class="order-left">
+                        <li>
+                            <a href="{$shppiedBeforeUrl}" class="count">{$shppiedBeforeCount}</a>
+                            <p>입금전</p>
+                        </li>
+                        <li>
+                            <a href="{$shppiedStandbyUrl}" class="count">{$shppiedStandbyCount}</a>
+                            <p>배송준비중</p>
+                        </li>
+                        <li>
+                            <a href="{$shppiedBeginUrl}" class="count">{$shppiedBeginCount}</a>
+                            <p>배송중</p>
+                        </li>
+                        <li>
+                            <a href="{$shppiedComplateUrl}" class="count">{$shppiedComplateCount}</a>
+                            <p>배송완료</p>
+                        </li>
+                    </ul>
+                    <ul class="order-right">
+                        <li>
+                            <span>취소</span>
+                            <a href="{$orderCancelUrl}" class="count">{$orderCancelCount}건</a>
+                        </li>
+                        <li>
+                            <span>교환</span>
+                            <a href="{$orderExchangeUrl}" class="count">{$orderExchangeCount}건</a>
+                        </li>
+                        <li>
+                            <span>반품</span>
+                            <a href="{$orderReturnUrl}" class="count">{$orderReturnCount}건</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class='msr-orderlist'>
+                <div module="Myshop_OrderHistoryListitem">
+                    <!--
+                        $login_url = /member/login.html
+                    -->
+                
+                    <div class="order-tit">
+                        <p>최근 주문 정보</p>
+                        <a href='/myshop/order/list.html'>더보기 <i class='xi-angle-right-min'></i></a>
+                    </div>
+                
+                    <table border="1" summary="" class='ms-table'>
+                        <caption>{$list_title}</caption>
+                        <colgroup>
+                            <col style="width:10%;" />
+                            <col style="width:70%;" />
+                            <col style="width:10%;" />
+                            <col style="width:10%;" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">주문일자</th>
+                                <th scope="col">상품명</th>
+                                <th scope="col">결제금액</th>
+                                <th scope="col">주문상세</th>
+                            </tr>
+                        </thead>
+                        <tbody class="center {$list_display|display}">
+                            <tr>
+                                <td {$rowspan} class="number {$display_column|display}">
+                                    {$order_date}
+                                </td>
+                                <td class="product left top">
+                                    <strong class="name">{$product_name_link}</strong>
+                                </td>
+                                <td class="right"><strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong><div class="{$product_price_ref_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</div></td>
+                                <td>
+                                    <p class="{$detail_info_display|display}"><a href="#none" class="line" onclick="{$detail_info}">조회</a></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td {$rowspan} class="number {$display_column|display}">
+                                    {$order_date}
+                                </td>
+                                <td class="product left top">
+                                    <strong class="name">{$product_name_link}</strong>
+                                </td>
+                                <td class="right"><strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong><div class="{$product_price_ref_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</div></td>
+                                <td>
+                                    <p class="{$detail_info_display|display}"><a href="#none" class="line" onclick="{$detail_info}">[상세정보]</a></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="message {$empty_display|display}">주문 내역이 없습니다.</p>
+                </div>
+            </div>
+
+            <div class='msr-wishlist'>
+                
+                <div class="order-tit">
+                    <p>위시리스트</p>
+                    <a href='/myshop/wish_list.html'>더보기 <i class='xi-angle-right-min'></i></a>
+                </div>
+                <div module="myshop_wishlist">
+                    <!--
+                        $login_page = /member/login.html
+                        $count = 4
+                    -->
+                    <table border="1" summary="" class="ms-prdlist-table grid4 {$list_display|display}">
+                        <caption>관심상품 목록</caption>
+                        <tbody module="myshop_wishlistitem">
+                            <tr>
+                                <td class="wish-prd">
+                                    <div><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt="" /></a></div>
+                                    <div class='ms-prd-name'><a href="/product/detail.html{$param}">{$product_name}</a></div>
+                                    <div class='ms-prd-price'>
+                                        <span>{$product_price}{$product_tax_type_text}</span>
+                                    </div>
+                                </td>
+                                <td class="wish-prd">
+                                    <div><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt="" /></a></div>
+                                    <div class='ms-prd-name'><a href="/product/detail.html{$param}">{$product_name}</a></div>
+                                    <div class='ms-prd-price'>
+                                        <span>{$product_price}{$product_tax_type_text}</span>
+                                    </div>
+                                </td>
+                                <td class="wish-prd">
+                                    <div><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt="" /></a></div>
+                                    <div class='ms-prd-name'><a href="/product/detail.html{$param}">{$product_name}</a></div>
+                                    <div class='ms-prd-price'>
+                                        <span>{$product_price}{$product_tax_type_text}</span>
+                                    </div>
+                                </td>
+                                <td class="wish-prd">
+                                    <div><a href="/product/detail.html{$param}"><img src="{$image_medium}" alt="" /></a></div>
+                                    <div class='ms-prd-name'><a href="/product/detail.html{$param}">{$product_name}</a></div>
+                                    <div class='ms-prd-price'>
+                                        <span>{$product_price}{$product_tax_type_text}</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="message {$empty_display|display}">관심상품 내역이 없습니다.</p>
+                </div>
+            </div>
+
+            <div class="-info" module="Layout_statelogoff">
+                <ul class="fitsoft-clear">
+                <li class="-member -left">
+                    <ul class="fitsoft-clear">
+                    <li class="-icon"><img src="/_sp/image/mypage/user.png" /></li>
+                    <li class="-link">
+                        <p>회원가입을 하시면 각종 다양한 혜택들을 받으실 수 있습니다.</p>
+                        <a href="/member/join.html">회원가입</a>
+                    </li>
+                    </ul>
+                </li>
+                <li class="-deposit -right" module="myshop_asyncbankbook">
+                    <a href="/myshop/deposits/historyList.html">
+                        <ul class="fitsoft-clear">
+                        <li class="-icon"><img src="/_sp/image/mypage/deposit.png" />&nbsp;</li>
+                        <li>
+                            <p class="-text">예치금</p>
+                            <p class="-count">0원</p>
+                        </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="-mileage -right" module="myshop_asyncbankbook">
+                    <a href="/myshop/mileage/historyList.html">
+                        <ul class="fitsoft-clear">
+                        <li class="-icon"><img src="/_sp/image/mypage/mileage.png" />&nbsp;</li>
+                        <li>
+                            <p class="-text">적립금</p>
+                            <p class="-count">0원</p>
+                        </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="-coupon -right" module="myshop_asyncbankbook">
+                    <a href="/myshop/coupon/coupon.html">
+                        <ul class="fitsoft-clear">
+                        <li class="-icon"><img src="/_sp/image/mypage/coupon.png" />&nbsp;</li>
+                        <li>
+                            <p class="-text">쿠폰</p>
+                            <p class="-count">0개</p>
+                        </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="-total-amount -right">
+                    <ul class="fitsoft-clear">
+                    <li class="-icon"><img src="/_sp/image/mypage/total_amount.png" />&nbsp;</li>
+                    <li>
+                        <p class="-text">총 주문금액</p>
+                        <p class="-count">0원</p>
+                    </li>
+                    </ul>
+                </li>
+            </div>
+        </div>
+    </div>
+
+</div>

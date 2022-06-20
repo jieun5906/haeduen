@@ -1,0 +1,128 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<div module="member_login" id="{$member_login_module_id}">
+    <!--@css(/css/module/member/login.css)-->
+    <!--@js(/js/module/member/login.js)-->
+    <!--
+        $defaultReturnUrl = /index.html
+    -->
+    <!--주문조회-->
+    <div class='login-wrap'>
+        <div class='' df-banner-code="login" hidden>
+            <a class='' href="{#href}" target="{#target}" df-banner-clone>{#item}</a>
+        </div>
+    </div>
+    <div class="loginWrap">
+        <div class="tab eTab {$member_login_tab_display|display}">
+            <ul>
+                <li class="selected">
+                    <a href="#member">회원</a>
+                </li>
+                <li>
+                    <a href="#noMember">비회원</a>
+                </li>
+            </ul>
+        </div>
+        <div class="loginHeader">
+            <div class="keyboard">
+                <button type="button" class="btnKey korean" title="korean">한글자판</button>
+                <button type="button" class="btnKey special" title="special">특수문자</button>
+            </div>
+            <div class="view">
+                <div class="korean"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/member/img_keyboard.png" alt="" width="254"></div>
+                <div class="special"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/member/img_keyboard_special.png" alt="" width="254"></div>
+            </div>
+        </div>
+        <fieldset>
+            <div class="formBox">
+                <div class="form">
+                    {$form.member_id}
+                    {$form.member_passwd}
+                </div>
+                <div class="option">
+                    <!-- <span class="auto">{$form.use_login_keeping}</span> -->
+                    <span class="save">{$form.check_save_id}</span>
+                    <span class="ssl"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/member/ico_ssl.png" alt="보안접속"><em>보안접속</em></span>
+                </div>
+                <div class="ec-base-button gFull">
+                    <button type="button" class="btnSubmit" onclick="{$action_func_login}">로그인</button>
+                    <a href="{$returnUrl}" onclick="{$action_nomember_order}" class="btnEm {$display_nomember|display}">비회원 구매</a>
+                </div>
+                <div class="loginUtil">
+                    <a href="/member/id/find_id.html" class="btnLogin">아이디찾기</a>
+                    <a href="/member/passwd/find_passwd_info.html" class="btnLogin">비밀번호찾기</a>
+                </div>
+                <div class='login-btn-wrap'>
+                    <a class='join-btn' href="/member/agreement.html">회원가입</a>
+                    <ul class="snsArea">
+                        <li class="{$display_facebook|display}">
+                            <a class='facebook' href="#none" onclick="{$facebook_func_login}"><i class='xi-facebook-official'></i> 페이스북 로그인</a>
+                        </li>
+                        <li class="{$display_google|display}">
+                            <a class='google' href="#none" onclick="{$google_func_login}"><i class='xi-google'></i> 구글 로그인</a>
+                        </li>
+                        <li class="{$display_kakao|display}">
+                            <a class='kakao' href="#none" onclick="{$kakao_func_login}"><i class='xi-speech'></i> 카카오 간편 로그인/회원가입</a>
+                        </li>
+                        <li class="{$display_naver|display}">
+                            <a class='naver' href="#none" onclick="{$naver_func_login}"><i class='xi-naver-square'></i> 네이버 간편 로그인/회원가입</a>
+                        </li>
+                        <li class="{$display_line|display}">
+                            <a class='line' href="#none" onclick="{$line_func_login}"><i class='xi-line-messenger'></i> LINE 로그인</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+     <!--//주문조회-->
+</div>
+
+
+
+<div module="MyShop_OrderHistoryNologin" id="{$order_history_nologin_id}">
+    <!--@css(/css/module/myshop/orderHistoryNologin.css)-->
+    <!--
+        $orderDetailUrl = /myshop/order/detail.html
+    -->
+    <div class='login-wrap'>
+        <div class='' df-banner-code="login" hidden>
+            <a class='' href="{#href}" target="{#target}" df-banner-clone>{#item}</a>
+        </div>
+    </div>
+    <div class="tab eTab">
+        <ul>
+            <li>
+                <a href="#member">회원</a>
+            </li>
+            <li class="selected">
+                <a href="#noMember">비회원</a>
+            </li>
+        </ul>
+    </div>
+    <div class="loginHeader">
+        <div class="keyboard">
+            <button type="button" class="btnKey korean" title="korean">한글자판</button>
+            <button type="button" class="btnKey special" title="special">특수문자</button>
+        </div>
+        <div class="view">
+            <div class="korean"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/member/img_keyboard.png" alt="" width="254"></div>
+            <div class="special"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/member/img_keyboard_special.png" alt="" width="254"></div>
+        </div>
+    </div>
+    <fieldset>
+        <div class="formBox">
+            <div class="form">
+                {$form.order_name}
+                {$form.order_id}
+                {$form.order_password}
+            </div>
+            <div class="ec-base-button gFull">
+                <button type="button" class="btnSubmit" onclick="$('#historyNoLoginForm').submit();">조회</button>
+            </div>
+            <div class="help">
+                <p>비회원인 경우 주문번호로 주문조회만 가능합니다.</p>
+            </div>
+        </div>
+    </fieldset>
+</div>

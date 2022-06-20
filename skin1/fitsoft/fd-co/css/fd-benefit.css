@@ -1,0 +1,47 @@
+
+.membership-benefit {}
+
+.msb-tit {background-color:#ffb6a3; height:676px; position:relative;}
+.msb-tit .tit-cont {width:1043px; margin:0 auto; display:flex; align-items:flex-start; justify-content:space-between;padding:125px 0 150px; }
+.msb-tit .tit-cont .tit-txt {margin-right:302px;}
+.msb-tit .tit-cont .tit-txt p {color:#fff;}
+.msb-tit .tit-cont .tit-txt p:nth-child(1) {font-size:19px; padding-bottom:70px;}
+.msb-tit .tit-cont .tit-txt p:nth-child(2) {font-size:46px; line-height:50px; padding-bottom:40px;}
+.msb-tit .tit-cont .tit-txt p:nth-child(2) b {display:block;}
+.msb-tit .tit-cont .tit-txt p:nth-child(3) {font-size:20px;}
+.msb-tit .tit-cont .tit-img {width:300px;}
+.msb-tit .tit-cont .tit-img img {width:100%;}
+.msb-tit .mb-tit-line {position:absolute; bottom:0; left:50%; transform:translate(-50%, 50%); font-size:0; padding:38px 0; width:93%; display:flex; align-items:center; justify-content:center; text-align:center; background-color:#333333;}
+.msb-tit .mb-tit-line a {display:inline-block; padding:0 22px; border-right:1px solid #fff;}
+.msb-tit .mb-tit-line a:first-child {padding-left:10px;}
+.msb-tit .mb-tit-line a:last-child {padding-right:10px; border-right:none;}
+.msb-tit .mb-tit-line a span {display:block; text-align:center; line-height:1;}
+.msb-tit .mb-tit-line a span:nth-child(1) {font-weight:bold; color:#ff8472; font-size:15px;}
+.msb-tit .mb-tit-line a span:nth-child(2) {margin-top:20px; font-weight:bold; color:#fff; font-size:21px;}
+.msb-benefit {padding-top:152px; margin:0 auto; text-align:center; background-color:#f5f5f5;}
+.msb-benefit .benefit-con {padding:100px 0 58px; border-top:2px solid #333333; margin:0 200px;}
+.msb-benefit .benefit-con.benefit01-1 {margin-top:0; border:none;}
+.msb-benefit .benefit-con strong {color:#fd8670; font-size:26px; margin-bottom:48px; display:block;}
+.msb-benefit .benefit-con p:nth-child(2) {font-size:58px; line-height:1; padding-bottom:50px;}
+.msb-benefit .benefit-con p:nth-child(2) b {display:block;}
+.msb-benefit .benefit-con p {font-size:42px; line-height:45px; padding-bottom:70px;}
+.msb-benefit .benefit-con .msb-banner {max-width:890px; margin:0 auto;}
+.msb-benefit .benefit-con .msb-banner img {width:auto !important; width:80%;}
+.msb-benefit .benefit-con .msb-morebtn {padding:60px 0 80px; text-align:right;}
+.msb-benefit .benefit-con .msb-morebtn a {font-size:26px; display:inline-block; padding-bottom:5px; border-bottom:2px solid #1f1f1f; vertical-align:middle;}
+.msb-benefit .benefit-con .msb-morebtn a i {font-size:24px;}
+.msb-benefit .benefit-con.benefit04 .msb-banner {display:flex; align-items:flex-start; justify-content:center;}
+.msb-benefit .benefit-con.benefit04 .msb-banner .xans-smart-banner-admin-PC00017 {margin-right:380px;}
+
+.msb-benefit .benefit-con-add p:nth-child(1) {font-size:58px; line-height:1; padding-bottom:50px;}
+.msb-benefit .benefit-con-add p:nth-child(1) b {display:block;}
+.msb-benefit .benefit-con-add p:nth-child(2) {font-size:37px; line-height:39px; padding-bottom:70px;}
+.msb-benefit .benefit-con-add .msb-banner {max-width:890px; margin:0 auto;}
+.msb-benefit .benefit-con-add .msb-banner img {width:auto !important;  width:80%;}
+.msb-benefit .benefit-con-add .msb-morebtn {padding:60px 0 80px; text-align:right; margin:0 200px;}
+.msb-benefit .benefit-con-add .msb-morebtn a {font-size:26px; display:inline-block; padding-bottom:5px; border-bottom:2px solid #1f1f1f; vertical-align:middle;}
+.msb-benefit .benefit-con-add .msb-morebtn a i {font-size:24px;}
+
+.msb-benefit .benefit-con.benefit06 .msb-banner {max-width:100%;}
+.msb-benefit .benefit-con.benefit06 .msb-banner a {display:inline-block; width:100%;}
+.msb-benefit .benefit-con.benefit06 .msb-banner img {width:100% !important;}

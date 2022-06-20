@@ -1,0 +1,66 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<!--컨플릭트-->
+<!--@js(/_sp/apps/addon/conflict/conflict.js)-->
+
+<!--네비게이션-->
+<!--@js(/_sp/apps/module/navigation/navigation.js)-->
+<!--@css(/_sp/apps/module/navigation/navigation.css)-->
+<div id="sp-navigation" class="layer">
+	<ul layout="sp-layout-fixed">
+		<li>
+			<a href="/">HOME</a>
+			<a href="#none">LOGIN</a>
+		</li>
+		<!--@import(/_sp/apps/module/navigation/navigation_right.html)-->
+	</ul>
+</div><!--//종료-->
+
+<!--회원가입 인트로-->
+<!--@css(/fd-co/css/member/member.css)-->
+<!--@js(/fd-co/js/member.js)-->
+
+<div id='fd-join-intro'>
+    <div class='fd-login-cont'>
+        <!-- 회원가입 인트로 -->
+        <div class='join-intro-cont'>
+            <p class='fd-member-tit'>회원가입</p>
+            <div class='jic-box'>
+                <div class='jic-joinsimple'>
+                    <p class='jic-subtit'>간편 회원가입</p>
+                    <a href='/member/join.html'>간편회원가입</a>
+                </div>
+                <div class='jic-joinsns'>
+                    <p class='jic-subtit'>SNS 간편가입</p>
+                    <ul class='jic-snslist'>
+                        <li class="{$display_naver|display}">
+                            <a href="#none" onclick="{$naver_func_login}"><i class='xi-naver' style='color:#1dc800;'></i> 네이버 회원가입</a>
+                        </li>
+                        <li class="{$display_kakao|display}">
+                            <a href="#none" onclick="{$kakao_func_login}"><i class='xi-kakaotalk' style='color:#3c1a1b;'></i> 카카오톡 회원가입</a>
+                        </li>
+                        <li class="{$display_facebook|display}">
+                            <a href="#none" onclick="{$facebook_func_login}"><i class='xi-facebook' style='color:#004c96;'></i> 페이스북 회원가입</a>
+                        </li>
+                        <!-- <li class="{$display_google|display}">
+                            <a href="#none" onclick="{$google_func_login}"><i class='xi-google'></i> 구글 로그인</a>
+                        </li>
+                        <li class="{$display_line|display}">
+                            <a href="#none" onclick="{$line_func_login}"><i class='xi-line'></i> 라인 로그인</a>
+                        </li>
+                        <li class="{$display_apple|display}">
+                            <a href="#none" onclick="{$apple_func_login}"><i class='xi-apple' style='color:#1d1d1b;'></i> apple로 로그인</a>
+                        </li> -->
+                    </ul>
+                    <p class='jic-notice'>
+                        회원 종류에 따라 회원가입 절차가 다릅니다.<br/>
+                        고객님께서 해당하는 유형을 선택하여 회원가입을 진행해 주시기 바랍니다.<br/>
+                        <i class='co-red'>회원가입후 <b>평생회원</b>으로 전환 하시면 <b>5,000원 할인 쿠폰</b>이 발급됩니다.(매년 1장씩 발급)</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!--@import(/fd-co/html/member/member-benefit.html)-->
+    </div>
+</div>

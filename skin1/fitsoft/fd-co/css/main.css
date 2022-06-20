@@ -1,0 +1,97 @@
+.sp-product[grid="4"] .sp-product-box {margin: 0 !important;}
+.sp-product {margin-bottom:0 !important;}
+.sp-index-wid-banner03 {margin:135px 0 120px !important;}
+.sp-index-wid-banner04 {margin:120px 0 122px !important;}
+
+[layout="fd-mainprd-layout1658"] {width:1658px; margin:0 auto;}
+[layout="fd-mainprd-layout1658"] .sp-product[grid="4"] .sp-product-item {width:396px !important; margin:0 24px 0 0; padding-bottom:0;}
+/*[layout="fd-mainprd-layout1658"] .sp-product[grid="4"] .sp-product-item .sp-product-item-thumb {height:502px !important; overflow:hidden;}*/
+[layout="fd-mainprd-layout1658"] .sp-product[grid="4"] .sp-product-item:nth-child(4n) {margin:0;}
+/*[layout="fd-mainprd-layout1658"] .fd-main-best.sp-product[grid="4"] .sp-product-item:nth-child(1) {width:539px !important; margin:0 20px 0 0 !important;}*/
+[layout="fd-mainprd-layout1658"] .fd-main-best.sp-product[grid="4"] .sp-product-item:nth-child(2) {width:539px !important; margin:0 20px 0 0 !important;}
+[layout="fd-mainprd-layout1658"] .fd-main-best.sp-product[grid="4"] .sp-product-item:nth-child(3) {width:539px !important; margin:0 !important;}
+[layout="fd-mainprd-layout1658"] .fd-main-best.sp-product[grid="4"] .sp-product-item:nth-child(7) {margin:0 !important;}
+[layout="fd-mainprd-layout1658"] .fd-main-best.sp-product[grid="4"] .sp-product-item:nth-child(11) {margin:0 !important;}
+[layout="fd-mainprd-layout1658"] .fd-main-best.sp-product[grid="4"] .sp-product-item:nth-child(4n) {margin:0 24px 0 0 !important;}
+/* [layout="fd-mainprd-layout1658"] .fd-main-best.sp-product[grid="4"] .sp-product-item:nth-child(3n)~.sp-product-item {margin:0 24px 0 0 !important;} */
+
+.fd-view-rolling {position:relative; margin-bottom:0 !important; margin-top:110px;}
+.fd-view-rolling .sp-product {position:absolute; width:840px !important; top:50%; right:8%; transform:translateY(-50%); padding:0 !important;}
+
+/* 메인 대배너 */
+.fd-main01 {margin-bottom:70px;}
+
+/* 기획전 배너 */
+.fd-rebanner2 .sp-clear {padding: 0 10px;}
+.fd-rebanner2 .sp-clear li {width:456px; height:456px; overflow:hidden; margin-right:20px;}
+.fd-rebanner2 .sp-clear li:last-child {margin-right:0;}
+.fd-rebanner2 .sp-clear li > a {height:100%;}
+
+/* 메인 배너 */
+.fd-main-banner {display:flex; align-items:center;}
+.fd-main-banner .fmb-left {width:60%;}
+.fd-main-banner .fmb-right {width:30%;}
+.fd-main-banner .fmb-right .fmb-right-img {display:flex; align-items:center;}
+
+.fd-main-tbanner {}
+
+.fd-main-layout {width:100%; margin:0 auto; overflow:hidden;}
+.fd-main-list {margin-bottom:30px !important;}
+/* 더보기 버튼 */
+.fd-main-more {/*margin-bottom:110px;*/ text-align:center;}
+.fd-main-more a {display:inline-block; padding:16px 50px; font-size:.9rem; border:1px solid #b9b9b9; border-radius:3px;}
+/* 타이틀 */
+.fd-slider-tit {text-align:center; padding:103px 0 43px;}
+.fd-main-best .fd-slider-tit {padding:230px 0 43px;}
+.fd-slider-tit p {font-size:1.7rem; font-weight:500 !important;}
+.fd-slider {max-width:80%; margin:0 auto !important;}
+.fd-slider .slick-list {overflow:visible;}
+.fd-slider[arrowsArea="h-out-46"] .slick-arrow.slick-next {left:96%;}
+.fd-slider[arrowsArea="h-out-46"] .slick-arrow.slick-prev {right:96%;}
+
+/* .fd-main-best .sp-product[grid="4"] .sp-product-item {margin: 0 0 20px 15px !important;} */
+/* .fd-main-best .sp-product-item {width:32.3% !important; margin: 0 0 20px 15px !important;} */
+.fd-main-best .sp-product-item .sp-product-item-thumb {height:684px !important; overflow:hidden;}
+.fd-main-best .sp-product-item:nth-child(3)~.sp-product-item .sp-product-item-thumb {height:502px !important;}
+/* .fd-main-best .sp-product-item .sp-product-item-thumb a.sp-product-item-thumb-href {height:100%;}
+.fd-main-best .sp-product-item .sp-product-item-thumb a.sp-product-item-thumb-href img {height:100%;}
+.fd-main-best .sp-product-item:nth-child(3)~.sp-product-item {width:24% !important;} */
+
+/* 메인 해시태그 배너 */
+.fd-main-tag {margin:200px 0 27px;}
+.fd-main-tag .fmt-cont {background-color:#f7f7f7; margin-bottom:72px; padding:0 0 35px;}
+.fd-main-tag .fmt-cont:last-child {margin-bottom:27px;}
+.fd-main-tag .fmt-cont .fmt-box {width:1362px; margin:0 auto;}
+.fd-main-tag .fmt-cont .fmt-box .fmt-prd {display:flex; align-items:flex-start; justify-content:space-between;}
+.fd-main-tag .fmt-cont .fmt-box .fmt-prd .fmt-prd-txt {margin-top:47px;}
+.fd-main-tag .fmt-cont .fmt-box .fmt-prd .fmt-prd-txt span {font-size:1.7rem; line-height:2.2rem; display:block;}
+.fd-main-tag .fmt-cont .fmt-box .fmt-prd .fmt-prd-txt b {font-size:1.7rem; line-height:2.2rem;}
+.fd-main-tag .fmt-cont .fmt-box .fmt-prd .fmt-prd-list {flex:1; margin-left:111px;}
+.fd-main-tag .fmt-cont .fmt-box .fmt-prd .fmt-prd-list .sp-product {margin-bottom:0;}
+.fd-main-tag .fmt-cont .fmt-box .fmt-prd .fmt-prd-list .fmt-hash-item {margin:0 20px 0 0 !important; padding-bottom:0;}
+.fd-main-tag .fmt-cont .fmt-box .fmt-prd .fmt-prd-list .fmt-hash-item:last-child {margin:0 !important;}
+.fd-main-tag .fmt-cont .fmt-box .fmt-prd .fmt-prd-list .sp-product-item-thumb {width:256px; height:352px; overflow:hidden;}
+.fd-main-tag .fmt-cont .fmt-box a {font-size:.9rem; font-weight:600;}
+
+/* 메인 하단 */
+.fd-main-bot {margin:100px 0;}
+.fd-main-bot .fmb-cont {width:1658px; margin:0 auto; font-size:0;}
+.fd-main-bot .fmb-cont .fmb-banner {display:inline-block; width:822px; margin-right:6px;}
+.fd-main-bot .fmb-cont .fmb-banner img {width:100%;}
+.fd-main-bot .fmb-cont .fmb-banner:nth-child(2n) {margin-right:0;}
+.fd-main-bot .fmb-cont .fmb-banner:nth-child(2n)~.fmb-banner {margin-top:5px;}
+/* .fd-main-bot .fmb-cont .fmb-item {display:inline-flex; align-items:center; justify-content:space-between; padding:40px 30px; width:45%; margin-right:10px; background-color:#f4f4f4;}
+.fd-main-bot .fmb-cont .fmb-item:nth-child(2n) {margin-right:0;}
+.fd-main-bot .fmb-cont .fmb-item:nth-child(2n)~.fmb-item {margin-top:10px;}
+.fd-main-bot .fmb-cont .fmb-item .fmb-icon {width:120px; height:120px; margin-left:60px;}
+.fd-main-bot .fmb-cont .fmb-item .fmb-icon img {width:100%;}
+.fd-main-bot .fmb-cont .fmb-item .fmb-txt {text-align:right; margin-right:60px;}
+.fd-main-bot .fmb-cont .fmb-item .fmb-txt b {font-size:1.5rem; display:block; color:#000;}
+.fd-main-bot .fmb-cont .fmb-item .fmb-txt span {font-size:1.2rem; line-height:2.5rem; color:#717171;} */
+
+.fd-insta {}
+.fd-insta .insta-txt {margin:130px 0 43px !important; text-align:center;}
+.fd-insta .insta-txt span {font-size:24px;display:block; margin-bottom:12px;}
+.fd-insta .insta-txt a {font-size:19px; color:#999999;}
+
+#instagramWidgetManual > iframe > #grid-images {margin:0 !important; width:100% !important;}

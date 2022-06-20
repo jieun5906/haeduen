@@ -1,0 +1,51 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="path">
+    <span>현재 위치</span>
+    <ol>
+        <li><a href="/">홈</a></li>
+        <li title="현재 위치"><strong>로그인</strong></li>
+    </ol>
+</div>
+
+<!-- <div class="titleArea">
+    <h2>로그인</h2>
+</div> -->
+<!--@css(/css/module/member/login.css)-->
+<div module="member_login" id="login-wrap" class="memberloginbox fd-loginbox">
+
+    <!--
+        $defaultReturnUrl = /index.html
+        $forbidIpUrl = member/adminFail.html
+    -->
+    <div class="login">
+    <!-- <div id="logintitle">
+        <h2>Member Login</h2>
+        <span>가입시 입력하신 아이디와 비밀번호로 로그인이 가능합니다.</span>
+    </div> -->
+        <fieldset>
+            <legend>회원로그인</legend>
+            <p class='fd-login-tit'>LOGIN</p>
+            <div class='fd-login-box'>
+                <div class='fd-login-input'>
+                    <label class="idbox" title="아이디">{$form.member_id}</label>
+                    <label class="pwbox" title="비밀번호">{$form.member_passwd}</label>
+                </div>
+                <a href="#none" class='fd-login-btn' onclick="{$action_func_login}"><!--<img src="/web/upload/fitsoft/login/btn_login.gif" alt="로그인" />-->LOGIN</a>
+            </div>
+            <div>{$form.member_check_save_id}</div>
+            <ul style="margin-top:15px">
+                <li><a href="/member/id/find_id.html"><i class="fas fa-check" style="color:#979797; margin-right:5px; font-size:10px"></i>아이디찾기</a></li>
+                <li style="margin-left:10px"><a href="/member/passwd/find_passwd_info.html"><i class="fas fa-check" style="color:#979797; margin-right:5px; font-size:10px"></i>비밀번호찾기</a></li>
+                <li style="float:right">
+                    <p class="security">
+                    <i class="fas fa-lock" style="color:#979797; font-size:10px"></i>{$form.member_check_save_id}
+                    {$form.member_check_secret_connect}
+                    </p>
+                </li>
+                <div style="clear:both"></div>
+            </ul>
+
+        </fieldset>
+    </div>
+</div>
+

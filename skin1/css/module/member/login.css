@@ -1,0 +1,70 @@
+/* 추가 220215 */
+.login-wrap {text-align:center; margin-bottom:50px;}
+.login-btn-wrap {text-align:center;}
+.login-btn-wrap a {display:inline-block; width:400px; padding:15px 0; border-radius:100px; font-family:'Pretendard-Regular', 'Noto Sans KR'; font-size:16px; margin-bottom:10px; color:#050505;}
+.login-btn-wrap a.join-btn {background-color:#000; color:#fff;}
+.login-btn-wrap a.kakao {background-color:#fae301;}
+.login-btn-wrap a.naver {border:1px solid #c1c1c1;}
+.login-btn-wrap a.facebook {background-color:#3b5998;color:#fff;}
+.login-btn-wrap a.google {background-color:#4285f4;color:#fff;}
+.login-btn-wrap a.line {background-color:#00b900;color:#fff;}
+.login-btn-wrap i {font-size:19px; vertical-align:bottom;}
+.other-btn-wrap {text-align:center; margin-top:10px;}
+.other-btn-wrap li {display:inline-block;}
+/* .other-btn-wrap li:first-child {margin-right:20px; padding-right:20px; position:relative;} */
+/* .other-btn-wrap li:first-child:after {content:'';display:inline-block; width:2px; height:14px;background-color:#c1c1c1; position:absolute; top:2px; right:0;} */
+.other-btn-wrap a {color:#757575; font-size:14px; font-family:'Pretendard-Regular', 'Noto Sans KR';}
+
+#login-wrap .idbox {}
+#login-wrap .idbox input { border:1px solid #ccc; width:258px; margin-bottom:5px; color:#000; font-size:12px; background-image:url("/web/upload/fitsoft/login/id.gif"); background-repeat:no-repeat; background-position-x:10px; background-position-y:12px;}
+#login-wrap .pwbox {margin-top:10px}
+#login-wrap .pwbox input { border:1px solid #ccc; width:258px; margin:0; color:#000; font-size:12px; background-image:url("/web/upload/fitsoft/login/pw.gif"); background-repeat:no-repeat; background-position-x:10px; background-position-y:12px;}
+
+
+
+#logintitle {margin-top:0; margin-bottom:30px; text-align:center}
+#logintitle h2 { font-weight:normal; font-size:16px; color:#383838;}
+#logintitle span {font-size:14px; line-height:35px; color:#757575;}
+
+
+
+
+.memberloginbox h3 { margin:0 0 20px 0; text-align:center;}
+.memberloginbox .login a:hover { text-decoration:none;}
+.memberloginbox .login img {opacity:1; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;}
+.memberloginbox .login img:hover {opacity:0.7; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;}
+.memberloginbox .login { margin:0 auto; padding:30px 0; color:#2e2e2e; width:500px;}
+.memberloginbox .login fieldset { position:relative; width:500px; margin:0 auto; }
+.memberloginbox .login fieldset .id,
+.memberloginbox .login fieldset .password { overflow:hidden; display:block; width:263px; margin:0 0 5px; border:1px solid #d9d9d9; color:#8F8F91; }
+.memberloginbox .login fieldset .id span,
+.memberloginbox .login fieldset .password span { height:32px; line-height:32px; padding:0 0 0 8px; color:#c9c9c9;}
+.memberloginbox .login fieldset input[type=text],
+.memberloginbox .login fieldset input[type=password] { width:95%; height:28px; line-height:28px; padding:2px 2px 2px 3px; border:0 none; color:#8F8F91; }
+.memberloginbox .login fieldset .security { padding:0; margin:0; color:#757575; }
+.memberloginbox .login fieldset .security img { vertical-align:middle; display:none }
+.memberloginbox .login fieldset > a { position:absolute; top:0; right:0; }
+.memberloginbox .login fieldset ul { overflow:hidden; padding:0; margin-bottom:0; border:0; }
+.memberloginbox .login fieldset li { float:left; }
+.memberloginbox .login fieldset li a { color:#2e2e2e; }
+.memberloginbox .login fieldset .link { position:relative; margin-top:40px; padding:40px 0 0 0; color:#535353; border-top:1px solid #e9e9e9;}
+.memberloginbox .login fieldset .link a { position:absolute; top:25px; right:0; }
+.memberloginbox .login fieldset .snsArea { padding:0; }
+.memberloginbox .login fieldset .snsArea li:first-child { width:380px; margin-top:20px; padding:0; background:none; }
+.memberloginbox .login fieldset .snsArea li { width:380px; margin-top:5px; padding:0; background:none; }
+.memberloginbox .login fieldset #noMemberWrap { border-top:0; margin-top:0; }
+
+
+#ordercheck {width:70%; margin:0 auto; font-size:11px;}
+#ordercheck .bt li {margin-top:10px; font-size:11px; width:100%;}
+#ordercheck .namebox {}
+#ordercheck .namebox input { border:1px solid #ccc; width:100%; padding:7px 13px; margin:0; color:#000; font-size:12px; /*background-image:url("/web/upload/fitsoft/login/name.gif"); background-repeat:no-repeat; background-position-x:10px; background-position-y:12px;*/}
+#ordercheck .nobox {margin-top:10px; color:#ccc;}
+#ordercheck .nobox input { border:1px solid #ccc; width:100%; padding:7px 13px; margin:0; color:#000; font-size:12px;/* background-image:url("/web/upload/fitsoft/login/no.gif"); background-repeat:no-repeat; background-position-x:10px; background-position-y:12px;*/}
+#ordercheck .nobox input::placeholder {font-family:'Pretendard-Regular', 'Noto Sans KR';}
+#ordercheck .pwbox {margin-top:10px;}
+#ordercheck .pwbox input { border:1px solid #ccc; width:100%; padding:7px 13px !important; margin:0; color:#000; font-size:12px; /*background-image:url("/web/upload/fitsoft/login/pw.gif"); background-repeat:no-repeat; background-position-x:10px; background-position-y:12px;*/}
+
+
+#ordercheck .bt li input {opacity:1; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;}
+#ordercheck .bt li input:hover {opacity:0.7; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;}

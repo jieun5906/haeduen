@@ -1,0 +1,142 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div module="board_ReadPackage_1002">
+    <!--@css(/css/module/board/readPackage.css)-->
+    <div module="board_title_1002">
+        <div class="path">
+            <span>현재 위치</span>
+            <ol>
+                <li><a href="/">홈</a></li>
+                <li><a href="/board/index.html">게시판</a></li>
+                <li title="현재 위치"><strong>{$board_name}</strong></li>
+            </ol>
+        </div>
+
+        <div class="titleArea">
+            <h2>{$board_title}</h2>
+        </div>
+    </div>
+
+    <!-- 글 내용-->
+    <div module="board_read_1002">
+        <!--
+            $login_page_url = /member/login.html
+            $deny_access_url = /board/free/list.html
+        -->
+        <div class="ec-base-table typeWrite">
+            <table border="1" summary="">
+            <caption>게시판 상세</caption>
+            <colgroup>
+                <col style="width:130px;" />
+                <col style="width:auto;" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <div class="detail">{$content_image}{$content}</div>
+                    </td>
+                </tr>
+                <tr class="attach {$config.use_attach|display}">
+                    <th scope="row">첨부파일</th>
+                    <td>{$attach_file}</td>
+                </tr>
+                <tr class="{$delete_button_auth|display} {$config.use_password|display}">
+                    <th scope="row">비밀번호</th>
+                    <td>{$form.password} <span class="ec-base-help txtInfo">수정 및 삭제하려면 비밀번호를 입력하세요.</span></td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+
+        <div class="ec-base-button fd-board-write-btn">
+            <span class="gLeft">
+                <span class="{$config.is_admin|display}">
+                    <a href="#none" onclick="{$action_post}" class="admin {$config.is_post|display} fd-btn-style02">관리자게시</a>
+                    <a href="#none" onclick="{$action_post}" class="admin {$config.not_post|display} fd-btn-style02">게시안함</a>
+                    <a href="#none" onclick="{$action_spam}" class='fd-btn-style02'>스팸신고</a>
+                    <a href="#none" onclick="{$action_spam_cancle}" class='fd-btn-style02'>스팸해제</a>
+                </span>
+            </span>
+            <span class="gRight">
+                <a href="#none" onclick="{$action_delete}" class="{$delete_button_auth|display} fd-btn-style02">삭제</a>
+                <a href="/board/free/modify.html{$param_modify}" class="{$modify_button_auth|display} fd-btn-style02">수정</a>
+                <a href="/board/free/reply.html{$param_reply}" class="{$reply_button_auth|display} fd-btn-style01">답변</a>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div module="board_CommentPackage_1002">
+    <!--@css(/css/module/board/commentPackage.css)-->
+    <!-- 코멘트 리스트 -->
+    <div module="board_commentlist_1002">
+        <!--
+            $delete_page_url = /board/free/comment_del.html
+            $delete_success_url = /board/free/read.html
+        -->
+        <ul class="boardComment">
+            <li class="first {$comment_reply_css}">
+                <div class="commentTop">
+                    <strong class="name">{$checkbox} {$member_icon} {$comment_name}</strong>
+                    <span class="date">{$comment_write_date}</span>
+                    <span class="grade {$config.is_use_point|display}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/board/ico_point{$comment_point_count}.gif" alt="{$comment_point_count}점" /></span>
+                </div>
+                <span class="button fd-board-cowrite-btn">
+                    <a href="javascript:;" onclick="{$action_comment_update}" class='fd-btn-style02'>수정</a>
+                    <a href="javascript:;" onclick="{$action_comment_delete}" class='fd-btn-style02'>삭제</a>
+                    <a href="javascript:;" onclick="{$action_comment_reply}" class="{$comment_reply_display|display} fd-btn-style01">댓글</a>
+                </span>
+                <div class="comment">
+                    <span class="{$is_spam_display|display}"><img src="//img.echosting.cafe24.com/skin/base/board/ico_spam.gif" alt="스팸글" /></span>
+                    {$comment_icon_lock} {$comment_content}
+                </div>
+            </li>
+            <li class="{$comment_reply_css}">
+                <div class="commentTop">
+                    <strong class="name">{$checkbox} {$member_icon} {$comment_name}</strong>
+                    <span class="date">{$comment_write_date}</span>
+                    <span class="grade {$config.is_use_point|display}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/board/ico_point{$comment_point_count}.gif" alt="{$comment_point_count}점" /></span>
+                </div>
+                <span class="button fd-board-cowrite-btn">
+                    <a href="javascript:;" onclick="{$action_comment_update}" class='fd-btn-style02'>수정</a>
+                    <a href="javascript:;" onclick="{$action_comment_delete}" class='fd-btn-style02'>삭제</a>
+                    <a href="javascript:;" onclick="{$action_comment_reply}" class="{$comment_reply_display|display} fd-btn-style01">댓글</a>
+                </span>
+                <div class="comment">
+                    <span class="{$is_spam_display|display}"><img src="//img.echosting.cafe24.com/skin/base/board/ico_spam.gif" alt="스팸글" /></span>
+                    {$comment_icon_lock} {$comment_content}
+                </div>
+            </li>
+        </ul>
+        <div class="ec-base-button typeBG spam {$config.is_admin|display} fd-board-write-btn">
+            <span class="gLeft">
+                <a href="#none" onclick="{$action_spam}" class='fd-btn-style02'>스팸신고</a>
+                <a href="#none" onclick="{$action_spam_cancle}" class='fd-btn-style02'>스팸해제</a>
+            </span>
+        </div>
+    </div>
+
+</div>
+
+<div module="board_movement_1002">
+    <!--@css(/css/module/board/movement.css)-->
+    <ul>
+        <li class="prev {$prev_display|display}"><strong>이전글</strong><a href="{$link_board_detail_prev}">{$prev_subject}</a></li>
+        <li class="next {$next_display|display}"><strong>다음글</strong><a href="{$link_board_detail_next}">{$next_subject}</a></li>
+    </ul>
+</div>
+
+<!-- 관리자 전용 메뉴 -->
+<div module="board_function_1002">
+    <!--@css(/css/module/board/function.css)-->
+    <!--
+        $success_return_url = /board/free/list.html
+     -->
+    <p class='fd-board-write-btn'>
+        해당 글 이동 {$form.boardGroup} 으로
+        <a href="#none" onclick="{$action_article_move}">글 이동</a>
+        <a href="#none" onclick="{$action_article_copy}">글 복사</a>
+        * 댓글포함, 답변 불포함
+    </p>
+</div>
+<!-- //관리자 전용 메뉴 -->
+<!--@define(cmc_log)-->

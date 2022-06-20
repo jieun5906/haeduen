@@ -1,0 +1,13 @@
+/* 오늘의 신상 */
+.sp-product-description div[rel="판매가"], .sp-product-description div[rel=" 할인가"], .sp-product-description div[rel="할인판매가"] {display:inline-block;}
+.sp-product-description div[rel=" 할인가"], .sp-product-description div[rel="할인판매가"] {margin-left:5px;}
+.fd-main-more {margin-top:70px;}
+[layout="fd-mainprd-layout1658"] .sp-product[grid="4"] .sp-product-item:nth-of-type(1), 
+[layout="fd-mainprd-layout1658"] .sp-product[grid="4"] .sp-product-item:nth-of-type(2),
+[layout="fd-mainprd-layout1658"] .sp-product[grid="4"] .sp-product-item:nth-of-type(3),
+[layout="fd-mainprd-layout1658"] .sp-product[grid="4"] .sp-product-item:nth-of-type(4) {margin-bottom:90px !important;}
+
+/* 가장 사랑받는 베스트 상품 */
+[layout="fd-mainprd-layout1658"] .sp-product[grid="4"] .sp-product-item .sp-product-item-thumb {683px !important; overflow:hidden;}
+[layout="fd-mainprd-layout1658"] .fd-main-best.sp-product[grid="4"] .sp-product-item:nth-child(1) {width:539px !important; margin:0 20px 90px 0 !important;}
+

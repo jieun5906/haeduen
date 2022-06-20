@@ -1,0 +1,112 @@
+
+<!--fdcompany-->
+<!--@css(/fd-co/css/footer.css)-->
+<!--@js(/fd-co/js/footer.js)-->
+
+<div id='fd-footer'>
+    <div class='ff-top'>
+        <div class='ff-layout'>
+            <ul class='fft-list'>
+                <li class='fft-item'><a href='/shopinfo/company.html'>ABOUT LOLOTEN</a></li>
+                <li class='fft-item'><a href='/member/agreement.html'>이용약관</a></li>
+                <li class='fft-item'><a href='/shopinfo/guide.html'>이용안내</a></li>
+                <li class='fft-item'><a href='/member/privacy.html'>개인정보취급방침</a></li>
+            </ul>
+        </div>        
+    </div>
+    <div class='ff-mid'>
+        <div class='ff-layout' module="Layout_footer">
+            <div class='ffm-left'>
+                <div class='hb-logo' scope="top" module="bannermanage2_display_29" style='margin:10px 0 53px;'>
+                    <a href="/" class="displaynone" scope="{$title}">{$banner}</a>
+                    <a href="/" class="displaynone" scope="{$title}">{$banner}</a>
+                </div>
+                <ul class='ffm-coinfo'>
+                    <li><i class='xi-angle-right-min'></i> 회사명 : {$company_name}</li>
+                    <li><i class='xi-angle-right-min'></i> 대표 : {$president_name}</li>
+                    <li><i class='xi-angle-right-min'></i> 통신판매신고번호 : {$network_regno}</li>
+                    <li><i class='xi-angle-right-min'></i> 사업자 등록번호 : {$company_regno} <a href="#none" class="{$action_biz_info|display}" onclick="{$action_biz_info}">[ 사업자정보 확인 ]</a></li>
+                    <li><i class='xi-angle-right-min'></i> TEL : {$phone} / FAX : {$fax}</li>
+                    <li><i class='xi-angle-right-min'></i> 주소 : {$mall_addr1} {$mall_addr2} ({$mall_zipcode})</li>
+                </ul>
+            </div>
+            <div class='ffm-right'>
+                <div class='ffmr ffmr-l'>
+                    <div class='ffmr-center'>
+                        <p class='ffmr-tit'>CUSTOMER CENTER</p>
+                        <div class='ffmr-des'>
+                            <span class='ffmr-num'>1544-0685</span>
+                            <span>평일 AM 10:00 - 17:00</span>
+                            <span>점심 PM 12:00 - 13:00</span>
+                            <span>토요일, 일요일, 공휴일 휴무</span>
+                        </div>
+                    </div>
+                    <div class='ffmr-item'>
+                        <p class='ffmr-tit'>BANK INFO</p>
+                        <div class='ffmr-des'>
+                            <span class='ffmr-bank'><i>예금주</i> ㈜로로텐</span>
+                            <span class='ffmr-bank'><i>농협</i>301-0093-5327-41</span>
+                            <span class='ffmr-bank'><i>신한</i>140-009-453623</span>
+                            <span class='ffmr-bank'><i>국민</i>729601-04-193572</span>
+                            <div class='ffmr-bank-link sp-clear'>
+                                <!--인터넷 뱅킹-->
+                                <!--@css(/_sp/apps/addon/banklink/banklink.css)-->
+                                <!--@js(/_sp/apps/addon/banklink/banklink.js)-->
+        
+                                <!--미확인 입금자-->
+                                <!--@css(/_sp/apps/addon/bankmiss/bankmiss.css)-->
+                                <!--@js(/_sp/apps/addon/bankmiss/bankmiss.js)-->
+                                <a href='#none' banklink data-url="/_sp/apps/addon/banklink/banklink.html"><i class='xi-credit-card'></i> 인터넷뱅킹</a>
+                                <a href='#none' bankmiss data-url="/_sp/apps/addon/bankmiss/bankmiss.html"><i class='xi-user-o'></i> 미확인입금자</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='ffmr ffmr-r'>
+                    <div class='ffmr-item'>
+                        <p class='ffmr-tit'>BOARD</p>
+                        <div class='ffmr-des'>
+                            <span class='ffmr-board'>
+                                <a href='/board/index.html'>고객센터</a>
+                                <a href='#none' bankmiss data-url="/_sp/apps/addon/bankmiss/bankmiss.html">미확인입금자</a>
+                            </span>
+                            <span class='ffmr-board'>
+                                <a href='/board/index.html'>FAQ</a>
+                                <a href=''>개인결제</a>
+                            </span>
+                            <span class='ffmr-board'>
+                                <a href='/board/free/read.html?no=476914&board_no=2'>출석체크</a>
+                                <a href='https://www.doortodoor.co.kr/parcel/pa_004.jsp' target='_blank'>배송조회</a>
+                            </span>
+                            <span class='ffmr-board'>
+                                <a href='/board/gallery/list.html?board_no=8&category_no=1'>이벤트</a>
+                                <a href='/board/product/list3.html?board_no=17'>포토후기</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class='ffmr-item'>
+                        <p class='ffmr-tit'>NOTICE</p>
+                        <div class='ffmr-des' module="board_list_2">
+                            <!--
+                                $count = 4
+                            -->
+                            <ul>
+                                <li class='ffmr-board-item'><a href="{$link_board_detail}" target="_parent">{$subject}</a></li>
+                                <li class='ffmr-board-item'><a href="{$link_board_detail}" target="_parent">{$subject}</a></li>
+                            </ul>
+                            <span class='ffmr-board-more'><a href='/board/free/list2.html?board_no=2'>MORE</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='ff-bot'>
+        <div class='ff-layout'>
+            <span>COPYRIGHT ⓒ ㈜로로텐. ALL RIGHT RESERVED.</span>
+            <div class='ffb-icon'>
+                <img src='/fd-co/img/bot-icon.jpg' alt='bottom'>
+            </div>
+        </div>
+    </div>
+</div>

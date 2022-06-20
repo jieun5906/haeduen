@@ -1,0 +1,138 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div class="path">
+    <span>현재 위치</span>
+    <ol>
+        <li><a href="/">홈</a></li>
+        <li><a href="/myshop/index.html">마이쇼핑</a></li>
+        <li title="현재 위치"><strong>마이쿠폰</strong></li>
+    </ol>
+</div>
+
+
+
+<!--@css(/fitsoft/fd-co/css/myshop.css)-->
+<!--@js(/fitsoft/fd-co/js/myshop.js)-->
+<div class='fd-comm-cont'>
+
+    <div class='fd-myshop-cont fd-flex-ais'>
+        <div class='ms-left'><!--@import(/fitsoft/fd-co/html/myshop/myshop-navi.html)--></div>
+        <div class='ms-right'>
+            <div class='fd-msr-cont'>
+                <div module="myshop_CouponList">
+                    <!--@css(/css/module/myshop/couponList.css)-->
+                    <!--
+                        $product_list_url = coupon_product_list.html
+                    -->
+
+                    <!--쿠폰-->
+                    <!--@css(/_sp/apps/module/coupon/coupon.css)-->
+                    <!--@js(/_sp/apps/module/coupon/coupon.js)-->
+                    <div class="msr-list">
+                        
+                        <div class="order-tit" style='margin-top:40px'>
+                            <p>마이쿠폰 목록</p>
+                        </div>
+
+                        <table border="1" summary="" class='ms-table ms-table-coupon'>
+                            <caption>마이 쿠폰 목록</caption>
+                            <colgroup>
+                                <col style="width:60px" />
+                                <col style="width:auto" />
+                                <col style="width:130px" />
+                                <col style="width:150px" />
+                                <col style="width:130px" />
+                                <col style="width:150px" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">쿠폰명</th>
+                                    <th scope="col">쿠폰적용 상품</th>
+                                    <th scope="col">구매금액</th>
+                                    <!--<th scope="col">결제수단</th>-->
+                                    <th scope="col">쿠폰 혜택</th>
+                                    <th scope="col">사용기간</th>
+                                </tr>
+                            </thead>
+                            <tbody class="{$display_coupon_list|display} center">
+                                <tr>
+                                    <td>{$coupon_no}</td>
+                                    <td class="center"><span>{$coupon_name}</span></td>
+                                    	<td class="sp-coupon-use-product">{$coupon_use_product_icon}</td> 
+                                    <td>{$coupon_use_price}</td>
+                                    <!--<td class="left">{$coupon_paymethod}</td>-->
+                                    <td>{$coupon_benefit_result}</td>
+                                    <td>{$coupon_start_end_date}</td>
+                                </tr>
+                                <tr>
+                                    <td>{$coupon_no}</td>
+                                    <td class="center"><span>{$coupon_name}</span></td>
+                                    	<td class="sp-coupon-use-product">{$coupon_use_product_icon}</td> 
+                                    <td>{$coupon_use_price}</td>
+                                    <!--<td class="left">{$coupon_paymethod}</td>-->
+                                    <td>{$coupon_benefit_result}</td>
+                                    <td>{$coupon_start_end_date}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="message {$display_no_coupon_list|display}">
+                            보유하고 계신 쿠폰 내역이 없습니다
+                        </div>
+                    </div>
+                    <p class="ec-base-button {$coupon_mileage_display|display}"><span class="gRight"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/myshop/btn_coupon_use.gif" alt="사용하기" onclick="COUPON.useCoupon()" /></span></p>
+                </div>
+
+                <div module="myshop_CouponListPaging" class="fitsoft-paging">
+                    <a href="{$first_url}" class="first"><img src="/img/page_first.gif" alt="첫 페이지" /></a>
+                    <a href="{$prev_url}"><img src="/img/page_prev.gif" alt="이전 페이지" /></a>
+                    <ol>
+                        <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+                        <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+                        <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+                        <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+                        <li><a href="{$url_query}" class="{$param_class}">{$n}</a></li>
+                    </ol>
+                    <a href="{$next_url}"><img src="/img/page_next.gif" alt="다음 페이지" /></a>
+                    <a href="{$last_url}" class="last"><img src="/img/page_last.gif" alt="마지막 페이지" /></a>
+                </div>
+
+
+                <!--쿠폰인증-->
+                <div module="myshop_CouponSerial">
+                    <!--@css(/css/module/myshop/couponSerial.css)-->
+                    <!--쿠폰인증-->
+                    <!--
+                        $login_page_url = /member/login.html
+                    -->
+                    <div class='msr-coupon'>
+                        <div class="order-tit" style='border-bottom:none;'>
+                            <p>쿠폰인증번호 등록하기</p>
+                        </div>
+                        <fieldset>
+                            <legend>쿠폰번호 등록</legend>
+                            <ul class='msr-couponcont'>
+                                <!-- <li><h3>COUPON · SERIAL NUMBER</h3></li> -->
+                                <li class="msr-couponform">
+                                    <span>{$form.coupon_code}</span>
+                                    <span class='msr-cpbtn'><a href="#none" onclick="{$action_coupon_submit}">쿠폰번호 인증</a></span>
+                                </li>
+                                <li><p>반드시 쇼핑몰에서 발행한 쿠폰번호만 입력해주세요. (10~35자 일련번호 "-" 제외)</p></li>
+                            </ul>
+                        </fieldset>
+                    </div><!--종료-->
+                </div>
+
+                <div class='msr-cpnoti'>
+                    <ul>
+                        <li class="item1">- <strong>쿠폰인증번호 등록하기</strong>에서 쇼핑몰에서 발행한 종이쿠폰/시리얼쿠폰/모바일쿠폰 등의 인증번호를 등록하시면 온라인쿠폰으로 발급되어 사용이 가능합니다.</li>
+                        <li class="item2">- 쿠폰은 주문 시 1회에 한해 적용되며, 1회 사용 시 재 사용이 불가능합니다.</li>
+                        <li class="item3">- 쿠폰은 적용 가능한 상품이 따로 적용되어 있는 경우 해당 상품 구매 시에만 사용이 가능합니다.</li>
+                        <li class="item4">- <strong>특정한 종이쿠폰/시리얼쿠폰/모바일쿠폰의 경우 단 1회만 사용이 가능할 수 있습니다.</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+

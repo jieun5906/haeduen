@@ -1,0 +1,80 @@
+/* font */
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: url(/fdcompany/font/Lato-Regular.ttf);
+    src: url(/fdcompany/font/Lato-Regular.ttf) format('truetype'),
+        url(/fdcompany/font/Lato-Light.ttf) format('truetype'),
+        url(/fdcompany/font/Lato-Bold.ttf) format('truetype'),
+        url(/fdcompany/font/Lato-Italic.ttf) format('truetype'),
+        url(/fdcompany/font/Lato-Black.ttf) format('truetype'),
+        url(/fdcompany/font/Lato-Thin.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url(/fdcompany/font/MalgunGothic.eot);
+    src: url(/fdcompany/font/MalgunGothic.eot) format('eot');
+}
+
+body, th, td, input, select, textarea, button {font-family:'맑은고딕','Malgun Gothic', 'Lato', 'Noto Sans KR',  'AppleGothic' , 'Dotum' ,"돋움" ,sans-serif !important;}
+.smart-banner-bx-wrapper .bx-pager, .smart-banner-bx-wrapper .bx-controls-auto {z-index:99 !important;}
+
+/* common */
+.fd-comm-cont {margin:0 auto; max-width:1300px;}
+.fd-cs-cont {margin:0 auto; max-width:1339px;}
+.fd-login-cont {margin:0 auto; max-width:1113px;}
+.fd-join-cont {margin:0 auto; max-width:780px;}
+.fd-hd-cont {margin:0 auto; max-width:1339px; display:flex; align-items:center; justify-content:center; position:relative;}
+.fd-prdlist-cont {margin:0 auto; max-width:1658px;}
+.fd-prdbestlist-cont {margin:0 auto; max-width:1280px;}
+.fd-prddetail-cont {margin:0 auto; max-width:1339px;}
+.fd-flex-ais {display:flex; align-items:flex-start;}
+
+.fd-prdlist-thumb {margin-bottom:10px;}
+.fd-prd-info li {margin-top:10px;}
+.fd-prd-info li:nth-child(1) {display:inline-block; margin-right:4px;}
+.fd-prd-info li:nth-child(2) {display:inline-block;}
+.fd-prd-info li:last-child {display:block !important;}
+.fd-prdlist-cont .prdList li.item {vertical-align:top;}
+
+.sp-pagination-arrow a.first {background-image:url('/fd-co/img/pagination_first.jpg') !important;}
+.sp-pagination-arrow a.prev {background-image:url('/fd-co/img/pagination_prev.jpg') !important;}
+.sp-pagination-arrow a.next {background-image:url('/fd-co/img/pagination_next.jpg') !important;}
+.sp-pagination-arrow a.last {background-image:url('/fd-co/img/pagination_last.jpg') !important;}
+.sp-pagination-page li {margin-right:5px;}
+.sp-pagination-page li:last-child {margin-right:0;}
+.sp-pagination-page a {border:1px solid #d6d6d6 !important; color:#d6d6d6 !important; background:none !important; padding:0 12px !important;}
+.sp-pagination-page a.this {border:1px solid #222222 !important; color:#222222 !important; text-decoration:none !important;}
+
+.sp-slider[arrows="blk-h-l"] .slick-arrow.slick-next {background:url('/fd-co/img/mainbn-right.png') !important; width:54px !important; height:77px !important;}
+.sp-slider[arrows="blk-h-l"] .slick-arrow.slick-prev {background:url('/fd-co/img/mainbn-left.png') !important; width:54px !important; height:77px !important;}
+
+
+/* div[rel='FAMILY 할인가'], div[rel='판매가'] {display:inline-block;}
+div[rel='판매가'] span:nth-child(2).prd-discount {font-size:.7rem !important; color:#999 !important;}
+.sp-product-description div[rel="모델명"] {margin-top:6px; padding-top:6px; border-top:1px solid #ececec;} */
+
+#sp-board-category-split {border-top:none;}
+
+.fd-prdlist-layout {padding:10px 0 0 0 !important;}
+.fd-prdlist-layout .fd-prd-thumb {}
+.fd-prdlist-layout .fd-prd-info  {padding:0 !important; margin-top:16px;}
+.fd-prdlist-layout .fd-prd-info.fd-bestroll-info {margin-top:0;}
+.fd-prdlist-layout .fd-prd-info .fd-prd-name {}
+.fd-prdlist-layout .fd-prd-info .fd-prd-name span {font-size:13px !important; font-weight:normal !important;}
+.fd-prdlist-layout .fd-prd-info .fd-prd-price {padding:15px 0;}
+.fd-prdlist-layout .fd-prd-info .fd-prd-size {}
+.fd-prdlist-layout .fd-prd-info .fd-prd-size span {color:#3f3f3f !important; font-size:13px !important; font-weight:normal !important;}
+
+
+/* 소비자가 기준 할인가 */
+.xans-product-detail .ec-sale-rate { display:inline-block; margin-left:10px; border:1px solid #df6c6c;
+    border-radius:3px; color:#fff; background:#df6c6c; text-align:center; padding:4px 6px; font-weight:normal; font-size:10px;} 
+
+
+.sp-board-gallery[grid="5"] .sp-board-gallery-box {margin:0 29px !important;}

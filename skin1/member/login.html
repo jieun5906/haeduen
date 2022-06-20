@@ -1,0 +1,104 @@
+
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/css/module/member/login.css)-->
+
+
+<div module="member_login" id="login-wrap" class="memberloginbox fd-loginbox">
+
+    <!--
+        $defaultReturnUrl = /index.html
+        $forbidIpUrl = member/adminFail.html
+    -->
+    <div class="login">
+    <!-- <div id="logintitle">
+        <h2>Member Login</h2>
+        <span>가입시 입력하신 아이디와 비밀번호로 로그인이 가능합니다.</span>
+    </div> -->
+        <fieldset>
+            <legend>회원로그인</legend>
+            <p class='fd-login-tit'>LOGIN</p>
+            <div class='fd-login-box'>
+                <div class='fd-login-input'>
+                    <label class="idbox" title="아이디">{$form.member_id}</label>
+                    <label class="pwbox" title="비밀번호">{$form.member_passwd}</label>
+                </div>
+                <a href="#none" class='fd-login-btn' onclick="{$action_func_login}"><!--<img src="/web/upload/fitsoft/login/btn_login.gif" alt="로그인" />-->LOGIN</a>
+            </div>
+            <!-- <div>{$form.member_check_save_id}</div> -->
+            <ul style="margin-top:15px">
+                <li><a href="/member/id/find_id.html"><i class="fas fa-check" style="color:#979797; margin-right:5px; font-size:10px"></i>아이디찾기</a></li>
+                <li style="margin-left:10px"><a href="/member/passwd/find_passwd_info.html"><i class="fas fa-check" style="color:#979797; margin-right:5px; font-size:10px"></i>비밀번호찾기</a></li>
+                <li style="float:right">
+                    <p class="security">
+                        {$form.member_check_save_id}
+                        <i class="fas fa-lock" style="color:#979797; font-size:10px"></i>
+                        {$form.member_check_secret_connect}
+                    </p>
+                </li>
+                <div style="clear:both"></div>
+            </ul>
+
+        </fieldset>
+    </div>
+</div>
+
+<div class='login-wrap'>
+    <div class='' df-banner-code="login" hidden>
+        <a class='' href="{#href}" target="{#target}" df-banner-clone>{#item}</a>
+    </div>
+</div>
+
+<div class='login-btn-wrap' module="member_login">
+    <a class='join-btn' href="/member/join.html">회원가입</a>
+    <ul class="snsArea">
+        <li class="{$display_facebook|display}">
+            <a class='facebook' href="#none" onclick="{$facebook_func_login}"><i class='xi-facebook-official'></i> 페이스북 로그인</a>
+        </li>
+        <li class="{$display_google|display}">
+            <a class='google' href="#none" onclick="{$google_func_login}"><i class='xi-google'></i> 구글 로그인</a>
+        </li>
+        <li class="{$display_kakao|display}">
+            <a class='kakao' href="#none" onclick="{$kakao_func_login}"><i class='xi-speech'></i> 카카오 간편 로그인/회원가입</a>
+        </li>
+        <li class="{$display_naver|display}">
+            <a class='naver' href="#none" onclick="{$naver_func_login}"><i class='xi-naver-square'></i> 네이버 간편 로그인/회원가입</a>
+        </li>
+        <li class="{$display_line|display}">
+            <a class='line' href="#none" onclick="{$line_func_login}"><i class='xi-line-messenger'></i> LINE 로그인</a>
+        </li>
+    </ul>
+</div>
+
+<div class='other-btn-wrap'>
+	<ul>
+        <!-- <li><a href="/member/login-intro.html">기존 회원로그인</a></li> -->
+    	<li><a href="/myshop/order/list.html">비회원 주문조회</a></li>
+    </ul>
+</div>
+
+
+<div module="MyShop_OrderHistoryNologin" style="border:1px solid #eaeaea; margin:0 auto; padding:30px 0; color:#2e2e2e; width:500px; margin-top:50px">
+    
+    <!--
+        $orderDetailUrl = /myshop/order/detail.html
+    -->
+    <div id="logintitle">
+        <h2>Nonmember Order</h2>
+        <span class='pret'>비회원의 경우, 주문시의 주문번호로 주문조회가 가능합니다.</span>
+    </div>
+
+    <div id="ordercheck">
+        <div class="namebox" title="주문자성함">{$form.order_name}</div>
+        <div class="nobox" title="주문번호">{$form.order_id}</div>
+        <div class="pwbox" title="주문비밀번호">{$form.order_password}</div>
+        <div class="bt">
+            <ul>
+                <li>
+                    <input type="image" alt="로그인" src="/fitsoft/images/check.gif"/>
+                    <!-- <a class='join-btn'>로그인</a> -->
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>

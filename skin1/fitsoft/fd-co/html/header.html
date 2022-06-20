@@ -1,0 +1,86 @@
+
+	<!--코어-->
+	<!--@import(/_sp/core.html)-->
+
+	<!--스카이-->
+	<!--css(/_sp/apps/layout/sky/sky-3/sky.css)-->
+	<!--js(/_sp/apps/layout/sky/sky-3/sky.js)-->
+	<!--회원가입포인트-->
+	<!--@css(/_sp/apps/addon/joinus/joinus.css)-->
+	<!--@js(/_sp/apps/addon/joinus/joinus.js)-->
+
+
+    <!-- fd-company -->
+	<!--@css(/fd-co/css/header.css)-->
+	<!--@js(/fd-co/js/header.js)-->
+
+
+<!-- snapfit start -->
+<span id = 'solutiontype' style='display:none;'>cafe24</span>
+<span id='sfsnapfit_store_id' style='display:none'>loloten</span>
+<div><input id="sf_draw_type" type="hidden" value="pc"><input id="sf_store_name" type = 'hidden' value = 'loloten'></div>
+<div module="Layout_statelogon" style="display: none"><span id="sf_user_name" class="xans-member-var-id" style="display:none;">{$id}</span></div>
+<!-- snapfit end -->
+
+<!-- cre.ma / 로그인 회원 정보 / 스크립트를 수정할 경우 연락주세요 (support@cre.ma) -->
+<div module="Layout_stateLogon" style="display: none;">
+<i id="crema-login-username" style="display: none;">{$id}</i>
+<i id="crema-login-name" style="display: none;">{$name}</i>
+</div>
+
+
+<div id='fd-header'>
+    <div class='hd-top'>
+        <div class='hd-cont fd-hd-cont'>
+            <div class='ht-left'>
+                <div class='ht-lang'>
+                    <span class='ht-lang-sel'>Language <img src='/fd-co/img/global.png' alt="global"></span>
+                    <ul class='ht-lang-list' module="Layout_multishopListitem">
+                        <li><a href="//{$shop_domain}/" target="_blank"><img src="/_sp/apps/module/language/{$language}.png" alt="" />&nbsp;{$locale_language}</a></li>
+                        <li><a href="//{$shop_domain}/" target="_blank"><img src="/_sp/apps/module/language/{$language}.png" alt="" />&nbsp;{$locale_language}</a></li>
+                    </ul>
+                </div>
+                <a href='/board/gallery/list.html?board_no=8'>이벤트</a>
+                <a href='/product/list.html?cate_no=134'>당일발송</a>
+                <a href='/product/list.html?cate_no=188'>오늘의무료배송</a>
+                <a href='/product/list.html?cate_no=213'>110SIZE</a>
+            </div>
+            <div class='ht-right' module="Layout_statelogoff">
+                <a href='/member/login.html'>로그인</a>
+                <a href='/fd-co/html/member/join-intro.html'>회원가입</a>
+                <a href='/order/basket.html'>장바구니</a>
+                <a href='/member/login.html'>마이페이지</a>
+                <a href='#none' class='ht-search-btn'>
+                    <i class='xi-search'></i> 검색
+                </a>
+                <a href='/board/index.html'>고객만족센터</a>
+            </div>
+            <div class='ht-right' module="Layout_stateLogon">
+                <a href='{$action_logout}'>로그아웃</a>
+                <a href='/order/basket.html'>장바구니</a>
+                <a href='/myshop/index.html'>마이페이지</a>
+                <a href='#none' class='ht-search-btn'>
+                    <i class='xi-search'></i> 검색
+                </a>
+                <a href='/board/index.html'>고객만족센터</a>
+            </div>
+            <div class='ht-slogo' scope="top" module="bannermanage2_display_29">
+                <a href="/" class="displaynone" scope="{$title}">{$banner}</a>
+                <a href="/" class="displaynone" scope="{$title}">{$banner}</a>
+            </div>
+            
+            <!-- 검색 팝업 시작 -->
+            <!--@import(/fd-co/html/hd-search.html)-->
+            <!-- 검색 팝업 끝 -->
+            
+        </div>
+    </div>
+    <div class='hd-bot'>
+        <div class='fd-hd-cont'>
+            <div class='hb-logo' scope="top" module="bannermanage2_display_29">
+                <a href="/" class="displaynone" scope="{$title}">{$banner}</a>
+                <a href="/" class="displaynone" scope="{$title}">{$banner}</a>
+            </div>
+        </div>
+    </div>
+</div>

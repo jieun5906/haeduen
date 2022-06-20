@@ -1,0 +1,126 @@
+/* 상품진열 기본 CSS */
+
+#fitsoftimg2 {z-index:10; position:absolute; left:0px; top:0px; opacity:0; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;}
+#fitsoftimg2:hover { opacity:1; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;}
+
+.fitsoftlist .prdpadding {margin:0 15px 70px 15px; } /* 상품들간의 간격 */
+.fitsoftlist .prdline {margin-bottom:0; position:relative;} /* 상품이미지 아래 상품명과의 간격 */
+
+.fitsoftlist {margin:0 auto 60px; }
+.fitsoftlist ul { zoom:1; width:100%; margin-bottom:0;  display: table; font-size:0;}
+/* .fitsoftlist ul.spec {display:flex; align-items:center;} */
+.fitsoftlist ul a:link {text-decoration:none;}
+.fitsoftlist ul a:hover {text-decoration:none;}
+.fitsoftlist ul:after {content:""; display:block; clear:both; }
+
+.fitsoftlist ul li { display: block; vertical-align:top;}
+.fitsoftlist ul li.item:hover .item_link_box {opacity:1; transition:all .4s ease-in;}
+/* .fitsoftlist ul li:first-child {padding-bottom:30px;} */
+.fitsoftlist ul li.fitsoft-prd-item {display:inline-block;}
+.fitsoftlist ul li.fitsoft-prd-item:first-child {display:block; padding-bottom:30px;}
+.fitsoftlist ul li.fitsoft-prd-item span {padding-right:6px; line-height:20px;}
+.fitsoftlist ul li.fitsoft-prd-item:nth-child(2) span {display:flex; align-items:center; flex-direction: row-reverse;}
+
+.fitsoftlist ul.grid2 > li { display: inline-block; width:50%; vertical-align:top;}
+.fitsoftlist ul.grid3 > li { display: inline-block; width:33.33%; vertical-align:top;}
+.fitsoftlist ul.grid4 > li { display: inline-block; width:25%; vertical-align:top;}
+.fitsoftlist ul.grid5 > li { display: inline-block; width:20%; vertical-align:top;}
+
+
+/* 상품정보 디자인 CSS */
+
+.fitsoftlist .name {clear:both; font-size:13px; margin-bottom:5px;}
+.fitsoftlist .name span {color:#050505!important; font-size:22px!important;}
+.fitsoftlist .name a {color:#000}
+.fitsoftlist .icon img {margin-top:12px; margin-right:2px }
+.fitsoftlist .prices {line-height:18px; color:#000; font-size:18px; margin-top:30px;}
+.fitsoftlist .price { font-size:18px; color:#999; margin-right:5px; }
+.fitsoftlist .normal { font-size:18px; color:#999; }
+.fitsoftlist .sale {font-size:24px; color:#000; font-weight:500;}
+.fitsoftlist .info { margin-top:10px; line-height:20px; font-size:16px; color:#999;}
+.fitsoftlist .summary {color:#999; font-size:16px;}
+
+.fitsoftlist .colorWrap {height:19px}
+
+/* 컬러칩 CSS */
+
+.fitsoftlist .color { padding-top:7px; text-align:right;}
+.fitsoftlist .color ul { display: inline-block; text-align:right; margin: 0; padding: 0; zoom:1; *display: inline;}
+.fitsoftlist .color li {padding:0;}
+.fitsoftlist .chips { width:8px; height:8px; margin-left:5px; font-size:0; line-height:0; }
+
+
+.fitsoftlist .box {padding:20px 20px 60px;}
+.fitsoftlist li {cursor:pointer;}
+.fitsoftlist li:hover {background-color:#fafafa;}
+.fitsoftlist li .thumbnail {width: 80%; margin:20px auto;}
+.fitsoftlist li .thumbnail a {display:inline-block; width:100%;}
+.fitsoftlist li .thumbnail a img {width:100%;}
+/* .fitsoftlist li:hover .box {background-color:#fafafa;} */
+.fitsoftlist li .fitsoft-prd-item span {display:inline-flex;}
+
+.item_link_box {opacity:0;}
+.item_link {box-sizing:border-box; display:flex; width:100%;}
+.item_link a.buynow-btn {box-sizing:border-box; border:1px solid #000; background:#3F3E3D; color:#fff; font-weight:500; width:60%; height:50px;line-height:50px; text-align:center;display:inline-block; font-size:16px;}
+.item_link button {box-sizing:border-box; border:1px solid #3f3e3d; height:50px; line-height:50px; text-align:center; background-color:#fff; width:20%;}
+.item_link button.basket-btn {background-image:url(/web/upload/fd-com/out-of-stock.png); background-repeat:no-repeat; background-position: center;}
+.item_link button.basket-btn img {background:#fff; padding:10px;}
+.item_link .wish-btn {border-right:0;}
+
+/* 정렬버튼 커스텀 (22.06.07) */
+.sort select {padding:10px; height:auto; border:none; font-weight:600;}
+
+/* 추천상품 커스텀 (22.06.07) */
+.fitsoftlist-recommend ul li.item .item_link_box {display:none;}
+.fitsoftlist-recommend ul li.item:hover .item_link_box {display:none;}
+
+/* 메인진열 상품 리스트 */
+/* 상품진열 기본 CSS */
+/* #fitsoftimg2 {z-index:10; position:absolute; left:0px; top:0px; opacity:0; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;}
+#fitsoftimg2:hover { opacity:1; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;} */
+
+
+.week_best ul li { display: block; vertical-align:top;}
+.week_best ul li.item:hover .item_link_box {opacity:1; transition:all .4s ease-in;}
+.week_best ul li.fitsoft-prd-item {display:inline-block;}
+.week_best ul li.fitsoft-prd-item:first-child {display:block; padding-bottom:30px;}
+.week_best ul li.fitsoft-prd-item span {padding-right:6px; line-height:20px;}
+.week_best ul li.fitsoft-prd-item:nth-child(2) span {display:flex; align-items:center; flex-direction: row-reverse;}
+
+.week_best ul.grid2 > li { display: inline-block; width:50%; vertical-align:top;}
+.week_best ul.grid3 > li { display: inline-block; width:33.33%; vertical-align:top;}
+.week_best ul.grid4 > li { display: inline-block; width:25%; vertical-align:top;}
+.week_best ul.grid5 > li { display: inline-block; width:20%; vertical-align:top;}
+
+
+/* 상품정보 디자인 CSS */
+
+.week_best .name {clear:both; font-size:13px; margin-bottom:5px;}
+.week_best .name span {color:#050505!important; font-size:22px!important;}
+.week_best .name a {color:#000}
+.week_best .icon img {margin-top:12px; margin-right:2px }
+.week_best .prices {line-height:18px; color:#000; font-size:18px; margin-top:30px;}
+.week_best .price { font-size:18px; color:#999; margin-right:5px; }
+.week_best .normal { font-size:18px; color:#999; }
+.week_best .sale {font-size:24px; color:#000; font-weight:500;}
+.week_best .info { margin-top:10px; line-height:20px; font-size:16px; color:#999;}
+.week_best .summary {color:#999; font-size:16px;}
+
+.week_best .colorWrap {height:19px}
+
+/* 컬러칩 CSS */
+
+.week_best .color { padding-top:7px; text-align:right;}
+.week_best .color ul { display: inline-block; text-align:right; margin: 0; padding: 0; zoom:1; *display: inline;}
+.week_best .color li {padding:0;}
+.week_best .chips { width:8px; height:8px; margin-left:5px; font-size:0; line-height:0; }
+
+
+.week_best .box {padding:20px 20px 60px;}
+.week_best li {cursor:pointer;}
+.week_best li:hover {background-color:#fafafa;}
+.week_best li .thumbnail {width: 80%; margin:20px auto;}
+.week_best li .thumbnail a {display:inline-block; width:100%;}
+.week_best li .thumbnail a img {width:100%;}
+/* .week_best li:hover .box {background-color:#fafafa;} */
+.week_best li .fitsoft-prd-item span {display:inline-flex;}
