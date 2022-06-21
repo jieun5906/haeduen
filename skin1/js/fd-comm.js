@@ -15,6 +15,12 @@ $(function(){
     // $('fd-review-more').click(clickReviewMore);
     // 헤더 shop 메뉴 펼치기 이벤트
     $('.fd-shop').mouseover(overShopMenu).mouseleave(leaveShopMenu);
+    
+    // 헤더 전체보기 클릭시 전체메뉴 박스 노출
+    $('#top .all-menu').click(clickAllMenuBtn);
+    // 헤더 전체보기 클릭시 전체메뉴 박스 닫기
+    $('#top .all-menu-cont .closeBtn').click(clickAllMenuClose);
+
     // q&a 비밀글 자동설정
     //setSecretWrite();
     // 인스타그램
@@ -25,6 +31,17 @@ $(function(){
     //scrollHeaderEvent();
     //$(window).scroll(scrollHeaderEvent);
 }); 
+
+// 헤더 전체보기 클릭시 전체메뉴 박스 노출
+function clickAllMenuBtn(e){
+    var target = $(e.currentTarget);    
+    target.siblings('.hover-cate').toggleClass('active');
+}
+// 헤더 전체보기 클릭시 전체메뉴 박스 닫기
+function clickAllMenuClose(e){
+    var target = $(e.currentTarget);    
+    target.parent('.hover-cate').removeClass('active');
+}
 
 // 상단 검색창 클릭시 노출
 function clickSearchBtn(){    

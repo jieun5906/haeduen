@@ -3,155 +3,118 @@
 <!--@js(/js/fd-comm.js)-->
 <!--@css(/css/fd-comm.css)-->
 
-<div class="top-banner swiper-container">
+
+<!-- <div class="top-banner swiper-container">
     <div class="swiper-wrapper">
-        <!-- Slides -->
+        // 띠배너-Slides
         <div class="swiper-slide"><div class='top_ban_wrap'><a href='/member/login.html' class='pret'>지금 회원가입하면 <strong>10% 즉시 할인 &gt; </strong></a></div></div>
         <div class="swiper-slide"><div class='kakao_ban_wrap'><a href='/member/login.html' class='pret'>카톡 채널 추가하면 <strong>2,000원 추가 할인 &gt; </strong></a></div></div>
     </div>
-</div>
+</div> -->
 
 
 <div class="inner">
     
-    <div id='logo' df-banner-code="logo" hidden>
-        <div df-banner-clone>
-            <a href="{#href}">{#item}</a>
+    <div class='top-hd-cont'>
+        <div module="Layout_stateLogon" class='mypage'>
+            <!--@css(/css/module/layout/statelogon.css)-->
+            <a class="myinfo"><strong>{$name}</strong>님</a>
+            <a href="/order/basket.html">장바구니</a>
+            <a href="/myshop/index.html">나의쇼핑</a>
+            <a href="/myshop/order/list.html">주문배송조회</a>
+            <a href="">고객센터</a>
+            <a href="{$action_logout}" class="log">로그아웃</a>
+        </div>
+
+        <div module="Layout_statelogoff" class='mypage'>
+            <!--@css(/css/module/layout/statelogoff.css)-->
+            <a href="/member/login.html" class="log">로그인</a>
+            <a href="/member/join.html">회원가입</a>
+            <a href="/myshop/index.html">나의쇼핑</a>
+            <a href="/order/basket.html">장바구니</a>
+            <a href="">고객센터</a>
         </div>
     </div>
-    
-    
-    <div module="Layout_stateLogon" class='mypage'>
-        <!--@css(/css/module/layout/statelogon.css)-->
-        <span class="myinfo"><a href="/member/modify.html">회원정보수정</a></span>
-        <a href="{$action_logout}" class="log">로그아웃</a>
-        <a href="/myshop/order/list.html">주문조회</a>
-        <a href="/myshop/index.html">마이쇼핑</a>
-    </div>
 
-    <div module="Layout_statelogoff" class='mypage'>
-        <!--@css(/css/module/layout/statelogoff.css)-->
-        <a href="/member/login.html" class="log">로그인</a>
-        <!-- <a href="/member/join.html">회원가입</a> -->
-        <a href="/myshop/order/list.html">주문조회</a>
-        <a href="/myshop/index.html">마이쇼핑</a>
-    </div>
-    
-    
-    <div id="menubar">
-        <nav>
-            <div class="container">
-                <ul>
-                    <li><a href="/about.html"><span>BRAND</span></a></li>
-                    
-                    <li><a href="/product/list.html?cate_no=24"><span>SHOP</span></a>
-                        <ul class="dream">
-                            <li module="Layout_category">
-                                <!--0@css(/css/module/layout/category.css)-->
-                                <!--0@js(/js/module/layout/category.js)-->
-                                <a href="/product/list.html{$param}">{$name_or_img_tag}</a>
-                                <a href="/product/list.html{$param}">{$name_or_img_tag}</a>
-                            </li>
-                        </ul>
-                        <!--<ul>
-                        	<li><a href="/product/list.html?cate_no=46">ALL</a></li>
-                            <li class="dream"><a href="/product/list.html?cate_no=47">살균가전</a></li>
-                        </ul>-->
-                    </li>
-                    
-                    <li><a href="/subscription.html"><span>SUBSCRIPTION</span></a>
-                    
-                    <!-- ★온라인스토어를 제외한 메뉴는 수동으로 관리합니다★ -->
-                    <!-- 온라인스토어(상품판매메뉴)는 상품관리의 메뉴와 연동되어 나타납니다 -->
-                    
-                   <!--  <li><a href="/story.html"><span>by COSMO</span></a>
-                        <ul>
-                            <li><a href="/story.html">STORY</a></li>
-                            <li class="dream"><a href="/promise.html"><span>대량구매</span></a></li>
-                            <li><a href="/product/list.html?cate_no=42">SHOP</a></li> -->
-                            <!--li class='fd-shop'>
-                                <a href="/product/list.html?cate_no=42">SHOP</a>
-                                <p id="category" module="Layout_category" class='fd-shop-menu'>
-                                <!--@css(/css/module/layout/category.css)--
-                                <!--@js(/js/module/layout/category.js)--
-                                    <a href="/product/list.html{$param}">- {$name_or_img_tag}</a>
-                                    <a href="/product/list.html{$param}">- {$name_or_img_tag}</a>
-                                    <a href="/product/list.html{$param}">- {$name_or_img_tag}</a>
-                                </p>
-                            </li>
-                        </ul>
-                    </li>-->
-                    
-                    <li><a href="/fitsoft/event_member.html"><span>MEMBERSHIP</span></a></li>
-                    
-                    <li><a href="/board/event/list.html?board_no=8"><span>EVENT&NOTICE</span></a></li> 
-
-                    <li><a href="/board/qna/list.html?board_no=6"><span>Q&A</span></a></li>
-
-                </ul>    
+    <div class="mid-hd-cont">
+        <div class="left-menu">
+            <a href="">
+                <img src="//ecimg.cafe24img.com/pg190b21065964022/deallikeshop1/fd-img/header-tips.png">
+                <span>미용노하우</span>
+            </a>
+            <a href="">
+                <img src="//ecimg.cafe24img.com/pg190b21065964022/deallikeshop1/fd-img/header-benefit.png">
+                <span>회원등급혜택</span>
+            </a>
+        </div>
+        
+        <div id='logo' df-banner-code="logo" hidden>
+            <div df-banner-clone>
+                <a href="{#href}">{#item}</a>
             </div>
-        </nav>
-    </div>
-    
-    
-	<div class='util-wrap'>
+        </div>
+        
         <!-- 검색 -->
-        <div id="topsearch">
+        <div class="right-menu" id="topsearch">
             <div class="search-bar">
                 <div module="Layout_SearchHeader">
                     <!--
                     $product_page=/product/detail.html
                     $category_page=/product/list.html
                     -->
-                    <fieldset id="search_fieldset">{$form.keyword}
-                        <!-- <a onclick="{$action_search_submit}" class="search-tit">SEARCH</a> -->
-                        <a class="search-tit gro"><img src='//ecimg.cafe24img.com/pg190b21065964022/deallikeshop1/fd-img/search.png' alt='search'></a>
+                    <fieldset id="search_fieldset">
+                        {$form.keyword}
+                        <a class="search-tit" onclick="{$action_search_submit}" ><img src='//ecimg.cafe24img.com/pg190b21065964022/deallikeshop1/fd-img/search.png' alt='search'></a>
                     </fieldset>
                 </div> 
             </div>
         </div>
-        
-        <div id="log" module="Layout_stateLogoff" class='user-menu'>
-            <img class='user-icon' src='/web/upload/fd-com/user.png'>
-            <div class='user-pop'>
-                <a href="/member/login.html">LOGIN</a>
-                <a href="/member/login.html">JOIN</a>
-                <a href="/member/modify.html">ORDER</a>
-            </div>
-        </div>
-        <div id="log" module="Layout_stateLogon" class='user-menu'>
-            <img class='user-icon' src='/web/upload/fd-com/user.png'>
-            <div class='user-pop ridi'>
-                <a class='ridi' href="/myshop/order/list.html">ORDER</a>
-                <a class='ridi' href="/myshop/index.html">MY PAGE</a>
-                <a class='ridi' href="{$action_logout}">LOGOUT</a>
-            </div>
-        </div>
-
-        <!-- 장바구니 -->
-        <div module="Layout_orderBasketcount" style="cursor:pointer;" onclick="location.href='/order/basket.html'" id="topcarticon"><img src='/web/upload/fd-com/cart.png'><span class='count mulish'>{$basket_count}</span></a></div>
-
-
-        <div module="Layout_multishopList" class="list">
-            <button type="button" class="toggle">
-                <span>KR <!--<img src="//img.cafe24.com/img/common/global/{$current_language_code}_18x12.png" alt="" />-->
-                    <img src="/img/fd/top-down.png" alt="" /> 
-                </span>
-            </button>
-            <ul module="Layout_multishopListitem">
-                <li class="{$selected_class}" style="display:none">
-                    <a href="//{$shop_domain}/">
-                        <span class="name">KR</span>
-                        <img src="//img.cafe24.com/img/common/global/{$language}_18x12.png" alt="" />
-                    </a>
-                </li>
-                <li class="{$selected_class}">
-                    <a href="//{$shop_domain}/">
-                        <span class="name">EN</span>
-                        <!-- <img src="//img.cafe24.com/img/common/global/{$language}_18x12.png" alt="" /> -->
-                    </a>
-                </li>
-            </ul>
-        </div>
     </div>
+    
+    <div class="bot-hd-cont" id="menubar">
+        <nav>
+            <div class="container">
+
+                <div class="all-menu-cont">
+                    <div class="all-menu">
+                        <i class='xi-bars'></i>
+                        <span>전체카테고리</span>
+                    </div>
+
+                    <!-- 메인페이지에서만 노출되는 카테고리 메뉴 -->
+                    <div class="main-cate" id="category" module="Layout_category">
+                        <!--@css(/css/module/layout/category.css)-->
+                        <!--@js(/js/module/layout/category.js)-->
+                        <div class="position">
+                            <ul class="dep1">
+                                <li><a href="/product/list.html{$param}">{$name_or_img_tag}</a></li>
+                                <li><a href="/product/list.html{$param}">{$name_or_img_tag}</a></li>
+                                <li><a href="/product/list.html{$param}">{$name_or_img_tag}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 전체카테고리 클릭시 노출되는 카테고리 메뉴 -->
+                    <div class="hover-cate">
+                        <!--@import(/fitsoft/header-all-cateMenu.html)-->
+                    </div>
+
+                </div>
+
+                <ul class="main-menu-bar">                                                                       
+                    <li><a href=" "><span>베스트</span></a>
+                    <li><a href=" "><span>신상품</span></a>
+                    <li><a href=" "><span>박스단위특가</span></a>
+                    <li><a href=" "><span>사은품판촉용</span></a>
+                    <li><a href=" "><span>미용실회원전용관</span></a>
+                    <li><a href=" "><span>상품후기</span></a>
+                    <li><a href=" "><span>점판상품</span></a>
+                    <li><a href=" "><span>오늘의특가</span></a>
+
+                </ul>    
+            </div>                    
+
+        </nav>
+    </div>
+
 </div>
