@@ -1,28 +1,29 @@
-$(function(){
+/*$(function(){
     // 메인화면 탭상품
-    var mySwiper1 = new Swiper ('.saleItem .swiper-container', {
+    var mySwiper1 = new Swiper ('#section4 .saleItem .swiper-container', {
         loop:true,
         spaceBetween: 5,
         observer: true, 
         observeParents: true,
         slidesPerView: 4,
         navigation: {
-            nextEl: '.saleItem .swiper-button-next',
-            prevEl: '.saleItem .swiper-button-prev',
+            nextEl: '#section4 .saleItem .swiper-button-next',
+            prevEl: '#section4 .saleItem .swiper-button-prev',
         },
     });
     // 메인화면 탭상품
-    var mySwiper2 = new Swiper ('.bestItem .swiper-container', {
+    var mySwiper2 = new Swiper ('#section4 .bestItem .swiper-container', {
         loop:true,
         spaceBetween: 5,
         observer: true, 
         observeParents: true,
         slidesPerView: 4,
         navigation: {
-            nextEl: '.bestItem .swiper-button-next',
-            prevEl: '.bestItem .swiper-button-prev',
+            nextEl: '#section4 .bestItem .swiper-button-next',
+            prevEl: '#section4 .bestItem .swiper-button-prev',
         },
     });
+    
     $(".main_tab_banner .tab li").click(function(){
         var $tabNum = $(this).index()+1;
         $(this).addClass("on");
@@ -30,6 +31,7 @@ $(function(){
         $(".main_tab_banner div[class^=tabView]").hide();
         $(".main_tab_banner .tabView"+$tabNum).show();
     });
+    
     // best number
     $(".prd_week_best ul li").each(function(){
         var $bestNum = $(this).index()+1;
@@ -117,7 +119,7 @@ function bestItemTab() {
         }
         button.innerText = title;
     }
-}
+}*/
 
 
 // if($(".saleItem .menu > li > .button").hasClass("active") === true) {

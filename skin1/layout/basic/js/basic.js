@@ -80,7 +80,7 @@ $(document).ready(function(){
 /**
  *  썸네일 이미지 엑박일경우 기본값 설정
  */
-$(window).load(function() {
+/*$(window).load(function() {
     $("img.thumb,img.ThumbImage,img.BigImage").each(function($i,$item){
         var $img = new Image();
         $img.onerror = function () {
@@ -88,4 +88,4 @@ $(window).load(function() {
         }
         $img.src = this.src;
     });
-});
+});*/

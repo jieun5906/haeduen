@@ -30,7 +30,21 @@ $(function(){
     // 메인페이지 헤더 투명 이벤트
     //scrollHeaderEvent();
     //$(window).scroll(scrollHeaderEvent);
+    
+    // 메인페이지 '베스트 오브 베스트' tab 클릭시
+    $('#section4 .tabMenu button').click(clickMainBestPrd);
 }); 
+
+// 메인페이지 '베스트 오브 베스트' tab 클릭시
+function clickMainBestPrd(e){
+    var target = $(e.currentTarget)
+    var tabName = target.attr('data-id');
+
+    $('#section4 .tabMenu button').removeClass('active');
+    target.addClass('active');
+    $('.fd-fullpage #section4 .tabMenu .tabContent').removeClass('active');
+    $('.fd-fullpage #section4 .tabMenu #' + tabName).addClass('active');
+}
 
 // 헤더 전체보기 클릭시 전체메뉴 박스 노출
 function clickAllMenuBtn(e){

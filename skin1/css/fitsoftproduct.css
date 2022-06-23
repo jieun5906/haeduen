@@ -80,47 +80,47 @@
 #fitsoftimg2:hover { opacity:1; -webkit-transition-duration: 0.3s; transition-duration: 0.3s;} */
 
 
-.week_best ul li { display: block; vertical-align:top;}
-.week_best ul li.item:hover .item_link_box {opacity:1; transition:all .4s ease-in;}
-.week_best ul li.fitsoft-prd-item {display:inline-block;}
-.week_best ul li.fitsoft-prd-item:first-child {display:block; padding-bottom:30px;}
-.week_best ul li.fitsoft-prd-item span {padding-right:6px; line-height:20px;}
-.week_best ul li.fitsoft-prd-item:nth-child(2) span {display:flex; align-items:center; flex-direction: row-reverse;}
+.ec-base-product ul li { display: block; vertical-align:top;}
+.ec-base-product ul li.item:hover .item_link_box {opacity:1; transition:all .4s ease-in;}
+.ec-base-product ul li.fitsoft-prd-item {display:inline-block;}
+.ec-base-product ul li.fitsoft-prd-item:first-child {display:block; line-height: 20px; margin-bottom: 5px;}
+.ec-base-product ul li.fitsoft-prd-item span {padding-right:6px; line-height:20px;}
+.ec-base-product ul li.fitsoft-prd-item:nth-child(2) span {display:flex; align-items:center; flex-direction: row-reverse;}
 
-.week_best ul.grid2 > li { display: inline-block; width:50%; vertical-align:top;}
-.week_best ul.grid3 > li { display: inline-block; width:33.33%; vertical-align:top;}
-.week_best ul.grid4 > li { display: inline-block; width:25%; vertical-align:top;}
-.week_best ul.grid5 > li { display: inline-block; width:20%; vertical-align:top;}
+.ec-base-product ul.grid2 > li { display: inline-block; width:50%; vertical-align:top;}
+.ec-base-product ul.grid3 > li { display: inline-block; width:33.33%; vertical-align:top;}
+.ec-base-product ul.grid4 > li { display: inline-block; width:25%; vertical-align:top;}
+.ec-base-product ul.grid5 > li { display: inline-block; width: calc((100%/5) - 12px); vertical-align:top;}
 
 
 /* 상품정보 디자인 CSS */
 
-.week_best .name {clear:both; font-size:13px; margin-bottom:5px;}
-.week_best .name span {color:#050505!important; font-size:22px!important;}
-.week_best .name a {color:#000}
-.week_best .icon img {margin-top:12px; margin-right:2px }
-.week_best .prices {line-height:18px; color:#000; font-size:18px; margin-top:30px;}
-.week_best .price { font-size:18px; color:#999; margin-right:5px; }
-.week_best .normal { font-size:18px; color:#999; }
-.week_best .sale {font-size:24px; color:#000; font-weight:500;}
-.week_best .info { margin-top:10px; line-height:20px; font-size:16px; color:#999;}
-.week_best .summary {color:#999; font-size:16px;}
+.ec-base-product .name {clear:both; font-size:13px; margin-bottom:5px;}
+/* .ec-base-product .name span {color:#050505!important; font-size:22px!important;} */
+.ec-base-product .name {margin-bottom: 6px;}
+.ec-base-product .icon img {margin-top:12px; margin-right:2px }
+.ec-base-product .prices {line-height:18px; color:#000; font-size:18px; margin-top:30px;}
+.ec-base-product .price { font-size:18px; color:#999; margin-right:5px; }
+.ec-base-product .normal { font-size:18px; color:#999; }
+.ec-base-product .sale {font-size:24px; color:#000; font-weight:500;}
+.ec-base-product .info { margin-top:10px; line-height:20px; font-size:16px; color:#999;}
+.ec-base-product .summary {color:#999; font-size:16px;}
 
-.week_best .colorWrap {height:19px}
+.ec-base-product .colorWrap {height:19px}
 
 /* 컬러칩 CSS */
 
-.week_best .color { padding-top:7px; text-align:right;}
-.week_best .color ul { display: inline-block; text-align:right; margin: 0; padding: 0; zoom:1; *display: inline;}
-.week_best .color li {padding:0;}
-.week_best .chips { width:8px; height:8px; margin-left:5px; font-size:0; line-height:0; }
+.ec-base-product .color { padding-top:7px; text-align:right;}
+.ec-base-product .color ul { display: inline-block; text-align:right; margin: 0; padding: 0; zoom:1; *display: inline;}
+.ec-base-product .color li {padding:0;}
+.ec-base-product .chips { width:8px; height:8px; margin-left:5px; font-size:0; line-height:0; }
 
 
-.week_best .box {padding:20px 20px 60px;}
-.week_best li {cursor:pointer;}
-.week_best li:hover {background-color:#fafafa;}
-.week_best li .thumbnail {width: 80%; margin:20px auto;}
-.week_best li .thumbnail a {display:inline-block; width:100%;}
-.week_best li .thumbnail a img {width:100%;}
-/* .week_best li:hover .box {background-color:#fafafa;} */
-.week_best li .fitsoft-prd-item span {display:inline-flex;}
+.ec-base-product .box {padding:10px 0 0 0;}
+.ec-base-product li {cursor:pointer;}
+/* .ec-base-product li:hover {border:1px solid #00BBFF;}
+.ec-base-product li .thumbnail {width: 80%; margin:20px auto;} */
+.ec-base-product li .thumbnail a {display:inline-block; width:100%; font-size: 0;}
+.ec-base-product li .thumbnail a img {width:100%; border: 0;}
+/* .ec-base-product li:hover .box {background-color:#fafafa;} */
+.ec-base-product li .fitsoft-prd-item span {display:inline-flex;}
