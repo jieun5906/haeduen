@@ -714,7 +714,7 @@ span.fd-review-more {display:inline-block; margin-left:5px; padding:4px 6px !imp
 #fd_footer .footer_util ul.utilMenu li:first-child a{padding-left:0px !important;}
 #fd_footer .footer_util ul.utilMenu li:last-child a{border-right:0 !important;}
 
-.utilAddress {margin:0; width:1200px;}
+.utilAddress {margin:0 auto; width:1200px;}
 .utilAddress .address { padding:0; line-height:1.7;}
 .utilAddress .address span { padding:0 13px; position:relative; }
 .utilAddress .address span::before { content:""; position:absolute; top:2px; left:-1px; width:1px; height:9px; background:#cecece; }
