@@ -1,0 +1,61 @@
+<div id="quick" class='fd-quick-sideMenu'>
+    
+    <div class='brand'>
+        <div class='view-brand'>
+            <i class='xi-bars'></i	>
+            브랜드보기
+        </div>
+        <div class='brand-cont'>
+            <h2>Brand</h2>
+            <div class='list'>
+                <!--@import(/fitsoft/main_brandList.html)-->
+            </div>
+        </div>
+    </div>
+    
+    <div class='cart'>
+        <div module="Layout_orderBasketcount" class='tit'>
+            <!--@css(/css/module/layout/orderBasketcount.css)-->
+            <a href='/order/basket.html'>
+                장바구니{$basket_count}개
+            </a>
+        </div>
+        <div module="Layout_productRecent" class='cont'>
+            <!--@css(/css/module/layout/productRecent.css)-->
+            <h2><a href="/product/recent_view_product.html">최근 본 상품</a></h2>
+            <ul>
+                <li class="{$disp_recent|display}">
+                    <a href="/product/detail.html{$param}"><img src="{$recent_img}" alt="" /><span>{$name}</span></a>
+                </li>
+                <li class="{$disp_recent|display}">
+                    <a href="/product/detail.html{$param}"><img src="{$recent_img}" alt="" /><span>{$name}</span></a>
+                </li>
+            </ul>
+            <p class="player">
+                <i class='xi-angle-up-thin prev'></i>
+                <i class='xi-angle-down-thin next'></i>
+            </p>
+        </div>
+    </div>
+    
+    <div class="cs">
+        <div class='tit'>콜센터</div>
+        <div class='cont'>
+        	<strong>
+                070<br>7775<br>2965
+            </strong>
+            <p>
+                오후 0시 까지<br>당일출고!
+            </p>
+        </div>
+    </div>
+    
+    <div class='kakao'>
+        <a href=''>
+            <i class='xi-kakaotalk'></i>
+            카카오톡 상담
+        </a>
+    </div>
+
+    <!--<p class="pageTop"><a href="#header" title="화면 최상단으로 이동하기"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/layout/btn_top1.gif" alt="맨위로" /></a></p>-->
+</div>

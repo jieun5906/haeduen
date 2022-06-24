@@ -791,21 +791,27 @@ span.fd-review-more {display:inline-block; margin-left:5px; padding:4px 6px !imp
 .fd-fullpage .section#section4 .tabMenu .tabContent { display:none;  margin:0 auto; }
 .fd-fullpage .section#section4 .tabMenu .tabContent.active { display:block; }
 .fd-fullpage .section#section4 .tabMenu .tabContent:not(.active) {display:none!important;}
-.fd-fullpage .section ul.grid5 {display: flex; flex-wrap: wrap;}
-.fd-fullpage .section ul.grid5 > li {width: calc((100%/5) - 12px); border: 1px solid #fff; margin-right: 15px; margin-top: 15px; padding: 10px; box-sizing: border-box;}
+.fd-fullpage .section ul {display: flex; flex-wrap: wrap;}
+.fd-fullpage .section ul > li {border: 1px solid #fff; margin-right: 15px; margin-top: 15px; padding: 10px; box-sizing: border-box;}
+.fd-fullpage .section ul > li:hover {border:1px solid #00BBFF;}
+.fd-fullpage .section ul.grid4 > li {width: calc((100%/4) - 15px);}
+.fd-fullpage .section ul.grid4 > li:nth-of-type(-n + 4) {margin-top: 0;}
+.fd-fullpage .section ul.grid4 > li:nth-of-type(4n) {margin-right: 0;}
+.fd-fullpage .section ul.grid5 > li {width: calc((100%/5) - 12px);}
 .fd-fullpage .section ul.grid5 > li:nth-of-type(-n + 5) {margin-top: 0;}
 .fd-fullpage .section ul.grid5 > li:nth-of-type(5n) {margin-right: 0;}
-.fd-fullpage .section ul.grid5 > li:hover {border:1px solid #00BBFF;}
 /* .fd-fullpage .section#section4 .tabMenu .best_icon {position:absolute;left:5px;top:5px;text-align:center;box-sizing:border-box;z-index:10}
 .fd-fullpage .section#section4 .tabMenu .best_icon span{display:block;font-weight:700;color:#000;font-size:9px;text-decoration:underline;}
 .fd-fullpage .section#section4 .tabMenu .best_icon span.best_number{letter-spacing:-1px;position:relative;padding-top:0px} */
 
 .fd-fullpage .section#section5 {margin:170px auto; display: flex; align-items: flex-start; justify-content: space-between;}
-.fd-fullpage .section#section5 .tit {position:relative; margin-right: 82px;}
+.fd-fullpage .section#section5 .tit {position:relative; width: 20%;}
 .fd-fullpage .section#section5 h2 {font-size: 32px; font-weight: 500;}
 .fd-fullpage .section#section5 p {font-size: 14px; font-weight: 400; color: #555; margin: 15px auto 28px;}
-.fd-fullpage .section#section5 .ec-base-product {margin: 0;}
-.fd-fullpage .section#section5 .ec-base-product ul.grid4 > li:hover {border:0;}
+.fd-fullpage .section#section5 .ec-base-product {margin: 0; width: 80%;}
+.fd-fullpage .section#section5 .ec-base-product ul {flex-wrap: inherit;}
+.fd-fullpage .section#section5 .ec-base-product ul > li {margin-top: 0;}
+.fd-fullpage .section#section5 .ec-base-product ul > li:hover {border:0;}
 
 .fd-fullpage .section#section6 a {display: block;}
 .fd-fullpage .section#section6 a img {width: 100%; height: 100%;}
@@ -907,3 +913,37 @@ span.fd-review-more {display:inline-block; margin-left:5px; padding:4px 6px !imp
 .sy .xans-product-additional div.board .ec-base-table tbody {border-top: 1px solid #000000;}
 .sy .xans-product-additional div.board .ec-base-table tbody tr {font-size: 14px;}
 .sy .xans-product-additional div.board .ec-base-table tbody tr:first-child td {border-top:0;}
+
+
+
+
+/**************************************** 사이드 퀵메뉴 ****************************************/
+.fd-quick-sideMenu {position: fixed; right:11.458vw; top:270px; z-index: 100; width: 90px;}
+/* brand */
+.fd-quick-sideMenu .view-brand {position: relative; display: flex; align-items: center; justify-content: center; width: 100%; margin-bottom: 4px; border:1px solid #00BBFF; border-radius:23px; background: #fff; color: #00BBFF; font-size: 12px; font-weight: 350; padding: 7px 0; cursor: pointer;}
+.fd-quick-sideMenu .view-brand i {margin-right: 4px; font-size: 12px;}
+.fd-quick-sideMenu .brand-cont {position: absolute; top:0; left: -155px; display: none; border:0.5px solid #00BBFF; background: #F5FCFF; width: 143px; padding: 12px 0 15px 15px; box-sizing: border-box;}
+.fd-quick-sideMenu .brand-cont.active {display: block;}
+.fd-quick-sideMenu .brand-cont h2 {margin-bottom: 5px; font-size: 16px; font-weight: 700;}
+.fd-quick-sideMenu .brand-cont .list {display: flex; flex-direction: column; font-size: 12px; font-weight: 350; line-height: 20px;}
+.fd-quick-sideMenu .brand-cont .list a:hover {text-decoration: underline;}
+/**/
+.fd-quick-sideMenu div .tit {background: #00BBFF; font-size: 12px; text-align: center; color: #fff; padding: 7px 0;}
+.fd-quick-sideMenu div .tit a {display: block; width: 100%; height: 100%; color: #fff; font-size: 12px; text-align: center;}
+.fd-quick-sideMenu div .cont {border:1px solid #00BBFF; padding: 5px 0 10px;}
+.fd-quick-sideMenu div .cont h2 {margin-bottom: 8px;}
+.fd-quick-sideMenu div .cont h2 a {color: #00BBFF; font-size: 12px; font-weight: 700;}
+/* cart */
+.fd-quick-sideMenu div .xans-layout-productrecent ul {height: 285px; overflow: hidden;}
+.fd-quick-sideMenu div .cont .player {display: flex; align-items: center; justify-content: center;}
+.fd-quick-sideMenu div .cont .player i {color: #000; font-size: 11px; font-weight: 600; width: 19px; height: 19px; border: 1px solid #EEEEEE; background: #F8F8F8; border-radius: 100%; display: flex; align-items: center; justify-content: center;}
+.fd-quick-sideMenu div .cont .player i.prev {margin-right: 3px;}
+/* cs */
+.fd-quick-sideMenu .cs {margin-top: 4px;}
+.fd-quick-sideMenu .cs .cont {background: #f5f5f5; padding: 5px 0; text-align: center;}
+.fd-quick-sideMenu .cs .cont strong {font-size: 18px; font-weight: 900; line-height: 18px; color: #000;}
+.fd-quick-sideMenu .cs .cont p {font-size: 10px; font-weight: 400; line-height: 14px; margin-top: 7px; color: #000;}
+/* kakao */
+.fd-quick-sideMenu .kakao {margin-top: 4px; background: #F9E000; border-radius: 18px;}
+.fd-quick-sideMenu .kakao a {display: flex; align-items: center; justify-content: center; width: 100%; height:100%; padding: 5px 0; font-size: 8px; font-weight: 500; color: #371C1D;}
+.fd-quick-sideMenu .kakao a i {font-size: 15px; color:#371C1D; margin-right: 1px;}
