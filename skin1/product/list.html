@@ -7,7 +7,7 @@
 <!--@js(/js/fitsoft-prdlist.js)-->
 
 
-<div module="product_listrecommend" class="fitsoftlist fitsoftlist-recommend dream">
+<div module="product_listrecommend" class="fitsoftlist">
     <div><h2>Best Item</h2></div>
 
     <!--
@@ -15,36 +15,62 @@
     $basket_result = /product/add_basket.html
     $basket_option = /product/basket_option.html
     -->
-    <ul class="grid4">
-        <!--@import(/prdlist.html)-->
-        <!--@import(/prdlist.html)-->
+    <ul class="fit-prdList grid4">
+        <!--@import(/prdlist3.html)-->
+        <!--@import(/prdlist3.html)-->
     </ul>
 </div>
 
 
-<div module="Product_menupackage">
-    <div class="menuCategory" id="subcate">
-        <ul class="menuCategory" module="product_displaycategory"  style="display:{$display};">
-            <li><a href="/product/list.html?{$param_cate_no}">{$category_name}</a></li>
-            <li><a href="/product/list.html?{$param_cate_no}">{$category_name}</a></li>
-            <li><a href="/product/list.html?{$param_cate_no}">{$category_name}</a></li>
-        </ul>
-    </div> 
-</div>
-
-
-<div module="product_headcategory" id="catetitle"><h2 class='mulish'>{$title_text}</h2></div>
-
-<div module="product_normalmenu">
-    <!--@css(/css/module/product/normalmenu.css)-->
-    <!--@js(/js/module/product/normalmenu.js)-->
-    <p class="prdCount"><strong>{$total_count}</strong>개의 상품</p>
-    <div class="sort skono-select">
-        <select id="selArray" name="selArray" module="product_Orderby">
-            <option value="{$param}">{$sort_name}</option>
-            <option value="{$param}">{$sort_name}</option>
-        </select>
+<div module="Product_menupackage" class='fitsoftlist'>
+    <!--@css(/css/module/product/menupackage.css)-->
+    
+    <div module="product_headcategory" id="catetitle">
+        <div class='tit'>
+            <h2>{$title_text}</h2>
+            <span module="product_normalmenu" class="prdCount">({$total_count})</span>
+        </div>
+        
+        <div module="product_normalmenu">
+            <!--@css(/css/module/product/normalmenu.css)-->
+            <!--@js(/js/module/product/normalmenu.js)-->
+            <div class="sort">
+                <select id="selArray" name="selArray" module="product_Orderby">
+                    <option value="{$param}">{$sort_name}</option>
+                    <option value="{$param}">{$sort_name}</option>
+                </select>
+            </div>
+        </div>        
     </div>
+
+    <ul class="menuCategory">
+        <!-- 참고 : 뉴상품관리 전용 모듈입니다. 뉴상품관리 이외의 곳에서 사용하면 정상동작하지 않습니다. -->
+        <li module="product_displaycategory" class="{$selected}">
+            <a href="/product/list.html?{$param_cate_no}">{$category_name} <span class="count {$product_count_display|display}">({$product_count})</span></a>
+            <ul module="product_children">
+                <li class="{$selected}">
+                    <a href="/product/list.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a>
+                    <div class="button">
+                        {$children_icon}
+                        <ul module="product_children" class="subCategory">
+                            <li class="{$selected}"><a href="/product/list.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                            <li class="{$selected}"><a href="/product/list.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="{$selected}">
+                    <a href="/product/list.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a>
+                    <div class="button">
+                        {$children_icon}
+                        <ul module="product_children" class="subCategory">
+                            <li class="{$selected}"><a href="/product/list.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                            <li class="{$selected}"><a href="/product/list.html?{$param_cate_no}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li><!-- //참고 -->
+    </ul>
 </div>
 
 
@@ -55,9 +81,9 @@
     $basket_result = /product/add_basket.html
     $basket_option = /product/basket_option.html
     -->
-    <ul class="grid4">
-        <!--@import(/prdlist.html)-->
-        <!--@import(/prdlist.html)-->
+    <ul class="fit-prdList grid4">
+        <!--@import(/prdlist3.html)-->
+        <!--@import(/prdlist3.html)-->
     </ul>
 </div>
 

@@ -1,29 +1,56 @@
 <!--@js(/js/detailguide.js)-->
 <!--@css(/css/detailguide.css)-->
-<div id="detailguide">
-    <!-- 기본정보 -->
-    <div module="product_additional">
-        <div module="product_detaildesign">
-            <!--
-            출력 갯수 지정 변수, 없으면 설정된 전체가 나옵니다.
-            count = 10
-            -->
-            <table border="1" summary="" class='fitsoft-detail-info'>
-                <caption>{$name} 기본 정보</caption>
-                <tbody>
-                    <tr class="{$item_display|display}">
-                        <th scope="row">{$item_title}</th>
-                        <td >{$item_content}</td>
-                    </tr>
-                    <tr class="{$item_display|display}">
-                        <th scope="row">{$item_title}</th>
-                        <td >{$item_content}</td>
-                    </tr>
-                </tbody>
-            </table>
+<div id="detailguide" module='product_detail'>
+    <!-- 기본정보 --> 
+    
+    <div class="prdinfo">
+        <div class="info-cont">
+            <div class='name'>{$name}</div>
+            <div class='desc'>{$simple_desc}</div>
+            <div class='prices'>
+                <span class="price_percent"></span>
+                <span class="sale">{$product_sale_price|numberformat}원</span>
+                <span class="basic"><strike>{$product_price|numberformat}원</strike></span>
+            </div>
+
+            <div class='info-basic made'>
+                <span class="tit">제조사</span>
+                <span class="cont">{$manu_name}</span>
+            </div>
+            <div class='info-basic brand'>
+                <span class="tit">브랜드</span>
+                <span class="cont">{$prd_brand}</span>
+            </div>
+            <div class='info-basic delivery'>
+                <span class="tit">배송비</span>
+                <span class="cont">{$delivery_price}</span>
+            </div>
+            <div class='info-basic mileage'>
+                <span class="tit">적립금</span>
+                <span class="cont">{$mileage_percent}% ({$mileage_value|numberformat}원)</span>
+            </div>
+            <!-- 공급사 바로가기버튼 영역 -->
+            <div class="info-basic supply {$supply_link_display|display}">
+                <span class="tit">공급사</span>
+                <span class="cont">
+                    <span>{$supply_top_logo}</span>
+                    <a href="#none" onclick="{$supply_go_action}"><img src="{$supply_go_img}" alt="공급사 바로가기" /></a>
+                </span>
+            </div>
+            <!-- //공급사 바로가기버튼 영역 -->
+        </div>
+    
+
+
+        <!-- 참고 : 뉴상품관리 전용 모듈입니다. 뉴상품관리 이외의 곳에서 사용하면 정상동작하지 않습니다. -->
+        <div class="color {$colorchip_display|display}">
+            <div module="product_Colorchip">
+                <span class="chips" style="background-color:{$color}"></span>
+                <span class="chips" style="background-color:{$color}"></span>
+            </div>
         </div>
     </div>
-
+    
     <!-- 옵션 -->
     <table border="1" summary="" module="product_option">
         <caption>상품 옵션</caption>

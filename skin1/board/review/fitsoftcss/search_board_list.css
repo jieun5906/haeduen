@@ -122,7 +122,7 @@ h1, h3 { margin:0; }
 .ec-base-paginate img { vertical-align:top; }
 .ec-base-paginate li a { display:block; width:33px; padding:9px 0; font-weight:bold; color:#939393; line-height:14px; background:#fff; }
 .ec-base-paginate li a:hover { text-decoration:none; background:#f0f2f2; }
-.ec-base-paginate li a.this { padding-bottom:6px; border-bottom:3px solid #495164; color:#495164; }
+.ec-base-paginate li a.this { padding-bottom:6px; /* border-bottom:3px solid #495164; */ font-weight: bold; color:#000; }
 .ec-base-paginate a.nolink { cursor:default; }
 
 /* typeSub */
