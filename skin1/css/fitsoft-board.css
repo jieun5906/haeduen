@@ -29,12 +29,16 @@
 /* 목록 */
 .fitsoft-boardlist-free {}
 .fitsoft-boardlist-free .xans-board {}
+.fitsoft-boardlist-free .xans-board .title h2 {font-size: 20px; font-weight: 400;}
+.fitsoft-boardlist-free .xans-board .title p {font-size: 14px; font-weight: 400; margin-top: 10px;}
 .fitsoft-boardlist-free .ec-base-table {margin-top:50px;}
-.fitsoft-boardlist-free .ec-base-table.typeList table {border-top:1px solid #000;}
-.fitsoft-boardlist-free .xans-board th {border-left:none; border-color:#000; font-weight:bold; color:#000;}
-.fitsoft-boardlist-free .xans-board td {border:none !important;}
+/* .fitsoft-boardlist-free .ec-base-table.typeList table {border-top:1px solid #000;} */
+.fitsoft-boardlist-free .xans-board th {/* border-left:none; border-color:#000; font-weight:bold; */ color:#353535;}
+/* .fitsoft-boardlist-free .xans-board td {border:none !important;} */
 .fitsoft-boardlist-free .xans-board .ec-base-table thead tr th {border-top:1px solid #000; border-bottom:1px solid #000;} 
-.fitsoft-boardlist-free .txtNum {font-size:14px !important;}
+/* .fitsoft-boardlist-free .txtNum {font-size:14px !important;} */
+
+.fitsoft-boardlist-free .xans-board.message {font-weight: normal; color: #000;}
 
 /* 상세 */
 .fitsoft-boardread-free {}

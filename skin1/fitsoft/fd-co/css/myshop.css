@@ -213,7 +213,7 @@
 .msr-coupon fieldset .msr-couponcont .msr-couponform span {display:inline-block;}
 .msr-coupon fieldset .msr-couponcont .msr-couponform input[type='text'] {height:38px; line-height:38px; padding:5px; width:300px; border:1px solid #e6e6e6;}
 .msr-coupon fieldset .msr-couponcont .msr-couponform .msr-cpbtn {display:inline-flex; align-items:center; justify-content:center; margin-left:5px;}
-.msr-coupon fieldset .msr-couponcont .msr-couponform .msr-cpbtn a {display:inline-block; height:38px; line-height:38px; padding:5px 20px; background-color:#000; color:#fff;}
+.msr-coupon fieldset .msr-couponcont .msr-couponform .msr-cpbtn a {display:inline-block; height:38px; line-height:38px; padding:5px 20px; background-color:#00BBFF; color:#fff;}
 .msr-cpnoti {margin-top:10px;}
 .msr-cpnoti ul {padding:15px;}
 .msr-cpnoti ul li {line-height:1.3rem; color:#000;}

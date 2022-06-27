@@ -4,6 +4,7 @@
 .ec-base-table table:after { position:absolute; top:0; left:0; display:block; content:""; width:100%; height:1px; background:#fff; }
 .ec-base-table th,
 .ec-base-table td { border-top:1px solid #ececec; font-size:13px; vertical-align:top; }
+.ec-base-table td img {margin-right: 3px;}
 .ec-base-table th { font-weight:normal; color:#757575; }
 .ec-base-table td { padding:12px 13px; }
 .ec-base-table tbody th { padding:12px 0 12px 13px; text-align:left; }
