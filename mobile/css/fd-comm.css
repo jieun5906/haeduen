@@ -248,7 +248,7 @@ body.fp-viewing-6rdPage #fp-nav {display:none;}
 .fd-prd-cont {display:inline-block; width:100%; height:145px; text-align:center;}
 .fd-prd-cont img {height:100%; width:auto !important; max-width:inherit !important;}
 .fd-prdlist-item {text-align:center;}
-.prdlist .name {margin:5px 10px !important;}
+/* .prdlist .name {margin:5px 10px !important;} */
 .prdlist .thumbnail {position:relative;}
 .fd-prdlist-item .prices {display: flex; align-items: center; justify-content: center; flex-direction: column-reverse;}
 .fd-prdlist-item .prices span:first-child {padding-top:6px;}
@@ -749,12 +749,41 @@ body.fp-viewing-6rdPage #fp-nav {display:none;}
 /* .fd-fullpage #section4 .tabContent .week_best ul li {width: 50%;} */
 
 /******************** 상품리스트(메인&목록) ********************/
-.ec-base-product .grid2 > li .thumbnail {margin: 0;}
-.ec-base-product .grid2 > li .thumbnail img {border: 0;}
-.ec-base-product .grid2 > li .description {margin: 10px 0 0 0;}
-.ec-base-product .grid2 > li .description .name a {font-size: 12px; font-family: 400; line-height: 17px; margin-bottom: 4px;}
-.ec-base-product .grid2 > li .description .price.basic {font-size: 12px; font-weight: 400; line-height: 17px; margin:0 0 2px; color: #555;}
-.ec-base-product .grid2 > li .description .price.sale {margin-top: 2px;}
-.ec-base-product .grid2 > li .description .price.sale span {font-size: 14px !important; font-family: 500 !important; line-height: 17px;}
-.ec-base-product .grid2 > li .description .price.sale span span {margin-right: 4px;}
-.ec-base-product .grid2 > li .description .icon {margin: 6px 0 0;}
+.fd-prdList.grid2 > li .thumbnail {margin: 0;}
+.fd-prdList.grid2 > li .thumbnail img {border: 0;}
+.fd-prdList.grid2 > li .description {margin: 10px 0 0 0;}
+.fd-prdList.grid2 > li .description .name a {font-size: 12px; font-weight: 400; line-height: 17px; margin-bottom: 4px;}
+.fd-prdList.grid2 > li .description .spec li:nth-of-type(1) span {font-size: 12px !important;}
+.fd-prdList.grid2 > li .description .spec li:nth-of-type(2) span {font-size: 14px !important; font-weight: 500 !important; color: #000 !important; line-height: 20px;}
+.fd-prdList.grid2 > li .description .spec li:nth-of-type(2) span span {float: left; margin-right: 5px; color: #dd0c0c !important;}
+/* .fd-prdList.grid2 > li .description .price.basic {font-size: 12px; font-weight: 400; line-height: 17px; margin:0 0 2px; color: #555;}
+.fd-prdList.grid2 > li .description .price.sale {margin-top: 2px;}
+.fd-prdList.grid2 > li .description .price.sale span {font-size: 14px !important; font-weight: 500 !important; line-height: 17px; color: #000 !important;}
+.fd-prdList.grid2 > li .description .price.sale span span {margin-right: 4px; color: #dd0c0c !important;}
+.fd-prdList.grid2 > li .description .icon {margin: 6px 0 0;} */
+
+/******************** 상품 목록 ********************/
+.prdList-menupackage {background: #F8F8F8; padding: 20px 0;}
+.prdList-menupackage .fd-prd-tit {display: flex; align-items: flex-end; justify-content: center; padding: 0; font-size: 16px; font-weight: 500; line-height: 23px; margin-bottom: 12px !important; border: 0 !important; padding: 0 !important;}
+.prdList-menupackage .fd-prd-tit .prdCount {display: inline-block !important; padding: 0; font-size: 12px; font-weight: 500; line-height: 17px; background: transparent; margin-left: 5px; margin-bottom: 2px;}
+.prdList-menupackage #subcate {margin: 0;}
+.prdList-menupackage #subcate ul {display: flex; align-items: center; white-space: nowrap; overflow-x: scroll;}
+.prdList-menupackage #subcate ul li {background: transparent; margin:0 10px; padding: 0; border:0;}
+.prdList-menupackage #subcate ul li:hover {background: transparent; margin:0 10px; padding: 0; border: 0; font-weight: bold;}
+.prdList-menupackage #subcate ul li a {font-size: 12px; font-weight: 300;}
+.prdList-menupackage #subcate ul li:last-child {margin-right: 0;}
+/* 정렬 */
+.xans-product-normalmenu {padding: 24px 10px 8px;}
+.xans-product-normalmenu .sort select {border-color: #000; background-image: none;}
+/* 더보기 버튼 */
+.xans-product-listmore {margin: 50px auto 0; border: 1px solid #00BBFF; background: #fff; width: 150px; height: 30px;}
+.xans-product-listmore a {display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; font-size: 12px; font-weight: 400; line-height: 0px;}
+
+/******************** 검색결과 ********************/
+.search-prdList {margin-top: 20px !important;}
+.search-prdList .fd-prdList li {text-align: left;}
+.search-prdList .fd-prdList li .name a {font-size: 12px; font-weight: 400;}
+.search-prdList .fd-prdList li .price {font-size: 12px; font-weight: 400; color: #555;}
+.search-prdList .fd-prdList li .prices {display: block;}
+.search-prdList .fd-prdList li .prices span {font-size: 14px !important; font-weight: 500; color: #000 !important; padding: 0;}
+.search-prdList .fd-prdList li .prices span span {float: left; color: #DD0C0C !important; margin-right: 5px;}

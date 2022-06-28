@@ -3,7 +3,8 @@
     <!--@css(/css/module/search/form.css)-->
     <!--@js(/js/module/search/form.js)-->
     <h2>Search</h2>
-
+    
+	<!--
     <div class="searchbox">
         {$form.keyword}
         <p class="button"><button type="submit" class="btnStrong">검색</button></p>
@@ -12,7 +13,7 @@
 
     <div style="margin:0 0">
         <div style="float:left">{$form.order_by}</div>
-        <!--@js(/js/fitsoft.gridsize.js)-->
+        <!--@js(/js/fitsoft.gridsize.js)--
         <div id="prdgrid" style="float:right; margin-top:0;">
             <ul>
                 <li onclick="setGridSize(this, '1');"><img class="gridsize" src=/web/upload/fitsoft/mobile/grid/grid1.png></li>
@@ -23,6 +24,7 @@
         </div>
         <div style="clear:both"></div>
     </div>
+	-->
     
     <p class="empty {$search_fail_display|display}">검색 결과가 없습니다.</p>
 </div>
@@ -30,12 +32,12 @@
 
 
 <!-- 참고 : 뉴상품관리 전용 변수가 포함되어 있습니다. 뉴상품관리 이외의 곳에서 사용하면 일부 변수가 정상동작하지 않을 수 있습니다. -->
-<div class="mPrdList typeThumb prdlist" module="Search_Result">
+<div class="mPrdList typeThumb prdlist ec-base-product" module="Search_Result">
     <!--
         $count = 10
         $moreview = yes
     -->
-    <ul class="grid2">
+    <ul class="fd-prdList grid2">
         <!--@import(/prdlist.html)-->
         <!--@import(/prdlist.html)-->
     </ul>
