@@ -58,7 +58,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .mulish { font-family: 'Mulish', sans-serif;}
-.pret {font-family: 'Pretendard', 'Noto Sans KR' !important;}
+.pret {font-family: 'Pretendard' !important;}
+.noto {font-family: 'Noto Sans KR' !important;}
+
 .f20 {font-size:20px !important;}
 .fd-buy-btn {background-color:#000; color:#fff !important;}
 .fd-buy-btn:hover {background-color:transparent; color:#000 !important;}
@@ -147,15 +149,15 @@
 .fd-fullpage .section#section4 .fd-insta-banner .bx-pager {display:none;}
 body.fp-viewing-6rdPage #fp-nav {display:none;}
 */
-.fd-fullpage .section#section1 img {width:100%;height:560px;object-fit:cover;}
-.fd-fullpage .section#section1 .swiper-pagination {bottom:30px;}
-.fd-fullpage .section#section1 .swiper-pagination-bullet {background-color:#050505; opacity:0.3; width:12px; height:12px; margin:0 6px;}
-.fd-fullpage .section#section1 .swiper-pagination-bullet-active {background-color:#050505; opacity:0.5;}
-.fd-fullpage .section#section2 {margin:100px auto;}
+.fd-fullpage .section#section1 img {width:100%; height:auto; object-fit:cover;}
+.fd-fullpage .section#section1 .swiper-pagination {bottom:2px;}
+.fd-fullpage .section#section1 .swiper-pagination-bullet {background-color:#fff; opacity:1; width:7px; height:7px; margin:0 2px;}
+.fd-fullpage .section#section1 .swiper-pagination-bullet-active {background-color:#00BBFF;}
+/* .fd-fullpage .section#section2 {margin:100px auto;}
 .fd-fullpage .section#section2 .line {width:1px; height:60px; background:#999; margin:40px auto;}
 .fd-fullpage .section#section2 {margin:60px auto;}
 .fd-fullpage .section#section2 .s2-banner-wrap {display:inline-block; width:100%; margin:0 auto; text-align:center; padding:0 20px;box-sizing:border-box;}
-.fd-fullpage .section#section2 .s2-banner-wrap img {width:100%; margin-bottom:10px;}
+.fd-fullpage .section#section2 .s2-banner-wrap img {width:100%; margin-bottom:10px;} */
 .main-tit {margin-bottom:40px; text-align:center; line-height:1.4;}
 .main-tit h2 {font-weight:normal;font-size:24px; color:#383838; padding-bottom:4px;}
 .main-tit p {font-size:14px; color:#757575;}
@@ -654,7 +656,7 @@ body.fp-viewing-6rdPage #fp-nav {display:none;}
 /******************** header ********************/
 #header {position: fixed; width: 100%; background: #fff; z-index: 1000;}
 #header .top-hd-cont .mypage {display: flex; align-items: center; justify-content: center; background: #E6F9FF; border-bottom:0.5px solid #60D5FF; padding: 8px 0 5px;}
-#header .top-hd-cont .mypage a {color: #00BBFF; font-size: 14px; font-weight: 500; margin-right: 15px;}
+#header .top-hd-cont .mypage a {color: #00BBFF; font-size: 12px; font-weight: 500; margin-right: 15px;}
 #header .top-hd-cont .mypage a:last-child {margin-right: 0;}
 #header .top-hd-cont .mypage a span {font-weight: 700;}
 #header .mid-hd-cont {position: relative; height: 70px; top: 0;}
@@ -715,3 +717,44 @@ body.fp-viewing-6rdPage #fp-nav {display:none;}
 #slidemenu .inner .menu-cont.brandMenu a {display: block;}
 #slidemenu .inner .menu-cont.mypageMenu {margin: 15px 0 17px;}
 #slidemenu .inner .menu-cont.mypageMenu ul {padding: 0 20px;}
+
+/* 22.06.28 */
+/******************** main ********************/
+.fd-fullpage .section:not(#section1) {margin-left:10px; margin-right:10px;}
+.fd-fullpage #section2 {margin: 20px 10px 70px;}
+.fd-fullpage #section2 .menu {background: #E6F9FF; margin-bottom: 18px; padding: 12px 0; border-radius: 4px;}
+.fd-fullpage #section2 .menu a {position: relative; color: #00BBFF; font-size: 12px; font-weight: 400; margin: 0 16px;}
+.fd-fullpage #section2 .menu a::after {content: ""; position: absolute; display: block; width: 1px; height: 10px; background: #00BBFF; right:-17px; top: 50%; transform: translateY(-50%);}
+.fd-fullpage #section2 .menu a:last-child:after {display: none;}
+.fd-fullpage #section2 .cate-icon {display: flex; align-items: flex-start; flex-wrap: wrap;}
+.fd-fullpage #section2 .cate-icon a {display: block; width: 65px; height: auto; margin-right: 4px; margin-top: 13px;}
+.fd-fullpage #section2 .cate-icon a:nth-of-type(5n) {margin-right: 0;}
+.fd-fullpage #section2 .cate-icon a:nth-of-type(-n + 5) {margin-top: 0;}
+.fd-fullpage #section2 .cate-icon a .icon {width: 100%; height: 65px; border-radius: 100%; background: #F4F4F4; display: flex; align-items: center; justify-content: center;}
+.fd-fullpage #section2 .cate-icon a .icon img {width: 37px; height: 37px;}
+.fd-fullpage #section2 .cate-icon a .tit {margin-top: 6px; font-size: 12px; font-weight: 400; list-style: 14px; text-align: center;}
+.fd-fullpage #section3 .se2-top .tit-cont {margin-bottom: 30px;}
+.fd-fullpage #section3 .se2-top .tit-cont h2 {font-size: 24px; font-weight: 500; line-height: 34px; margin-bottom: 6px;}
+.fd-fullpage #section3 .se2-top .tit-cont span {font-size: 14px; font-weight: 300; line-height: 20px;}
+.fd-fullpage #section3 .se2-top .left {margin-bottom: 60px;}
+.fd-fullpage #section3 .se2-top .right {margin-bottom: 40px;}
+.fd-fullpage #section3 .se2-top .df-bannermanager {display: flex; justify-content: space-between;}
+.fd-fullpage #section3 .se2-top .df-bannermanager a {width: 50%; margin-right: 10px; border-radius: 4px; overflow: hidden;}
+.fd-fullpage #section3 .se2-top .df-bannermanager a:last-child {margin-right: 0;}
+.fd-fullpage #section3 .se2-top .df-bannermanager a img {width: 100%; height: auto;}
+.fd-fullpage #section3 .se2-bot a {display: block; width: 100%; height: auto; margin-bottom: 4px; border-radius: 4px; overflow: hidden;}
+.fd-fullpage #section3 .se2-bot a img {width: 100%; height: auto;}
+.fd-fullpage #section4 h2 {text-align: center; font-size: 30px; font-weight: 500; line-height: 43px;}
+.fd-fullpage #section4 .tabMenu {padding-top: 23px;}
+/* .fd-fullpage #section4 .tabContent .week_best ul li {width: 50%;} */
+
+/******************** 상품리스트(메인&목록) ********************/
+.ec-base-product .grid2 > li .thumbnail {margin: 0;}
+.ec-base-product .grid2 > li .thumbnail img {border: 0;}
+.ec-base-product .grid2 > li .description {margin: 10px 0 0 0;}
+.ec-base-product .grid2 > li .description .name a {font-size: 12px; font-family: 400; line-height: 17px; margin-bottom: 4px;}
+.ec-base-product .grid2 > li .description .price.basic {font-size: 12px; font-weight: 400; line-height: 17px; margin:0 0 2px; color: #555;}
+.ec-base-product .grid2 > li .description .price.sale {margin-top: 2px;}
+.ec-base-product .grid2 > li .description .price.sale span {font-size: 14px !important; font-family: 500 !important; line-height: 17px;}
+.ec-base-product .grid2 > li .description .price.sale span span {margin-right: 4px;}
+.ec-base-product .grid2 > li .description .icon {margin: 6px 0 0;}
