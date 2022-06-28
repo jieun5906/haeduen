@@ -1,5 +1,5 @@
 /* 하단 */
-#bottom {margin:0 auto; padding:30px; color:#999; font-size:12px; background:#fafafa;}
+#bottom {margin:60px auto 0; padding:30px; color:#999; font-size:12px; background:#fafafa;}
 #bottom .footer_logo img {width:120px; image-rendering:-webkit-optimize-contrast;}
 
 #bottom .bottom_company .utilMenu {display:flex; margin: 10px 0 20px;}
