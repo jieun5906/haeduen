@@ -1,137 +1,137 @@
 <!--@css(/layout/basic/css/slideMenu.css)-->
-<!--@js(/layout/basic/js/slide_menu.js)-->
+<!--@0js(/layout/basic/js/slide_menu.js)-->
 
 <aside id="aside" module="layout_slidePackage">
-<a href="#none" class="btnClose fd-sidebar-close"><img src="/web/upload/fitsoft/mobile/close.png" alt="닫기"></a>
-
-    
-<div id="slidemenu" class='fd-sidebar'>
-    <!-- 슬라이드 메뉴 상단 -->
-    <div id="slidemenutop" class="pret">
-        <p module="Layout_stateLogon"><a href='/myshop/index.html'>마이페이지</a></p>
-        <div module="Layout_stateLogoff">
-            <a href='/member/login.html'>로그인</a>
-            <a href='/member/join.html'>회원가입</a>
-        </div>            
-    </div>
-    <!-- 슬라이드 메뉴 상단 close -->
-    
-	<div class="inner">   
+    <a href="#none" class="btnClose fd-sidebar-close"><i class="xi-close"></i></a>
         
-    	<div id="menulist">
-            
-            <!--<button class="accordionmenu">by COSMO</button>
-            <div class="panel">
-                <ul>
-                    <li><a href="/story.html">STORY</a></li>
-                    <li><a href="/promise.html">대량구매</a></li>
-                </ul>
-            </div>-->
-            <button class="accordionmenu2"><a href="/about.html">BRAND</a></button>
-            
-            <button class="accordionmenu">SHOP</button>
-            <div class="panel">
-                <p module='layout_category' class='fd-shop-menu'>
-                    <a href="/product/list.html{$param}">- {$name}</a>
-                    <a href="/product/list.html{$param}">- {$name}</a>
-                </p>
-            </div>
-            
-            <button class="accordionmenu2"><a href="/subscription.html">SUBSCRIPTION</a></button>
-            
-            <button class="accordionmenu2"><a href="/board/gallery/list.html?board_no=8">EVENT & NOTICE</a></button>
-            <div class="panel">
-                <ul>
-                    <!--<li><a href="/board/memo/list.html?board_no=1001">SHOW_US</a></li>
-                    <li><a href="/collection.html?cate_no=45">WITH_US</a></li>-->
-                    <!--<li><a href="/fitsoft/event_member.html">MEMBERSHIP</a></li>-->
-                </ul>
-            </div>
-            
-            <button class="accordionmenu2"><a href="/board/product/list.html?board_no=6">Q&A</a></button>
-            
-            <button class="accordionmenu2"><a class="submenu pret" href="/fitsoft/event_member.html">멤버십</a></button>
-            
-            <!-- <button class="accordionmenu2"><a class="submenu pret" href="">고객센터</a></button> -->
+    <div id="slidemenu" class='fd-sidebar'>
+        <!-- 슬라이드 메뉴 상단 -->
+        <div class="side-top">
 
-            
-    	</div>
+            <div id='logo' df-banner-code="logo" hidden>
+                <div df-banner-clone>
+                    <a href="{#href}">{#item}</a>
+                </div>
+            </div>
 
-            
-        <!-- 검색창 -->
-        <div class="search-bar">
-            <div module="Layout_SearchHeader">
-                <!--
-                $product_page=/product/detail.html
-                $category_page=/product/list.html
-                -->
-                <fieldset id="search_fieldset">
-                    <legend>검색</legend>{$form.keyword}<img src=/web/upload/fitsoft/mobile/searchicon.png onclick="{$action_search_submit}">
-                </fieldset>
-            </div> 
+            <div id="slidemenutop">            
+                <div module="Layout_stateLogon" class='mypage'>
+                    <a class="myinfo"><strong>{$name}</strong>님</a>
+                    <a href="/order/basket.html">장바구니</a>
+                </div>
+                
+                <div module="Layout_statelogoff" class='mypage'>
+                    <a href="/member/login.html" class="log">로그인</a>
+                    <a href="/member/join.html">회원가입</a>
+                    <a href="/order/basket.html">장바구니</a>
+                </div>
+            </div>
+
         </div>
-
-
-
-                       
-        <!-- 글로벌 --> 
-        <div class='side-bot'>
-            <div module="Layout_multishopList" class="thumb fd-side-global">
-                <ul module="Layout_multishopListitem">
-                    <li><a href="//{$shop_domain}/">KR<img src="//img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" /></a></li>
-                    <li><a href="//{$shop_domain}/">EN<img src="//img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" /></a></li>
-                </ul>
-            </div>
-            <div class='fd-side-member pret'>
-                <p module="Layout_stateLogon"><a href='{$action_logout}'>로그아웃</a></p>
-                <p><a href='/myshop/order/list.html'>주문조회</a></p>
-            </div>
-        </div>
+        <!-- 슬라이드 메뉴 상단 close -->
         
-        
-
-    
-        <!-- 고객센터번호/계좌 -->
-        <!-- <div id="cscenter">
-
-            <div id="customer">
-                <ul>
-                    <li class="cs1">1234-1234</li>
-                    <li class="cs2">Opening hours. am9-pm6</li>
-                    <li class="cs2">Sat, Sun Off</li>
-                </ul>
-            </div>
-
-            <div id="bank">
-                <ul>
-                    <li class="bank1">하나은행 281-910024-10404</li>
-                    <li class="bank2">예금주 : 이즈프럼</li>
-                </ul>
-            </div>
-
-        </div>         -->
-
-
-        <!-- SNS아이콘 -->
-        <!-- <div id="sns">
-            <ul>
-                <li>
-                    <span style="margin-right:10px">Follow us</span>
-                    <a href="https://www.facebook.com/isfrom.official" target="_blank"><img src="/web/upload/fitsoft/sns/fb.png" style="height:18px"></a>
-                    <a href="https://pf.kakao.com/_tnMiK" target="_blank"><img src="/web/upload/fitsoft/sns/kakao.png"></a>
-                </li>
-                <div style="clear:both"></div>
+        <div class="inner">   
+            
+            <ul class="tab">
+                <li class="cateMenu active">전체카테고리</li>
+                <li class="brandMenu">브랜드</li>
+                <li class="mypageMenu">마이페이지</li>
             </ul>
-        </div> -->
-    
+
+            <!-- 전체카테고리 -->
+            <div class="cateMenu menu-cont active" id="menulist">                
+                <!-- 메인페이지에서만 노출되는 카테고리 메뉴 -->
+                <div class="main-cate" id="category" module="Layout_category">
+                    <!--@css(/css/module/layout/category.css)-->
+                    <!--@js(/js/module/layout/category.js)-->
+                    <div class="position">
+                        <ul class="dep1 other-menu">
+                            <li><a href="/product/list.html{$param}">{$name}</a><i class='xi-angle-down-min'></i></li>
+                            <li><a href="/product/list.html{$param}">{$name}</a><i class='xi-angle-down-min'></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="dep2 other-menu">
+                    <li><a href="/product/list.html?cate_no=73"><span>베스트</span></a>
+                    <li><a href="/product/list.html?cate_no=74"><span>신상품</span></a>
+                    <li><a href="/product/list.html?cate_no=75"><span>박스단위특가</span></a>
+                    <li><a href="/product/list.html?cate_no=76"><span>사은품판촉용</span></a>
+                    <li><a href="/product/list.html?cate_no=77"><span>미용실회원전용관</span></a>
+                    <li><a href="/board/product/list.html?board_no=4"><span>상품후기</span></a>
+                    <li><a href="/product/list.html?cate_no=78"><span>점판상품</span></a>
+                    <li><a href="/product/list.html?cate_no=79"><span>오늘의특가</span></a>           
+                </ul>
+            </div>
+            
+            <!-- 브랜드 -->
+            <div class="brandMenu menu-cont">
+                <!--@import(/fitsoft/main_brandList.html)-->
+            </div>
+
+            <!-- 마이페이지 -->
+            <div class="mypageMenu menu-cont">
+                <ul>
+                    <li><a href="/myshop/index.html"><span>마이페이지</span></a>
+                    <li><a href="/myshop/order/list.html"><span>주문조회</span></a>
+                    <li><a href="/product/recent_view_product.html"><span>최근본상품</span></a>
+                    <li><a href="/myshop/wish_list.html"><span>관심상품</span></a>     
+                </ul>
+
+                <ul class='dep2'>
+                    <li><a href="/board/qna/list.html?board_no=1"><span>공지사항</span></a>
+                    <li><a href="/board/qna/list.html?board_no=6"><span>상품Q&A</span></a>
+                    <li><a href="/board/qna/list.html?board_no=3"><span>자주묻는질문</span></a>
+                    <li><a href="/board/qna/list.html?board_no=9"><span>1:1 고객문의</span></a>
+                    <li><a href="/board/qna/list.html?board_no=1002"><span>증빙서류발급</span></a>
+                    <li><a href="/board/free/list.html?board_no=5"><span>미용노하우</span></a>       
+                </ul>
+            </div>
+
+                        
+            <!-- 글로벌 --> 
+            <!-- <div class='side-bot'>
+                <div module="Layout_multishopList" class="thumb fd-side-global">
+                    <ul module="Layout_multishopListitem">
+                        <li><a href="//{$shop_domain}/">KR<img src="//img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" /></a></li>
+                        <li><a href="//{$shop_domain}/">EN<img src="//img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" /></a></li>
+                    </ul>
+                </div>
+            </div> -->
         
-        
-        
-        
-    </div><!-- inner close -->
-    
-    
-    
-</div>
+            <!-- 고객센터번호/계좌 -->
+            <!-- <div id="cscenter">
+
+                <div id="customer">
+                    <ul>
+                        <li class="cs1">1234-1234</li>
+                        <li class="cs2">Opening hours. am9-pm6</li>
+                        <li class="cs2">Sat, Sun Off</li>
+                    </ul>
+                </div>
+
+                <div id="bank">
+                    <ul>
+                        <li class="bank1">하나은행 281-910024-10404</li>
+                        <li class="bank2">예금주 : 이즈프럼</li>
+                    </ul>
+                </div>
+
+            </div>         -->
+
+
+            <!-- SNS아이콘 -->
+            <!-- <div id="sns">
+                <ul>
+                    <li>
+                        <span style="margin-right:10px">Follow us</span>
+                        <a href="https://www.facebook.com/isfrom.official" target="_blank"><img src="/web/upload/fitsoft/sns/fb.png" style="height:18px"></a>
+                        <a href="https://pf.kakao.com/_tnMiK" target="_blank"><img src="/web/upload/fitsoft/sns/kakao.png"></a>
+                    </li>
+                    <div style="clear:both"></div>
+                </ul>
+            </div> -->        
+        </div><!-- inner close -->        
+    </div>
 
 </aside>

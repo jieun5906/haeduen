@@ -4,57 +4,54 @@
 
 <header id="header">
     
-    <!-- 좌측 메뉴버튼 -->
-    <div id="toggle"><span></span></div>
-
-    <div id="top">
-        <div class="topbg_back"></div>
-
-        <div style="margin:0 20px;">
-            
-            <div id="menuicon" style='cursor:pointer;' class="fold"><img src=/web/upload/fitsoft/mobile/menuicon.png></div>
-
-            <!-- 상단 로고 이미지 크기는 /css/top.css 파일에서 조정 -->
-            <div id='logo' df-banner-code="logo" hidden>
-                <div df-banner-clone>
-                    <a href="{#href}">{#item}</a>
-                </div>
-            </div>
-            
-            <!-- 검색 -->
-            <div id="topsearch">
-                <div class="search-bar">
-                    <div module="Layout_SearchHeader">
-                        <!--
-                        $product_page=/product/detail.html
-                        $category_page=/product/list.html
-                        -->
-                        <fieldset id="search_fieldset">{$form.keyword}
-                            <!-- <a onclick="{$action_search_submit}" class="search-tit">SEARCH</a> -->
-                            <a class="search-tit gro"><img src='/web/upload/fd-com/search.png' alt='search'></a>
-                        </fieldset>
-                    </div> 
-                </div>
-            </div>
-
-            <!-- 장바구니 모듈 -->
-            <div id="cart" module="Layout_statelogoff"><a href="/order/basket.html"><div class="cartcount {$basket_count_display_class}"><span>{$basket_count}</span></div><img src=/web/upload/fitsoft/mobile/carticon.png></a></div>
-            <div id="cart" module="Layout_stateLogon"><a href="/order/basket.html"><div class="cartcount {$basket_count_display_class}"><span>{$basket_count}</span></div><img src=/web/upload/fitsoft/mobile/carticon.png></a></div>
-
-            <div style="clear:both"></div>
-
+    <div class='top-hd-cont'>
+        <div module="Layout_stateLogon" class='mypage'>
+            <!--@css(/css/module/layout/statelogon.css)-->
+            <a class="myinfo"><strong>{$name}</strong>님!</a>
+            <a href="/order/basket.html">장바구니</a>
+            <a href="/myshop/order/list.html">주문조회</a>
+            <a href="">고객센터</a>
         </div>
+        
+        <div module="Layout_statelogoff" class='mypage'>
+            <!--@css(/css/module/layout/statelogoff.css)-->
+            <a href="/member/login.html" class="log">로그인</a>
+            <a href="/member/join.html">회원가입</a>
+            <a href="/order/basket.html">장바구니</a>
+            <a href="/myshop/order/list.html">주문조회</a>
+            <a href="">고객센터</a>
+        </div>
+    </div>   
+
+    <div class='mid-hd-cont' id="top">        
+        <!-- 좌측 메뉴버튼 -->
+        <div id="toggle"><span></span></div>
+        <div class="topbg_back"></div>
+        <div id="menuicon" style='cursor:pointer;' class="fold"><i class="xi-bars"></i></div>
+
+        <!-- 상단 로고 이미지 크기는 /css/top.css 파일에서 조정 -->
+        <div id='logo' df-banner-code="logo" hidden>
+            <div df-banner-clone>
+                <a href="{#href}">{#item}</a>
+            </div>
+        </div>        
     </div>
-    
+
+    <!-- 검색 -->
+    <div class="bot-hd-cont" id="topsearch">
+        <div class="search-bar">
+            <div module="Layout_SearchHeader">
+                <!--
+                $product_page=/product/detail.html
+                $category_page=/product/list.html
+                -->
+                <fieldset id="search_fieldset">{$form.keyword}
+                    <!-- <a onclick="{$action_search_submit}" class="search-tit">SEARCH</a> -->
+                    <a class="search-tit gro"><img src='//ecimg.cafe24img.com/pg190b21065964022/deallikeshop1/fd-img/blue-Search.png' alt='search'></a>
+                </fieldset>
+            </div> 
+        </div>
+    </div>    
 	<!-- 검색창 팝업 모듈 -->
     
 </header>
-
-
-<div class="top-banner swiper-container">
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><div class='top_ban_wrap'><a href='/member/login.html'>지금 회원가입하면 <strong>10% 즉시 할인 &gt; </strong></a></div></div>
-        <div class="swiper-slide"><div class='kakao_ban_wrap'><a href='http://pf.kakao.com/_xhzZSs'> 카톡 채널 추가하면 <strong>2,000원 추가 할인 &gt; </strong></a></div></div>
-    </div>
-</div>

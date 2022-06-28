@@ -1,7 +1,7 @@
 /* 슬라이드 */
 
-#slidemenu {font-family: 'Mulish'; font-size:12px; line-height:22px; color:#000;}
-#slidemenu .inner {padding:0 0 0 38px; width:240px}
+#slidemenu {font-size:12px; line-height:22px; color:#000;}
+#slidemenu .inner {/* padding:0 0 0 38px; width:240px */}
 
 
 /* 로고 크기는 아래 12줄의 숫자를 조정해 주세요 */
@@ -10,9 +10,9 @@
 /*#slidemenutop .logo img {height:16px}*/
 
 #slidemenutop {padding:24px 38px 26px; border-bottom:1px solid #e0e0e0;}
-#slidemenutop a {color:#838383; font-weight:500; font-size:14px; position:relative;}
-#slidemenutop a:nth-child(2) {padding-left:20px;}
-#slidemenutop a:nth-child(2):before {content:''; display:inline-block; width:1px; height:12px; position:absolute; top:2px; left:9px; background:#838383;}
+#slidemenutop a {color:#000; font-weight:500; font-size:12px; position:relative; padding-right: 6px;}
+#slidemenutop a:last-child {padding-right:0;}
+/* #slidemenutop a:nth-child(2):before {content:''; display:inline-block; width:1px; height:12px; position:absolute; top:2px; left:9px; background:#838383;} */
 
 #slidemenutop .xans-layout-multishoplist.thumb {font-size:9px; margin-top:10px; }
 #slidemenutop .xans-layout-multishoplist.thumb > ul { overflow:hidden;}
@@ -25,7 +25,6 @@
 
 /* 아코디언 메뉴 */
 
-#slidemenu #menulist {margin-top:40px;}
 #slidemenu .accordionmenu, #slidemenu .accordionmenu2 {
   cursor: pointer;
   width: 240px;
@@ -49,19 +48,20 @@
   margin-right: 5px;
 }
 
-#slidemenu .active:after {
+/* #slidemenu .active:after {
   content: "\2212";
-}
+} */
 /*#slidemenu .active {
   border-bottom:1px solid #fff;
 }*/
 #slidemenu .panel {
   text-indent:5px;
   background-color: #fff;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  font-family: 'Pretendard'; font-size:14px; line-height:24px;
+  /* max-height: 0;
+  overflow: hidden; */
+  transition: max-height 0.2s ease-out; 
+  /* font-size:14px; */
+  line-height:24px;
 }
 #slidemenu .panel a{
   color:#545454;
@@ -104,7 +104,7 @@ body { position:relative; height:100%; }
 /* 확장 */
 html.expand body { position:fixed; top:0; left:0; width:100%; }
 html.expand #container { -webkit-transform: translate(320px, 0); -moz-transform: translate(320px, 0); -ms-transform: translate(320px, 0); -o-transform: translate(320px, 0); transform: translate(320px, 0); }
-html.expand #btnFoldLayout { z-index:405; }
+/* html.expand #btnFoldLayout { z-index:405; } */
 html.expand #aside { z-index:0; overflow-x:hidden; }
 
 /* aside */
@@ -152,5 +152,5 @@ background: linear-gradient(#f7f7f7,#eff0f0,#e8e9e9); /* Standard syntax */
 /* btnFoldLayout */
 #btnFoldLayout {
     display:none; position:absolute; left:300px; top:0; right:0; bottom:0; width:100%; height:100%; opacity:0;
-    -webkit-tap-highlight-color:rgba(0, 0, 0, 0); and -webkit-focus-ring-color:rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0); -webkit-focus-ring-color:rgba(0, 0, 0, 0);
 }
