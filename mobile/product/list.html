@@ -1,7 +1,14 @@
 <!--@layout(/layout/basic/layout2.html)-->
 <!--@js(/js/subcate.js)-->
-<div module="Product_menupackage">
+<!--@js(/js/fd-comm.js)-->
+
+<div module="Product_menupackage" class='prdList-menupackage'>
     <!--@css(/css/module/product/menuPackage.css)-->
+    
+    <div id="titleArea" module="product_headcategory" class='fd-prd-tit'>
+        {$title_text_or_image}
+        <span class="prdCount" module="product_normalmenu">({$total_count})</span>
+    </div>
 
     <div class="menuCategory" id="subcate">
         <ul class="menuCategory" module="product_displaycategory"  style="display:{$display};">
@@ -16,32 +23,27 @@
 
 
 <!-- 추천상품 -->
-<div module="product_listrecommend" class="rollingprd prdlist fitsoftswipe" style="margin-bottom:30px">
+<div module="product_listrecommend" class="ec-base-product fitsoftswipe" style="margin-bottom:30px">
     <div class='fd-prd-tit'>
         <h2>Best Item</h2> 
     </div>
-    <!--@js(/js/swipe.js)-->
-    <!--@js(/js/mainProductSwipe.js)-->
+    <!--@0js(/js/swipe.js)-->
+    <!--@0js(/js/mainProductSwipe.js)-->
     <!--
         $count = 4
         $line = 1
         $grid = 2
         $swipe = yes
     -->
-    <ul class="grid2">
-        <!--@import(/prdlist.html)-->
-        <!--@import(/prdlist.html)-->
+    <ul class="fd-prdList grid2">
+        <!--@import(/prdlist2.html)-->
+        <!--@import(/prdlist2.html)-->
     </ul>
 </div><!-- //추천상품 -->
 
 <!-- 참고 : 뉴상품관리 전용 변수가 포함되어 있습니다. 뉴상품관리 이외의 곳에서 사용하면 일부 변수가 정상동작하지 않을 수 있습니다. -->
 
-<div id="titleArea" module="product_headcategory" class='fd-prd-tit'>
-    <h2>{$title_text_or_image}</h2> 
-</div>
 <div module="product_normalmenu" class="normalmenu_top">
-
-    <p class="prdCount"><strong>{$total_count}</strong>개의 상품</p>
     <!--@css(/css/module/product/normalmenu.css)-->
     <!--@js(/js/module/product/normalmenu.js)-->
     <div class="sort">
@@ -56,18 +58,19 @@
 
 
 <!-- 참고 : 뉴상품관리 전용 변수가 포함되어 있습니다. 뉴상품관리 이외의 곳에서 사용하면 일부 변수가 정상동작하지 않을 수 있습니다. -->
-<div class="mPrdList typeThumb prdlist" module="product_listnormal">
+<div class="ec-base-product" module="product_listnormal">
     <!--
         $count = 10
         $moreview = yes
     -->
-    <ul class="grid2">
+    <ul class="fd-prdList grid2">
         <!--@import(/prdlist2.html)-->
         <!--@import(/prdlist2.html)-->
     </ul>
 </div><!-- //참고 -->
 
-
-<div module="product_listmore" class="paginate typeMoreview">
-    <a href="#none" onclick="{$more_action}">+ More item</a>
+<div module="product_listmore" class="btn_moreview">
+    <a href="#none" onclick="{$more_action}">
+        더보기(<span id="more_current_page_{$display_group}">{$current_page}</span>/<span id="more_total_page_{$display_group}">{$total_page}</span>)
+    </a>
 </div>

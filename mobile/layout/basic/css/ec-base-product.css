@@ -2,12 +2,12 @@
 .ec-admin-icon.cart { height:26px; cursor:pointer; }
 
 .ec-base-product { padding:0; background-color:#fff; }
-.ec-base-product h2 { max-height:43px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:15px; line-height:43px; padding:0 42px 0 14px; background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/bg_title_close.gif") no-repeat right 14px top 50%; background-size:13px 8px; cursor:pointer; }
+.ec-base-product h2 { max-height:43px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:15px; line-height:43px; padding:0 42px 0 14px; /* background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/bg_title_close.gif") no-repeat right 14px top 50%; background-size:13px 8px; */ cursor:pointer; }
 .ec-base-product h3 { margin-bottom:14px; }
 .ec-base-product img { max-width:100%; }
 .ec-base-product > ul { padding:14px 0 0; }
 .ec-base-product li { vertical-align:top; }
-.ec-base-product [class*="grid"] { display:table; table-layout:fixed; width:100%; box-sizing:border-box; padding:0 7px; font-size:0; line-height:0; }
+.ec-base-product [class*="grid"] { display:table; table-layout:fixed; width:100%; box-sizing:border-box; padding:0 10px; font-size:0; line-height:0; }
 .ec-base-product [class*="grid"] > li { display:inline-block; margin:0 0 14px; vertical-align:top; text-align:center; font-size:12px; line-height:1.4; }
 .ec-base-product .thumbnail { position:relative; margin:0 7px 14px; }
 .ec-base-product .thumbnail a { display:block; }
