@@ -266,8 +266,8 @@ span.fd-review-more {display:inline-block; margin-left:5px; padding:4px 6px !imp
 .fd-join-tit {text-align:left !important; padding-bottom:30px; margin-bottom:25px !important; border-bottom:2px solid #000;}
 .fd-join-tit h2 {font-weight:600; font-size:18px;}
 .fd-join-table {}
-.fd-join-table table {display:flex; padding-bottom:25px; margin:10px 0 35px !important;}
-.fd-join-table table tbody {width:100%; padding:0 50px;}
+.fd-join-table table {display:flex; /* padding-bottom:25px; */ margin:10px 0 0 !important;}
+.fd-join-table table tbody {width:100%; /* padding:0 50px; */}
 .fd-join-table table tbody:first-child {padding-right:0;}
 .fd-join-table table tbody:last-child {padding-left:0;}
 .fd-join-table table tbody th {border:none; padding:20px 0 20px 18px; width:150px; font-size:14px; font-weight:600;}
@@ -276,14 +276,14 @@ span.fd-review-more {display:inline-block; margin-left:5px; padding:4px 6px !imp
 .fd-join-table table tbody td select {height:32px;}
 .fd-join-table table tbody td .txt-des {font-size:11px; padding-top:4px; display:block; color:#666;}
 
-.fd-agree-box {border:none !important; background-color:transparent !important; padding:10px 50px 0 !important;}
+.fd-agree-box {border:none !important; background-color:transparent !important; padding:10px 0 0 !important;}
 .fd-agree-box p {font-size:14px;}
 .fd-agree-box p .check label {font-size:0px;}
 .fd-agree-box p .fd-detail-des {padding:0 10px; text-decoration:underline; font-size:12px; cursor:pointer;}
 .fd-agree-box .fd-agree-des {display:none;}
 
 .fd-join-button {padding:100px 0 30px !important;}
-.fd-join-button a {display:inline-block; padding:18px 90px; background-color:#000; color:#fff; font-size:.9rem;}
+.fd-join-button a {display:inline-block; padding:18px 90px; background-color:#00BBFF; color:#fff; font-size:.9rem;}
 
 .fd-join-result {color:#000 !important;}
 .fd-join-result img {display:inline-block; margin-bottom:30px;}
@@ -299,7 +299,8 @@ span.fd-review-more {display:inline-block; margin-left:5px; padding:4px 6px !imp
 .fd-login-box .fd-login-input {display:flex; flex-direction:column; width:100%;}
 .fd-login-box .fd-login-input input[type='text'], .fd-login-box .fd-login-input input[type='password'] {width:94% !important; height:auto !important; line-height:inherit !important; padding:10px !important;}
 .fd-login-box .fd-login-input .pwbox {margin-top:0 !important;}
-.fd-login-box .fd-login-btn { display:inline-flex; align-items:center; justify-content:center; width:87px; height:77px; background-color:#000; color:#fff;}
+.fd-login-box .fd-login-btn { display:inline-flex; align-items:center; justify-content:center; width:87px; height:77px; background-color:#00BBFF; color:#fff;}
+.login-btn-wrap a.join-btn { background-color:#fff; border:1px solid #00BBFF; color:#00BBFF; border-radius: 0;}
 
 .fd-nomember-btn a {top:0 !important;}
 .fd-login-join-btn {position:relative !important; display:inline-block; width:100%; padding:15px 0; margin-top:10px; text-align:center; border:1px solid #000; color:#000; transition:all .2s;}
@@ -968,3 +969,16 @@ span.fd-review-more {display:inline-block; margin-left:5px; padding:4px 6px !imp
 .xans-product-recentlist .button div:last-child {margin-bottom: 0;}
 .xans-product-recentlist td,
 .xans-product-recentlist thead th {font-size: 14px;}
+
+/* 22.06.29 */
+/**************************************** 회원가입 ****************************************/
+/* .fd-join .btnArea a {width: 150px; height: 40px; display: flex; align-items: center; justify-content: center; background: #00BBFF; color: #fff; margin: 0 auto;}
+.fd-join h2.tit {text-align:left !important; padding-bottom:30px; margin-bottom:25px !important; border-bottom:2px solid #000; font-weight:600; font-size:18px;}
+.fd-join .boardWrite th,
+.fd-join .boardWrite td {background: none;} */
+.fd-join .ec-base-table table,
+.fd-join .ec-base-table tbody tr,
+.fd-join .ec-base-table tbody th,
+.fd-join .ec-base-table tbody td {border: 0;}
+.fd-join .ec-base-table tbody th {width: 150px; font-size: 14px; font-weight: 600;}
+.fd-join .agree-cont {margin-top: 35px; padding-top:35px; border-top:1px solid #eaeaea; color: #000;}

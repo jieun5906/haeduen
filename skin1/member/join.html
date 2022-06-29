@@ -1,17 +1,9 @@
 <!--@layout(/layout/basic/layout.html)-->
-<div class="path">
-    <span>현재 위치</span>
-    <ol>
-        <li><a href="/">홈</a></li>
-        <li title="현재 위치"><strong>회원 가입</strong></li>
-    </ol>
-</div>
-
 <div class="titleArea fd-join-tit">
     <h2>JOIN</h2>
 </div>
 
-<div module="member_join" class="pret">
+<div module="member_join" class="pret fd-join">
     <!--@css(/css/module/member/join.css)-->
     <!--
         $returnUrl = /myshop/index.html
@@ -96,15 +88,15 @@
         </table>
     </div>
 
-    <h3 class="{$display_base_column_title|display}">기본정보</h3>
+    <!--<h3 class="{$display_base_column_title|display}">기본정보</h3>-->
     <p class="required {$display_base_column_title|display}"><img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" alt="필수" /> 필수입력사항</p>
     <div class="ec-base-table typeWrite fd-join-table">
         <table border="1" summary="">
-        <caption>회원 기본정보</caption>
+        <!--<caption>회원 기본정보</caption>
         <colgroup>
             <col style="width:150px;" />
             <col style="width:auto;" />
-        </colgroup>
+        </colgroup>-->
         <tbody>
             <tr>
                 <th scope="row">아이디 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" alt="필수" /></th>
@@ -197,7 +189,7 @@
         </table>
     </div>
 
-    <h3 class="{$display_add_title|display}">추가정보</h3>
+    <!--<h3 class="{$display_add_title|display}">추가정보</h3>-->
     <div class="ec-base-table typeWrite {$display_add_title|display}">
         <table border="1" summary="">
         <caption>회원 추가정보</caption>
@@ -342,57 +334,59 @@
     </div>
 
     <!-- <h3>전체 동의</h3> -->
-    <div class="ec-base-box typeThinBg gStrong fd-agree-box">
-        <p>{$sAgreeAllChecked}<label for="sAgreeAllChecked"><strong>이용약관 및 개인정보수집 및 이용에 모두 동의합니다.</strong></label></p>
-    </div>
-
-    <div class="ec-base-box typeThinBg agreeArea fd-agree-box">
-        <p><span class="check">{$form.agree_service_check}</span><label for="agree_service_check0"> [필수] 이용약관 동의</label><span class='fd-detail-des'>자세히보기</span></p>
-        <div class="content fd-agree-des">
-            {$service_desc}
+    <div class='agree-cont'>
+        <div class="ec-base-box typeThinBg gStrong fd-agree-box">
+            <p>{$sAgreeAllChecked}<label for="sAgreeAllChecked"><strong>이용약관 및 개인정보수집 및 이용에 모두 동의합니다.</strong></label></p>
         </div>
-    </div>
 
-    <div class="ec-base-box typeThinBg agreeArea fd-agree-box">
-        <p><span class="check">{$form.agree_privacy_check}</span><label for="agree_privacy_check0">[필수] 개인정보 수집 및 이용 동의</label><span class='fd-detail-des'>자세히보기</span></p>
-        <div class="content fd-agree-des">
-            {$privacy_desc}
+        <div class="ec-base-box typeThinBg agreeArea fd-agree-box">
+            <p><span class="check">{$form.agree_service_check}</span><label for="agree_service_check0"> [필수] 이용약관 동의</label><span class='fd-detail-des'>자세히보기</span></p>
+            <div class="content fd-agree-des">
+                {$service_desc}
+            </div>
         </div>
-    </div>
 
-    <div class="ec-base-box typeThinBg agreeArea {$display_information|display} fd-agree-box">
-        <p>[선택] 개인정보 제3자 제공 동의 <span class="check"> {$form.agree_information_check}</span></p>
-        <div class="content fd-agree-des">
-            {$information_desc}
+        <div class="ec-base-box typeThinBg agreeArea fd-agree-box">
+            <p><span class="check">{$form.agree_privacy_check}</span><label for="agree_privacy_check0">[필수] 개인정보 수집 및 이용 동의</label><span class='fd-detail-des'>자세히보기</span></p>
+            <div class="content fd-agree-des">
+                {$privacy_desc}
+            </div>
         </div>
-    </div>
 
-    <div class="ec-base-box typeThinBg agreeArea {$display_consignment|display} fd-agree-box">
-        <p>[선택] 개인정보 처리 위탁 동의</p>
-        <div class="content fd-agree-des">
-            {$consignment_desc}
+        <div class="ec-base-box typeThinBg agreeArea {$display_information|display} fd-agree-box">
+            <p>[선택] 개인정보 제3자 제공 동의 <span class="check"> {$form.agree_information_check}</span></p>
+            <div class="content fd-agree-des">
+                {$information_desc}
+            </div>
         </div>
-        <p class="check"><span>개인정보 처리 위탁에 동의하십니까?</span> {$form.agree_consignment_check}</p>
-    </div>
 
-    <div class="ec-base-box typeThinBg agreeArea {$display_marketing|display} fd-agree-box">
-        <p>
-            [선택] 마케팅 수신 동의 <span class='fd-detail-des'>자세히보기</span>
-            <span class="check">
-                <span class="{$display_is_sms|display}">
-                    <span>SMS</span> {$form.is_sms}
+        <div class="ec-base-box typeThinBg agreeArea {$display_consignment|display} fd-agree-box">
+            <p>[선택] 개인정보 처리 위탁 동의</p>
+            <div class="content fd-agree-des">
+                {$consignment_desc}
+            </div>
+            <p class="check"><span>개인정보 처리 위탁에 동의하십니까?</span> {$form.agree_consignment_check}</p>
+        </div>
+
+        <div class="ec-base-box typeThinBg agreeArea {$display_marketing|display} fd-agree-box">
+            <p>
+                [선택] 마케팅 수신 동의 <span class='fd-detail-des'>자세히보기</span>
+                <span class="check">
+                    <span class="{$display_is_sms|display}">
+                        <span>SMS</span> {$form.is_sms}
+                    </span>
+                    <span class="{$display_is_news_mail|display}">
+                        <span>이메일</span> {$form.is_news_mail}
+                    </span>
                 </span>
-                <span class="{$display_is_news_mail|display}">
-                    <span>이메일</span> {$form.is_news_mail}
-                </span>
-            </span>
-        </p>
-        <div class="content fd-agree-des">
-            <p>할인쿠폰 및 혜택, 이벤트, 신상품 소식 등 쇼핑몰에서 제공하는 유익한 쇼핑정보를 SMS나 이메일로 받아보실 수 있습니다.</p>
-            <p>단, 주문/거래 정보 및 주요 정책과 관련된 내용은 수신동의 여부와 관계없이 발송됩니다.</p>
-            <p>선택 약관에 동의하지 않으셔도 회원가입은 가능하며, 회원가입 후 회원정보수정 페이지에서 언제든지 수신여부를 변경하실 수 있습니다.</p>
-        </div>
-     </div>
+            </p>
+            <div class="content fd-agree-des">
+                <p>할인쿠폰 및 혜택, 이벤트, 신상품 소식 등 쇼핑몰에서 제공하는 유익한 쇼핑정보를 SMS나 이메일로 받아보실 수 있습니다.</p>
+                <p>단, 주문/거래 정보 및 주요 정책과 관련된 내용은 수신동의 여부와 관계없이 발송됩니다.</p>
+                <p>선택 약관에 동의하지 않으셔도 회원가입은 가능하며, 회원가입 후 회원정보수정 페이지에서 언제든지 수신여부를 변경하실 수 있습니다.</p>
+            </div>
+         </div>
+    </div>
 
     <div class="ec-base-button fd-join-button ridi">
         <a href="#none" onclick="{$action_func_join}"><!--<img src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_member_join1.gif" alt="회원가입" />-->JOIN US</a>
