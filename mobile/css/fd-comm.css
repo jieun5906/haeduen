@@ -74,8 +74,8 @@
 
 .fd-tit-style {padding-bottom:30px; margin-bottom:10px !important; border-bottom:2px solid #000;}
 .fd-tit-style h2 {font-weight:600; font-size:18px;}
-.fd-btn-style01 {display:inline-flex; align-items:center !important; justify-content:center !important; background-color:#000 !important; border:1px solid #000 !important; color:#fff !important;}
-.fd-btn-style02 {display:inline-flex; align-items:center !important; justify-content:center !important; border:1px solid #000 !important;}
+.fd-btn-style01 {display:inline-flex; align-items:center !important; justify-content:center !important; background-color:#00BBFF !important; border:1px solid #00BBFF !important; color:#fff !important;}
+.fd-btn-style02 {display:inline-flex; align-items:center !important; justify-content:center !important; border:1px solid #00BBFF !important; color: #00BBFF;}
 .fd-layout-style {border: none !important; border-bottom:1px dashed #eee !important;}
 .fd-layout-style span.period a {border:none !important;}
 .fd-layout-style span.period a:hover {border:none !important;}
@@ -269,17 +269,30 @@ body.fp-viewing-6rdPage #fp-nav {display:none;}
 .fd-detail .fd-detail-total {color:#000 !important;}
 .fd-detail .btnStrong {background-color:#000; border-color:#000;}
 .fd-detail #detailguide .accordion-label {padding:12px 0 !important;}
-.fd-detail-tab li {width:33.33% !important;}
 .fd-detail-info {}
 .fd-detail-info .prd-sub-name {margin-bottom:8px;}
-.fd-detail-info .prd-main-name {font-size:24px; margin-bottom:10px; line-height:1.6;}
-.fd-detail-info .prd-price-wrap {display:flex; margin:30px 0 24px;}
+.fd-detail-info .prd-main-name {font-size:16px; margin-top:12px; line-height:23px; font-weight: 500;}
+/* .fd-detail-info .prd-price-wrap {display:flex; margin:30px 0 24px;}
 .fd-detail-info .prd-price { font-size:12px; font-weight:600; display:inline-flex; flex-direction:column;}
 .fd-detail-info .prd-price.normal {margin-left:8px; color:#999; }
 .fd-detail-info .prd-price .sale { font-size:20px;}
-.fd-detail-info .prd-price strike {font-size:14px; font-weight:normal; padding-top:3px;}
-.fd-detail-info .prd-des {margin-bottom:12px; font-size:16px; color:#999;}
-.fd-detail-qty {padding-top:15px;}
+.fd-detail-info .prd-price strike {font-size:14px; font-weight:normal; padding-top:3px;} */
+.fd-detail-info .prd-des {margin-bottom:6px; font-size:12px; font-weight: 300; line-height: 17px; color:#000;}
+.fd-detail-info .icon img {margin: 0 2px 0 0;}
+.fd-detail-info .prices {display: flex; align-items: flex-end; margin: 15px 0 17px;}
+.fd-detail-info .prices .price_percent {font-size: 18px; font-weight: 500; color: #dd0c0c; line-height: 26px; margin-right: 3px;}
+.fd-detail-info .prices .sale {font-size: 18px; font-weight: 500; color: #000; line-height: 26px; margin-right: 5px;}
+.fd-detail-info .prices .basic {font-size: 14px; font-weight: 400; color: #555; line-height: 20px;}
+.fd-detail .xans-product-detaildesign {padding: 0; border:0;}
+.fd-detail .fitsoft-prd-simple-info th,
+.fd-detail .fitsoft-prd-simple-info th span {font-size: 14px !important; font-weight: 500 !important; line-height: 20px; color: #000 !important;}
+.fd-detail .fitsoft-prd-simple-info td,
+.fd-detail .fitsoft-prd-simple-info td span {font-size: 14px !important; font-weight: 300 !important; line-height: 20px; color: #000 !important;}
+.fd-detail .fitsoft-prd-simple-info td .shippingFee {margin-left: 10px;}
+.fd-detail .fitsoft-prd-simple-info td .mileage_tooltip a {border:1px solid #000; padding: 3px 5px; font-size: 12px;}
+.fd-detail .fitsoft-prd-simple-info td .mileage_tooltip .mileage_layer {display: inline-block; border:1px solid #000; padding:5px; margin-top: 3px;}
+
+.fd-detail-qty {padding-top:50px; margin: 0 10px;}
 .fd-detail-qty table {}
 .fd-detail-qty table tr.quantity td {text-align:right; padding:10px 0;}
 .fd-detail-qty table tr.quantity td #quantity {width:30px; text-align:center; border-bottom:1px solid #000;}
@@ -787,3 +800,59 @@ body.fp-viewing-6rdPage #fp-nav {display:none;}
 .search-prdList .fd-prdList li .prices {display: block;}
 .search-prdList .fd-prdList li .prices span {font-size: 14px !important; font-weight: 500; color: #000 !important; padding: 0;}
 .search-prdList .fd-prdList li .prices span span {float: left; color: #DD0C0C !important; margin-right: 5px;}
+
+/* 22.06.29 */
+/******************** 상품상세 ********************/
+/* 상단 이미지 */
+.fd-detail .overview .prdImgView { position:relative; min-height:100px; height: 360px; text-align:center; margin: 0;}
+.fd-detail .overview .prdImgView .xans-product-mobileimage {width: 100%; height: 100%;}
+.fd-detail .overview .prdImgView ul li {height: 360px;}
+.fd-detail .overview .prdImgView ul li img {width: 100%; height: 100%; object-fit: cover;}
+.fd-detail .overview .prdImgView .paginate {position: absolute; bottom: 7px; left: 50%; transform: translateX(-50%); margin: 0;}
+.fd-detail .overview .prdImgView .paginate button.circle {background: #EEEEEE; border-radius: 100%; width: 7px; height: 7px; margin: 0 2px;}
+.fd-detail .overview .prdImgView .paginate button.circle.selected {background-color: #00BBFF;}
+/* option */
+.xans-product-detail .prdOption table th {font-size: 14px; font-weight: 500;}
+.xans-product-detail .prdOption table tr,
+.xans-product-detail .prdOption table td {padding: 0;}
+/* totalProducts */
+#totalProducts {border-bottom: 1px solid #EEEEEE; padding-bottom: 22px; margin:0 10px;}
+#totalPrice.totalPrice {padding: 20px 0 0; color: #000; font-size: 14px;}
+#totalProducts tbody td p {margin-bottom: 0;}
+#totalPrice.totalPrice .total strong {font-size: 20px; font-weight: 700; margin-left: 36px;}
+/* button */
+.fd-detail-btn ul {width: 100%; display: flex; align-items: center; justify-content: space-between;}
+.fd-detail-btn ul li {width: 50%; height: 50px; margin-right: 5px;}
+.fd-detail-btn ul li:last-child {margin-right: 0;}
+.fd-detail-btn ul li a {display: flex; align-items: center; justify-content: center; width: 100% !important; height: 100% !important; padding: 0 !important; font-size: 14px; font-weight: 500;}
+.fd-detail-btn ul li a.detail-sub-btn {border:1px solid #00BBFF; color:#00BBFF;}
+.fd-detail-btn ul li a.fd-buy-btn {border:1px solid #00BBFF; background: #00BBFF; color:#fff;}
+/* 상세정보 탭 */
+#tabProduct {margin: 50px 10px 0;}
+#tabProduct ul {display: flex; align-items: center; justify-content: space-between;}
+#tabProduct ul li {position: relative; width:calc(100%/5) !important;}
+#tabProduct ul li:nth-of-type(3) {width: 27% !important;}
+#tabProduct li.selected::after {content: ""; position: absolute; left: 0; bottom: 0; display: block; width: 100%; height: 2px; background:#000;}
+#tabProduct ul li.selected a,
+#tabProduct ul li a {border: 0;}
+/* 상세정보 */
+.xans-product-additional {margin: 0 10px;}
+/* review */
+.fd-detail-review {margin: 17px 0 0;}
+.fd-detail-review #detailboardtext {margin: 0 0 13px; padding: 0; border: 0 !important;}
+.fd-detail-review #detailboardtext div {display: flex;}
+.fd-detail-review #detailboardtext .bt a {width: 50%; margin-right: 9px;}
+.fd-detail-review #detailboardtext .bt a:last-child {margin-right: 0;}
+/* delivery */
+.fd-detail-delivery {margin-top: 17px; font-size: 12px;}
+.fd-detail-delivery .bot-info {margin-top: 15px;}
+.fd-detail-delivery .bot-info:first-child {margin-top: 0;}
+/* fna */
+.fd-detail-review-list li {border-top: 0 !important; border-bottom: 1px solid #ddd !important;}
+.fd-detail-review .descriptions a .des-left {padding: 14px 12px;}
+.fd-detail-review .descriptions .review-tit {font-size: 14px; font-weight: 500; padding: 0; margin-bottom: 7px;}
+.fd-detail-review .descriptions > p {display: flex; align-items: center;}
+.fd-detail-review .descriptions .id {font-size:12px; font-weight: 350; color: #666; margin-right: 10px;}
+.fd-detail-review .descriptions .date  {font-size:12px; font-weight: 350; color: #666;}
+
+.xans-board-write .prdSelect {margin: 0;}

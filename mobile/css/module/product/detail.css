@@ -28,12 +28,12 @@
 
 
 
-.xans-product-detail .btnArea ul {display:flex; align-items:center; justify-content:space-between;}
+/* .xans-product-detail .btnArea ul {display:flex; align-items:center; justify-content:space-between;}
 .xans-product-detail .btnArea .detail-sub-btn {border:1px solid #999; width:60px; height:60px;display:inline-flex; align-items:center;justify-content:center; cursor:pointer; margin-right:8px;}
 .xans-product-detail .btnArea .detail-sub-btn img {height:24px; width:auto;}
 .xans-product-detail .btnArea .fd-buy-btn {font-size:16px; display:inline-flex; width:50vw; padding:21px 0; align-items:center;justify-content:center;}
 .xans-product-detail .btnArea .fd-soldout-btn {font-size:16px; display:inline-flex; width:72vw; padding:21px 0;  align-items:center;justify-content:center; color:#fff; background:#3f3e3d;}
-
+ */
 
 
 /* 공급사 바로가기 영역 */
