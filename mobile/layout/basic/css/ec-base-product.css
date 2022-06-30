@@ -92,7 +92,7 @@
 
 /* grid */
 .ec-base-product .grid1 > li { width:100%; }
-.ec-base-product .grid2 > li { width:50%; }
+.ec-base-product .grid2 > li { /* width:50%; */ width: 46.8%; }
 .ec-base-product .grid3 > li { width:33.333%; }
 .ec-base-product .grid4 > li { width:25%; }
 .ec-base-product .grid5 > li { width:20%; }

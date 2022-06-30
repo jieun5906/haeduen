@@ -40,8 +40,8 @@
 .xans-order-basketpackage .title h2 { padding:0 0 0 14px; line-height:43px; font-size:13px; border-bottom:1px solid #d5d5d5; color:#000; background-color:#f0f0f0; }
 .xans-order-basketpackage .prdInfo { padding:7px 14px 0; border-bottom:1px solid #d5d5d5; background-color:#fff; }
 .xans-order-basketpackage .description { position:relative; min-height:90px; padding:7px 0 0 90px; }
-.xans-order-basketpackage .description .prdImg { position:absolute; left:0; top:7px; z-index:10; width:73px; border:1px solid #d5d5d5; }
-.xans-order-basketpackage .description .prdImg img { width:100%; }
+.xans-order-basketpackage .description .prdImg { position:absolute; left:0; top:7px; z-index:10; width:73px; height:73px; border:1px solid #d5d5d5; }
+.xans-order-basketpackage .description .prdImg img { width:100%; height: 100%; object-fit: cover;}
 .xans-order-basketpackage .description .prdName { display:block; margin:0 0 14px; font-size:13px; }
 .xans-order-basketpackage .description .prdName .ec-set-product-name { display:block; margin:0 0 3px; }
 .xans-order-basketpackage .description .info { margin:0 0 14px; }

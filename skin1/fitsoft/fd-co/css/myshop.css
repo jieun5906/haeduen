@@ -164,7 +164,7 @@
 .msr-basketlist .ms-table td.-qty .msr-price span {font-weight:500;}
 .msr-basketlist .ms-table td.msr-etc {}
 .msr-basketlist .ms-table td.msr-etc > a {display:block; padding:8px 12px; font-size:13px !important;}
-.msr-basketlist .ms-table td.msr-etc > a:nth-child(1) {background-color:#1f1f1f; color:#fff; margin-bottom:6px;}
+.msr-basketlist .ms-table td.msr-etc > a:nth-child(1) {background-color:#00BBFF; color:#fff; margin-bottom:6px;}
 .msr-basketlist .ms-table td.msr-etc > a:nth-child(2) {border:1px solid #b1b1b1; color:#b1b1b1;}
 .msr-basketlist .ms-table td.fd-recent-price p span {color:#1f1f1f !important; font-size:normal !important;}
 .msr-basketlist .ms-table td.fd-recent-price .txtEm {color:#1f1f1f !important; font-size:normal !important;}
@@ -184,7 +184,7 @@
 .msr-order-foot .msr-sum .msr-orderprice span {font-size:1.1rem; font-weight:600;}
 .msr-order-foot .msr-sum .msr-orderprice .msr-sumtxt {font-size:1.3rem;}
 .msr-basket-botbtn {display:flex; align-items:center; justify-content:space-between;}
-.msr-basket-botbtn .msr-botbtn {font-weight:600; font-size:.8rem; padding:15px 30px; display:inline-block; border:1px solid #f0f0f0;}
+.msr-basket-botbtn .msr-botbtn {font-weight:500; font-size:.8rem; padding:10px 20px; display:inline-block; border:1px solid #ececec;}
 .xans-order-basketpackage .xans-order-selectorder {margin:0 !important;}
 #sp-cart .xans-order-totalsummary {margin-bottom:10px !important;}
 #sp-cart .sp-no-result-found > div {background-color:#f8f8f8; font-size:.9rem;}

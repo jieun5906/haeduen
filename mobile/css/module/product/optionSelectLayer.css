@@ -80,5 +80,5 @@ body#popup > div.xans-product-optionselectlayer { position:absolute; top:10px; l
 
 /* 총 상품 금액 */
 .totalPrice { margin:10px 0 0; padding:14px 0 0; font-size:13px; border-top:1px solid #9a9ba0; }
-.totalPrice .total { color:#008bcc; }
+.totalPrice .total { color:#008bcc; display: inline-flex;}
 .totalPrice .total .price { font-style:normal; font-size:16px; }

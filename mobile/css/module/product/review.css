@@ -1,4 +1,4 @@
-.fd-detail-review { display:none; margin-top:30px }
+.fd-detail-review { /* display:none; */ margin-top:30px }
 .fd-detail-review .board > .btnArea { padding:0 0 10px 0; margin:0 auto; }
 .fd-detail-review .nodata { padding:14px 0; text-align:center; margin:15px 0;}
 

@@ -147,7 +147,7 @@
 .xans-product-detail .infoArea .xans-product-action .btnArea ul li {cursor: pointer; width: 50%; margin-right: 9px; font-size: 14px; font-weight: 500;}
 .xans-product-detail .infoArea .xans-product-action .btnArea ul li:last-child {margin-right: 0;}
 .xans-product-detail .infoArea .xans-product-action .btnArea ul li a {display: block; width: 100%; height: 100%; padding:9px 0; text-align: center; }
-.xans-product-detail .infoArea .xans-product-action .btnArea .detail-sub-btn {border:1px solid #00BBFF; width:100%; display:inline-flex; align-items:center;justify-content:center; cursor:pointer; margin-right:8px;}
+.xans-product-detail .infoArea .xans-product-action .btnArea .detail-sub-btn {color: #00BBFF; border:1px solid #00BBFF; width:100%; display:inline-flex; align-items:center;justify-content:center; cursor:pointer; margin-right:8px;}
 .xans-product-detail .infoArea .xans-product-action .btnArea .detail-sub-btn a {color: #00BBFF;}
 .xans-product-detail .infoArea .xans-product-action .btnArea .detail-sub-btn img {height:24px; width:auto;}
 .xans-product-detail .infoArea .xans-product-action .btnArea .fd-buy-btn {border:1px solid #00BBFF;  margin-right: 0; font-size:16px; display:inline-flex; width:100%; align-items:center; justify-content:center;}

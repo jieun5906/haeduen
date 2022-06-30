@@ -40,7 +40,7 @@
 .ec-base-product ul li.fitsoft-prd-item {display:inline-block;}
 .ec-base-product ul li.fitsoft-prd-item:first-child {display:block; line-height: 20px; margin-bottom: 5px;}
 .ec-base-product ul li.fitsoft-prd-item span {padding-right:6px; line-height:20px;}
-.ec-base-product ul li.fitsoft-prd-item:nth-child(2) span {display:flex; align-items:center; flex-direction: row-reverse; font-size: 18px !important; font-weight: 500 !important;}
+.ec-base-product ul li.fitsoft-prd-item:nth-child(2) span {display:flex; align-items:center; flex-direction: row-reverse; font-size: 18px !important; font-weight: 500 !important; color: #000 !important;}
 .ec-base-product ul li.fitsoft-prd-item:nth-child(2) span span {color: #DD0C0C !important;}
 
 

@@ -41,7 +41,7 @@
 .xans-board-read #password { width:100%; }
 
 /* 버튼 */
-.xans-board-read .ec-base-button { margin:10px 14px; }
+.xans-board-read .ec-base-button { margin:10px 0; }
 
 /* read - 상품 */
 .xans-board-product { overflow:hidden; margin:0 0 10px; padding:10px; border:1px solid #eaeaea; border-left:none; border-right:none; background:#fff; }

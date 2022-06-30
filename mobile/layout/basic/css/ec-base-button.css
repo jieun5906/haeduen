@@ -1,16 +1,16 @@
 /* 기본 버튼 디자인 */
-  .btnNormal, .btnStrong, .btnBasic, .btnSubmit, .btnEm { display:inline-block; letter-spacing:0; text-align:center; font-family:'SCDream', 'Noto Sans KR',sans-serif; border-radius:0; -moz-box-sizing:border-box; box-sizing:border-box; }
+  .btnNormal, .btnStrong, .btnBasic, .btnSubmit, .btnEm { display:inline-block; letter-spacing:0; text-align:center; font-family:'Noto Sans KR',sans-serif; border-radius:0; -moz-box-sizing:border-box; box-sizing:border-box; }
   .btnNormal, .btnStrong, .btnBasic { height:29px; line-height:27px; padding:0 10px; vertical-align:middle; font-size:12px; }
   .btnNormal { color:#1b1b1b; border:1px solid #eaeaea; border-bottom-color:#eaeaea; background:#fff; }
-  .btnStrong { color:#fff; border:1px solid #555; border-bottom-color:#373d4b; background:#555; }
-  .btnSubmit { height:38px; line-height:36px; padding:0 10px; font-size:13px; color:#fff; border:1px solid #555; background:#555; }
+  .btnStrong { color:#fff; border:1px solid #00BBFF; border-bottom-color:#00BBFF; background:#00BBFF; }
+  .btnSubmit { height:38px; line-height:36px; padding:0 10px; font-size:13px; color:#fff; border:1px solid #00BBFF; background:#00BBFF; }
   .btnEm { height:36px; line-height:34px; padding:0 10px; font-size:13px; border:1px solid #eaeaea; background:#fff; }
   .btnBasic { color:#1b1b1b; border:1px solid #eaeaea; background:#f0f0f0; }
 
 
 
 .btnSubmit2, .btnEm2 { display:inline-block; letter-spacing:0; text-align:center; font-family: 'SCDream', 'Noto Sans KR',sans-serif; border-radius:0; -moz-box-sizing:border-box; box-sizing:border-box; }
-  .btnSubmit2 { height:34px; line-height:32px; padding:0 10px; font-size:10px; color:#fff; border:1px solid #555; background:#555;}
+  .btnSubmit2 { height:34px; line-height:32px; padding:0 10px; font-size:10px; color:#fff; border:1px solid #00BBFF; background:#00BBFF;}
   .btnEm2 { height:34px; line-height:32px; padding:0 10px; font-size:10px; border:1px solid #eaeaea; background:#fff;}
 
 

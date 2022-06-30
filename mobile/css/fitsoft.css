@@ -4,8 +4,8 @@
 /* 레이아웃 */
 
 #contents {}
-#contents2 {margin-top:100px; margin-bottom:50px}
-#contents3 {margin-top:100px; margin-bottom:0}
+#contents2 {margin:151px 10px 50px;}
+#contents3 {margin:151px 10px 0;}
 
 
 #prdgrid {width:128px; margin:0 auto; margin-top:40px;}
@@ -23,7 +23,7 @@
 
 
 /* 타이틀 */
-#titleArea {border-bottom:1px solid #000; padding-top:30px; padding-bottom:10px; text-align:center; margin:0 auto; text-align:left; margin-top:0; margin-left:14px; margin-right:14px}
+#titleArea {border-bottom:1px solid #000; padding-top:30px; padding-bottom:10px; text-align:center; margin:0 auto; text-align:left; margin-top:0;/*  margin-left:14px; margin-right:14px */}
 #titleArea h2 {font-size:15px; font-weight:600; }
 #titleArea span {display:none}
 

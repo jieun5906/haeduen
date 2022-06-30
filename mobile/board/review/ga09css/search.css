@@ -1,5 +1,5 @@
 /* 공통 */
-.xans-board-search { margin:0 0 29px; padding:14px;/* border-top:1px solid #ececec; border-bottom:1px solid #ececec;*/ text-align:left; }
+.xans-board-search { margin:0 0 29px; padding:14px 0;/* border-top:1px solid #ececec; border-bottom:1px solid #ececec;*/ text-align:left; }
 .xans-board-search .keyword { position:relative; padding:0 51px 0 0; }
 .xans-board-search input#search { width:100%; }
 .xans-board-search .category { overflow:hidden; }

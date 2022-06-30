@@ -3,7 +3,7 @@
 
 
 .xans-product-normalmenu {padding:40px 0 20px; border-top:1px solid #050505; display:flex;justify-content:space-between; align-items:center;}
-.xans-product-normalmenu .function { overflow:hidden; text-align:right; line-height:38px; border:1px solid #eaeaea; }
+.xans-product-normalmenu .function { overflow:hidden; text-align:right; line-height:38px; /* border:1px solid #eaeaea; */ }
 .xans-product-normalmenu .function .btnCompare { display:inline-block; padding:0 12px; border-left:1px solid #d7d5d5; }
 .xans-product-normalmenu .function .btnCompare:hover { color:#008bcc; text-decoration:none; }
 .xans-product-normalmenu .prdCount {font-size:14px; }
